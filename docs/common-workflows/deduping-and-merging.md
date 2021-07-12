@@ -50,7 +50,7 @@ should consider contacts to be duplicated. For example a rule could
 state that when the email address and first name between two contacts
 match CiviCRM should consider these contacts to be duplicates.
 
-Using the default rules to find and merge duplicate contacts
+## Using the default rules to find and merge duplicate contacts
 
 If you do not want to configure the dedupe rules at this stage you can
 simply use the default rules to find duplicates from your database.
