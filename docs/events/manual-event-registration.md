@@ -92,7 +92,7 @@ If you are registering a participant manually, you can enter a payment
 amount less than the event fees, then make one or more additional
 payments later on until the fee is paid in full.
 
-During the manual registration you enter the the amount actually being
+During the manual registration you enter the amount actually being
 paid at this time in the **Amount** field in the Payment Information
 section and set the **Participant Status** field to Partially paid.
 
