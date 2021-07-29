@@ -58,8 +58,7 @@ page, make a note of it.
 
 ### Completing the SMS Provider settings in CiviCRM
 
-You now have all of the information needed to configure SMS in CiviCRM.
-To continue, return to CiviCRM and go to: **Administer** > **System
+You now have all of the information needed to configure SMS in CiviCRM. After installing the Clickatell extension in CiviCRM, go to: **Administer** > **System
 Settings**> **SMS Providers**. Click "Add New Provider".
 
 ![image](../img/CiviCRM_SMS_adding-a-provider.png)
@@ -187,7 +186,7 @@ You now have all of the information needed to configure SMS in CiviCRM.
 
 Now that you have a Twilio account with a mobile phone number, it needs to be set up in CiviCRM.
 
-1. Go to CiviCRM and go to: **Administer** > **System
+1. After installing the Twilio extension in CiviCRM, go to: **Administer** > **System
 Settings**> **SMS Providers**. Click **Add New Provider**.
 
 ![image](../img/CiviCRM_SMS_adding-a-provider-twilio.png)
