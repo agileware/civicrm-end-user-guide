@@ -25,11 +25,13 @@ may not use all 3
 1. The search screen 
     
     this is where the search criteria and available fields are configured
+
 2. Search displays
     
     a search can have no search displays or it can have one or multiple.
     search displays currently available are table views, list views or smart 
      groups
+     
 3. Search form
     
     in order to add a search form it is necessary to have the form
