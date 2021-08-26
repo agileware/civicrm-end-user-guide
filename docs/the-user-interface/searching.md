@@ -355,10 +355,6 @@ given date range. You may also limit results to show credit card
 payments only or payees only. See also event reports for more useful
 event search options.
 
-### Activity Search
-
-Find activities using any or all of the activity-related criteria. This
-is also possible in Advanced Search by using Display results as.
 
 ### Price Set Details for Event Participants
 
