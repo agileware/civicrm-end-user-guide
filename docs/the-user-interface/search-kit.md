@@ -112,6 +112,48 @@ been saved.
 
 ![img.png](../img/the-user-interface/search-kit/search-display.png)
 
+## Url filtering
+
+It is possible to add parameters to the url to filter a search display.
+One useful way to use this is by having 2 searches. One uses group by
+(e.g group contributions by payment instrument) and the other provides more
+detail. In this example you would edit grouped search to have a link on
+the payment method field. In the box would be the url as per below but
+for the 'value' a token would be used - in this case `[payment_instrument_id:label]`
+(The box on the right helps with finding tokens.)
+
+![Add search link](../img/the-user-interface/search-kit/search-link.png)
+
+To get the syntax for a field in the search display click on 'rewrite'
+to see the field name - for example in this case I can see the field
+name is 'payment_instrument_id:label'
+
+![img.png](img.png)
+
+I can add this to my saved search display url to filter by a particular 
+payment method - eg my url to show cash only looks like
+civicrm/search#/display/my_contributions/my_contributions?payment_instrument_id:label=Cash
+(both the saved search and the search display names are 'my_contributions' in this example).
+
+A few notes about url filters
+1) the field needs to be exposed in the search (but not necessarily the search display) to be available for filtering
+2) if the field is already filtered (e.g receive date before this week)
+then the url filter will further narrow down the results rather than replace
+the existing filter.
+3) where you see the field has a ':' in it that indicates that the field is what 
+we geekily call a 'pseudoconstant' - the underlying database value is generally
+a number which maps to a name and label. In this case the database field
+`payment_instrument_id` is a number. In some cases you will know the number
+instead - in which case you could use `payment_instrument_id=1` in
+your url or `payment_instrument_id:name=Cash` (this variant is more useful for implementers)
+who work with multiple sites.
+4) for dates you can use the following formats
+   - `receive_date=2021-09-23`
+   - `receive_date=20210923`
+   - `receive_date=20210923234040` (ie time is 23: 40: 40)
+   - `receive_date=this.month` (See [the list](../searching/relative-date-formats.md))
+
+
 # Search forms
 
 Search forms are forms that can be exposed as web pages

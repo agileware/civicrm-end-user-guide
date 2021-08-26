@@ -2,8 +2,7 @@
 
 In some cases it is possible to bookmark search URLs with parameters in them in order to quickly re-access searches.
 
-The parameters that are accepted by CiviCRM has been changing across versions. However, we have been standardising our approach and the parameters documented here have been added in a 
-standardised manner and can be expected to work going forwards. Testing has been done on 5.20 & 5.21 but some of these parameters are available in earlier versions.
+The following applies to advanced search and component searches from 5.21.
 
 To construct a parameterised url you need to
 
@@ -67,70 +66,4 @@ In general there are two types of date formats to use
 Hour, Minute and Second - eg. 20180921235959 means 21 September 2018 at 23 hours, 59 minutes and 59 seconds.
 You could leave off 235959 and it would mean at zero o'clock - ie midnight.
 
-2) Relative date fields. The available options are somewhat configurable by site but
-most sites should have the following
-
-| value | Means |
-| ---- | ---- |
-| current.month | Current calendar month to-date |
-| current.year | Current calendar year to-date |
-| current.quarter | Current quarter to-date |
-| current.week | Current week to-date |
-| previous\_before.day | Day prior to yesterday |
-| greater\_previous.month | From end of previous calendar month |
-| greater\_previous.year | From end of previous calendar year |
-| greater\_previous.quarter | From end of previous quarter |
-| greater\_previous.week | From end of previous week |
-| greater.month | From start of current calendar month |
-| greater.year | From start of current calendar year |
-| greater.day | From start of current day |
-| greater.quarter | From start of current quarter |
-| greater.week | From start of current week |
-| ending.year | Last 12 months including today |
-| ending\_2.year | Last 2 years including today |
-| ending\_3.year | Last 3 years including today |
-| ending\_30.day | Last 30 days including today |
-| ending\_60.day | Last 60 days including today |
-| ending.week | Last 7 days including today |
-| ending\_90.day | Last 90 days including today |
-| previous\_before.month | Month prior to previous calendar month |
-| starting.year | Next 12 months including today |
-| starting.month | Next 30 days including today |
-| starting\_2.month | Next 60 days including today |
-| starting.week | Next 7 days including today |
-| starting.quarter | Next 90 days including today |
-| next.month | Next calendar month |
-| next.year | Next calendar year |
-| next.fiscal\_year | Next fiscal year |
-| next.quarter | Next quarter |
-| next.week | Next week |
-| previous\_2.month | Previous 2 calendar months |
-| previous\_2.year | Previous 2 calendar years |
-| previous\_2.day | Previous 2 days |
-| previous\_2.quarter | Previous 2 quarters |
-| previous\_2.week | Previous 2 weeks |
-| previous.month | Previous calendar month |
-| previous.year | Previous calendar year |
-| previous.fiscal\_year | Previous fiscal year |
-| previous.quarter | Previous quarter |
-| previous.week | Previous week |
-| previous\_before.quarter | Quarter prior to previous quarter |
-| this.month | This calendar month |
-| this.year | This calendar year |
-| this.fiscal\_year | This fiscal year |
-| this.quarter | This quarter |
-| this.week | This week |
-| less.month | To end of current calendar month |
-| less.year | To end of current calendar year |
-| less.quarter | To end of current quarter |
-| less.week | To end of current week |
-| earlier.month | To end of previous calendar month |
-| earlier.year | To end of previous calendar year |
-| earlier.quarter | To end of previous quarter |
-| earlier.week | To end of previous week |
-| earlier.day | To end of yesterday |
-| this.day | Today |
-| starting.day | Tomorrow |
-| previous\_before.week | Week prior to previous week |
-| previous\_before.year | Year prior to previous calendar year |
-| previous.day | Yesterday |
+2) Relative date fields. See [the list](../searching/relative-date-formats.md)
