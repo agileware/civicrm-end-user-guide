@@ -1,15 +1,12 @@
 # Searching
 
 This chapter covers different ways to find information you've stored in
-CiviCRM. Two of the techniques in this chapter - finding contacts and
-the "search-action" workflow, described in the second bullet below - are
-core functions in CiviCRM, so most, if not all, users will find this
-chapter helpful.
+CiviCRM. 
 
 We will start off with some simple searches and then move on to more
 advanced techniques. CiviCRM beginners should be familiar with
 Quicksearch, Advanced Search and the component searches. More advanced
-users should also look at reports, custom searches and Search Builder.
+users should also look at [search kit](https://docs.civicrm.org/user/en/latest/the-user-interface/search-kit/) reports, custom searches and Search Builder.
 
 There are three main reasons to search:
 
