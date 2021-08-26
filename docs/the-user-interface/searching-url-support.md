@@ -1,6 +1,7 @@
 # URL Filter Support In Searches
 
-In some cases it is possible to bookmark search URLs with parameters in them in order to quickly re-access searches.
+In some cases it is possible to bookmark search URLs with parameters in them in order to quickly re-access searches. This page refers to advanced search and component searches (e.g 'Find Contributions').
+Discussion about url filtering in search kit is on the [search kit page.](../the-user-interface/search-kit/)
 
 The parameters that are accepted by CiviCRM has been changing across versions. However, we have been standardising our approach and the parameters documented here have been added in a 
 standardised manner and can be expected to work going forwards. Testing has been done on 5.20 & 5.21 but some of these parameters are available in earlier versions.
