@@ -16,9 +16,7 @@ There are three main reasons to search:
 -   To find a specific contact: the Quick search box can find contacts
     by name, email address or a variety of other characteristics.
 -   To perform an action on a contact or contacts that meet certain
-    criteria: a common workflow in CiviCRM, called a search-action, is
-    to find contacts that meet certain criteria and then perform an
-    action on them. For example, you might want to find all contacts in
+    criteria. For example, you might want to find all contacts in
     the advisory group in order to invite them to a meeting, find all
     those whose memberships have recently expired to send a renewal
     reminder, or find all contacts aged under 25 in a specific location
