@@ -1,7 +1,7 @@
 # URL Filter Support In Searches
 
 In some cases it is possible to bookmark search URLs with parameters in them in order to quickly re-access searches. This page refers to advanced search and component searches (e.g 'Find Contributions').
-Discussion about url filtering in search kit is on the [search kit page.](../the-user-interface/search-kit/)
+Discussion about url filtering in search kit is on the [search kit page.](../the-user-interface/search-kit.md)
 
 The following applies to advanced search and component searches from 5.21.
 
