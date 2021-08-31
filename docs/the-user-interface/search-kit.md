@@ -17,7 +17,7 @@ the extension or not. However it is maintained as part of core against
 the specific release it ships with (as it is closely tied to apiv4 
 functionality).
 
-# Search components
+## Search components
 
 There are 3 components to search kit. Depending on what you are doing you
 may not use all 3
@@ -37,7 +37,7 @@ may not use all 3
     in order to add a search form it is necessary to have the form
     builder (afform gui) extension that ships with core enabled.
 
-# The search screen
+## The search screen
 
 The search screen is reached from the search listing page (Search->Search Kit)
 ![img.png](../img/the-user-interface/search-kit/search-listing.png)
@@ -105,14 +105,29 @@ action we need to scroll down to contribution 2.
 
 ![img.png](../img/the-user-interface/search-kit/contributions2.png)
 
-# Search displays
+### Field transformations
+
+From 5.42 onwards it is possible to specify field formatting such as
+
+- printing a name in all uppercase
+- specifying if a field is null - has no value
+- displaying the year only for a date field.
+
+The available transformations depend on the type of the field.
+
+![Field transformations](../img/the-user-interface/search-kit/field-transformations.png)
+
+![Field transformation output](../img/the-user-interface/search-kit/fields-transformed.png)
+
+
+## Search displays
 
 Search displays are added from the Search screen once a search has 
 been saved.
 
 ![img.png](../img/the-user-interface/search-kit/search-display.png)
 
-## Url filtering
+### Url filtering
 
 It is possible to add parameters to the url to filter a search display.
 One useful way to use this is by having 2 searches. One uses group by
@@ -154,7 +169,7 @@ who work with multiple sites.
    - `receive_date=this.month` (See [the list](../searching/relative-date-formats.md))
 
 
-# Search forms
+## Search forms
 
 Search forms are forms that can be exposed as web pages
 or as dashlets (in future other options will exist). They 
