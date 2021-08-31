@@ -105,6 +105,21 @@ action we need to scroll down to contribution 2.
 
 ![img.png](../img/the-user-interface/search-kit/contributions2.png)
 
+### Field transformations
+
+From 5.42 onwards it is possible to specify field formatting such as
+
+- printing a name in all uppercase
+- specifying if a field is null - has no value
+- displaying the year only for a date field.
+
+The available transformations depend on the type of the field.
+
+![Field transformations](../img/the-user-interface/search-kit/field-transformations.png)
+
+![Field transformation output](../img/the-user-interface/search-kit/fields-transformed.png)
+
+
 ## Search displays
 
 Search displays are added from the Search screen once a search has 
