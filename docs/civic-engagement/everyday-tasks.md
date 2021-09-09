@@ -47,7 +47,7 @@ surveying during the door-knock canvass:
 1.  Go to **Campaigns > Reserve Respondents** and select the
     appropriate survey.
 2.  Select your target group in **Group(s)**, then click **Search**.
-3.  On the**Find Respondents to Reserve** screen, select the contacts
+3.  On the **Find Respondents to Reserve** screen, select the contacts
     you want to survey.
 4.  Click **Go** to Reserve Respondents.
 5.  On the Reserve Respondents screen, click **Reserve**.
@@ -128,9 +128,9 @@ survey for walklists.
     type **PhoneBank**.
 4.  From the **Profile** dropdown menu select the custom profile you
     created for this phonebank survey.  
-5.  For**Survey Responses** select **Use existing result set** and the
+5.  For **Survey Responses** select **Use existing result set** and the
     set, **Survey Default Results Set Options**.
-6.  Click**Save**.
+6.  Click **Save**.
 
 ### Reserve the target group you want to survey
 
@@ -141,7 +141,7 @@ surveying during the phone bank:
 2.  Select the name of your survey in **Survey** and your target group
     in **Group(s)**.
 3.  Click **Search**.
-4.  On the**Find Respondents to Reserve** screen, select the contacts
+4.  On the **Find Respondents to Reserve** screen, select the contacts
     you want to survey, then click **Go** to **Reserve Respondents**.
 5.  On the **Reserve Respondents** screen, click **Reserve**.
 
