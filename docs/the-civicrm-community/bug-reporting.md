@@ -91,7 +91,7 @@ valuable, but be careful to not including sensitive information such as
 your database log-in.
 
 If the forum suggests you discovered a bug in CiviCRM, you can report it
-to the [CiviCRM issue tracker](http://issues.civicrm.org/jira/browse/CRM).
+to the [CiviCRM issue tracker](https://lab.civicrm.org/groups/dev/-/issues).
 
 ## Writing good bug reports
 
