@@ -137,6 +137,29 @@ In CiviMail you can use a special link to allow contacts to view the email conte
 
 Developers can create custom tokens which can, for example, display the total amount of contributions from a contact. See the Developer Guide for more info about [custom tokens](https://docs.civicrm.org/dev/en/latest/framework/civimail/#tokens). 
 
+## Date tokens {:#date}
+
+From CiviCRM 5.43 you can alter the output of most core date tokens including the new
+`{domain.now}` token which outputs the current date. By following the token with a `|` (pipe)
+you can add formatting information in the syntax 'crmDate:' followed by either one of the
+key words below or a [`strftime` string](https://www.php.net/manual/en/function.strftime.php).
+
+Note that the key words map to the format options configured for your site under 
+administer->localisation->date formats 
+
+
+|Token|example output|
+|-----|-----|
+|{domain.now}| September 18th, 2021 11:58 PM|
+|{domain.now&#124;crmDate:"Datetime"} | September 18th, 2021 11:58 PM|
+|{domain.now&#124;crmDate:"shortdate"}|  09/18/2021|
+|{domain.now&#124;crmDate:"Full"}|September 19th, 2010|
+|{domain.now&#124;crmDate:"Partial"}|September 19th, 2010|
+|{domain.now&#124;crmDate:"Time"}|1:34 PM|
+|{domain.now&#124;crmDate:"Year"}|2010|
+|{domain.now&#124;crmDate:"FinancialBatch"}| 09/19/2010|
+|{domain.now&#124;crmDate:"%B %Y"}| September 202|
+
 ## Smarty in mail templates {:#smarty}
 
 Mail templates use Smarty to include variables, tokens & functions. A more thorough tutorial can be found at [http://www.smarty.net/manual](http://www.smarty.net/manual).
