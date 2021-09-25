@@ -40,11 +40,11 @@ may not use all 3
 ## The search screen
 
 The search screen is reached from the search listing page (Search->Search Kit)
-![img.png](../img/the-user-interface/search-kit/search-listing.png)
+![Search Kit Listing](../img/the-user-interface/search-kit/search-listing.png)
 
 The screen below shows a very basic search for contacts with no entry for
 camera skill level. 
-![img.png](../img/the-user-interface/search-kit/basic-search.png)
+![Basic Search Example](../img/the-user-interface/search-kit/basic-search.png)
 
 The search screen allows you to specify the entity that you wish to start
 from, any entities you wish to include, how you want to filter, group
@@ -69,12 +69,12 @@ where the 'with' field comes in. Let's say you want to find all donors who
 made a donation of at least $100 but have never made a campaign contribution.
 
 First you would choose to search for contacts
-![img.png](../img/the-user-interface/search-kit/search-contacts.png)
+![Search for Contacts](../img/the-user-interface/search-kit/search-contacts.png)
 
 Next you would add that the contacts you are looking for MUST have
 a contribution of $100 or more.
 
-![img.png](../img/the-user-interface/search-kit/with-contributions.png)
+![Condition - With contributions](../img/the-user-interface/search-kit/with-contributions.png)
 
 Note that in the image 'required' has been selected because we only want
 contacts with contributions that match the criteria specified when we
@@ -85,7 +85,7 @@ At this point it's helpful to see the results so far and at the bottom of the
 page you can choose to search and to add fields that help you to sanity
 check your result
 
-![img.png](../img/the-user-interface/search-kit/test-search.png)
+![Search Kit Result Testing](../img/the-user-interface/search-kit/test-search.png)
 
 To exclude contacts who have made a campaign contribution we need 
 to add this second description of contributions in with another 'with'.
@@ -103,7 +103,7 @@ To actually exclude them we ALSO need to add
 a where clause of 'contribution id is empty'. As with the previous 
 action we need to scroll down to contribution 2.
 
-![img.png](../img/the-user-interface/search-kit/contributions2.png)
+![Contributions Search Kit](../img/the-user-interface/search-kit/contributions2.png)
 
 ### Field transformations
 
@@ -125,7 +125,7 @@ The available transformations depend on the type of the field.
 Search displays are added from the Search screen once a search has 
 been saved.
 
-![img.png](../img/the-user-interface/search-kit/search-display.png)
+![Search Displays](../img/the-user-interface/search-kit/search-display.png)
 
 ### Url filtering
 
@@ -142,8 +142,6 @@ for the 'value' a token would be used - in this case `[payment_instrument_id:lab
 To get the syntax for a field in the search display click on 'rewrite'
 to see the field name - for example in this case I can see the field
 name is 'payment_instrument_id:label'
-
-![img.png](img.png)
 
 I can add this to my saved search display url to filter by a particular 
 payment method - eg my url to show cash only looks like
