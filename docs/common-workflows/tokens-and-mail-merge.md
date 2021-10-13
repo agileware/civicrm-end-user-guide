@@ -151,14 +151,14 @@ administer->localisation->date formats
 |Token|example output|
 |-----|-----|
 |`{domain.now}`| September 18th, 2021 11:58 PM|
-|`{domain.now}`|crmDate:"Datetime"}` | September 18th, 2021 11:58 PM|
-|`{domain.now}`|crmDate:"shortdate"}`|  09/18/2021|
-|`{domain.now}`|crmDate:"Full"}`|September 19th, 2021|
-|`{domain.now}`|crmDate:"Partial"}`|September 19th, 2021|
-|`{domain.now}`|crmDate:"Time"}`|1:34 PM|
-|`{domain.now}`|crmDate:"Year"}`|2021|
-|`{domain.now}`|crmDate:"FinancialBatch"}`| 09/19/2021|
-|`{domain.now}`|crmDate:"%B %Y"}`| September 2021|
+|`{domain.now|crmDate:"Datetime"}` | September 18th, 2021 11:58 PM|
+|`{domain.now|crmDate:"shortdate"}`|  09/18/2021|
+|`{domain.now|crmDate:"Full"}`|September 19th, 2021|
+|`{domain.now|crmDate:"Partial"}`|September 19th, 2021|
+|`{domain.now|crmDate:"Time"}`|1:34 PM|
+|`{domain.now|crmDate:"Year"}`|2021|
+|`{domain.now|crmDate:"FinancialBatch"}`| 09/19/2021|
+|`{domain.now|crmDate:"%B %Y"}`| September 2021|
 
 ## Smarty in mail templates {:#smarty}
 
