@@ -44,8 +44,6 @@ CiviCRM has been translated into a number of different languages and translation
 
 It is also possible to configure your site to support multiple languages. In this mode, your users will be able to choose from a list of available languages after logging in. You can also create and store multi-language versions of text. Examples include custom field labels, an online contribution page, campaign information, and event descriptions.
 
-For more info, have a look here:
-[http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149](http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149).
 
 - **Default Language** - If the additional language files have been installed, this dropdown enables a language other than US English to be selected as the default language.  This affects all users of CiviCRM.
 - **Inherit CMS Language** - By default, the language CiviCRM uses is independnent of the CMS.  If 'yes' then CiviCRM will use the language in use in the CMS.
@@ -54,6 +52,16 @@ For more info, have a look here:
 - **Default Language for contacts** - This setting controls the default 'preferred language' when creating a new contact.  Preferred Language is used in multi-lingual sites for some communications.
 
 **Multiple Languages Support** - If the multi-lingual mode is enabled, the database tables are modified to store multiple translations of certain fields.  For example, if multi-lingual mode is enabled and the system configured with English and French then there will be two fields created for fields such as event title - one in English, one in French. This mode can be very useful for organisations operating in multiple languages.
+
+You may also wish to configure how currency is displayed. CiviCRM allows you to configure the character that separates your numbers - eg. in the US you would see 1,000.00 but in Demark it might look like
+1.000,00. These are configured as the 'thousands separator' and 'decimal delimiter' on the localization page. However, note that from 5.43 these will be ignored if you add the line below to your civicrm.settings.php (in favour of the system deciding based on the locale). Allowing the system to decide is 
+likely to give better results if you communicate with people in more than one language.
+
+```
+define('IGNORE_SEPARATOR_CONFIG', TRUE);
+```
+
+
 
 ### Organization Address and Contact Info
 
