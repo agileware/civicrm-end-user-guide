@@ -139,26 +139,38 @@ Developers can create custom tokens which can, for example, display the total am
 
 ## Date tokens {:#date}
 
-From CiviCRM 5.43 you can alter the output of most core date tokens including the new
-`{domain.now}` token which outputs the current date. By following the token with a `|` (pipe)
-you can add formatting information in the syntax 'crmDate:' followed by either one of the
-key words below or a [`strftime` string](https://www.php.net/manual/en/function.strftime.php).
+Dates and times are presented in many ways -- using full words (eg "September" or "Sunday"), abbreviations ("Sept", "Mon"), numbers, different regional formats (eg
+`MM/DD/YYYY` vs `DD/MM/YYYY`), and so on.
 
-Note that the key words map to the format options configured for your site under 
-administer->localisation->date formats 
+During system setup, the administrator may [configure date preferences](../initial-set-up/dates.md).  Tokens such as `{event.start_date}`, `{domain.now}`, and
+`{contact.created_date}` will be formatted automatically based on these preferences.
 
+Alternatively, you may customize the format of each token individually.  This requires the `|crmDate` filter (CiviCRM v5.43+).  Common ways to format a date include:
 
-|Token|example output|
-|-----|-----|
-|`{domain.now}`| September 18th, 2021 11:58 PM|
-|`{domain.now|crmDate:"Datetime"}` | September 18th, 2021 11:58 PM|
-|`{domain.now|crmDate:"shortdate"}`|  09/18/2021|
-|`{domain.now|crmDate:"Full"}`|September 19th, 2021|
-|`{domain.now|crmDate:"Partial"}`|September 19th, 2021|
-|`{domain.now|crmDate:"Time"}`|1:34 PM|
-|`{domain.now|crmDate:"Year"}`|2021|
-|`{domain.now|crmDate:"FinancialBatch"}`| 09/19/2021|
-|`{domain.now|crmDate:"%B %Y"}`| September 2021|
+* __Configured Formats__: CiviCRM includes ~7 configurable formats. On new deployments, the initial configuration is tuned to English (US) conventions, but
+  they are often adjusted depending on the organization's language and locale. Here are some examples of how the `{domain.now}` token could be formatted:
+
+    |Format Name|Example Token|Example Value (US English)|
+    |----|-----|-----|
+    | "Complete Date and Time" (*default*) | `{domain.now|crmDate:"Datetime"}` | September 18th, 2022 11:58 PM |
+    | "Complete Date" (*default*)          | `{domain.now|crmDate:"Full"}`     | September 19th, 2022 |
+    | "Short Date"             | `{domain.now|crmDate:"shortdate"}`| 09/18/2022 |
+    | "Month and Year"         | `{domain.now|crmDate:"Partial"}`  | September 19th, 2022 |
+    | "Time Only"              | `{domain.now|crmDate:"Time"}`     | 1:34 PM |
+    | "Year Only"              | `{domain.now|crmDate:"Year"}`     | 2022 |
+    | "Financial Batch"        | `{domain.now|crmDate:"FinancialBatch"}`| 09/19/2022 |
+
+* __Adhoc Formats__: The adhoc formatting codes allow full access to a range of details, including the
+  conventional month, day, and year (numbers) as well as day-of-week, day-of-year, week-of-year, timezone,
+  and so on. Here are some examples of how the `{domain.now}` token could be formatted:
+
+    |Example Token|Example Value|
+    |-----|-----|
+    |`{domain.now|crmDate:"%B %Y"}`| September 2022 |
+    |`{domain.now|crmDate:"%m/%Y"}`| 09/2022 |
+    |`{domain.now|crmDate:"%l:%M %P"}`| 1:34 PM |
+
+    For a full list of formatting codes, please see [PHP Manual: strftime()](https://www.php.net/manual/en/function.strftime.php).
 
 ## Smarty in mail templates {:#smarty}
 
