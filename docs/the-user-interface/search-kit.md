@@ -64,9 +64,7 @@ to search for. Commonly used entities are
 - Participants
 - Grants
 
-However, you will normally use the 'with' to include more than one entity and this is
-where the 'with' field comes in. Let's say you want to find all donors who
-made a donation of at least $100 but have never made a campaign contribution.
+However, you will normally use the 'with' field to include more than one entity. Let's say you want to find all donors who made a donation of at least $100 but have never made a campaign contribution.
 
 First you would choose to search for contacts
 ![Search for Contacts](../img/the-user-interface/search-kit/search-contacts.png)
