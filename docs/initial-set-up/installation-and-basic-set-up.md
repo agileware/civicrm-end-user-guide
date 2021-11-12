@@ -140,7 +140,7 @@ After reviewing the default fields and layouts, review the Address Settings scre
 
 CiviCRM includes support for both the Google and OpenStreetMap mapping services. These services allow your users to display contact addresses and event locations on a map. To enable this feature, select your mapping provider and obtain a key for your site from that provider.
 
-You can also select a Geocoding Provider. This can be that same or different form you mapping provider. Once this service is enabled, your contact and event records will be automatically geocoded (the latitude and longitude for that address is inserted) as you add or edit address data.
+You can also select a Geocoding Provider. This can be the same or different from your mapping provider. Once this service is enabled, your contact and event records will be automatically geocoded (the latitude and longitude for addresses is calculated/retrieved and inserted) as you add or edit address data.
 
 Other mapping and geocoding services can be added by installing extensions.
 
