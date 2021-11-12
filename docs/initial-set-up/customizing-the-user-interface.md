@@ -5,7 +5,7 @@ information on the many ways you can change the interface to suit your
 needs and make it easier for your users.
 
 How to customize your data itself &mdash; what you collect and track &mdash; is covered
-in *Organising Your Data* and in the *What you need to know*and *Set-up*
+in *Organising Your Data* and in the *What you need to know* and *Set-up*
 chapters in the sections on the different CiviCRM components (e.g.,
 learn about customizing event types in the *Events* section).
 
