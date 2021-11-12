@@ -17,7 +17,7 @@ An important characteristic of scheduled jobs is that they run *automatically*. 
         
 * Cron can be configured in different ways.
         
-    * You system administrator will typically configure cron to run on a regular interval with a frequency between 5 and 60 minutes. Each time cron "runs", cron tells CiviCRM to execute whatever scheduled jobs CiviCRM deems necessary at that time. This means that the granularity available to configure specific scheduled jobs is limited by the cron job frequency. For example, if cron only runs once every day, then it will not be possible for a scheduled job to run every hour. So it's best to have your system administrator configure cron to run frequently enough to meet your needs.
+    * Your system administrator will typically configure cron to run on a regular interval with a frequency between 5 and 60 minutes. Each time cron "runs", cron tells CiviCRM to execute whatever scheduled jobs CiviCRM deems necessary at that time. This means that the granularity available to configure specific scheduled jobs is limited by the cron job frequency. For example, if cron only runs once every day, then it will not be possible for a scheduled job to run every hour. So it's best to have your system administrator configure cron to run frequently enough to meet your needs.
     
     * Alternatively, system administrators can configure _separate_ cron jobs to run specific CiviCRM scheduled jobs, although this type of setup is less common.
 
