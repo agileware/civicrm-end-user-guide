@@ -175,7 +175,7 @@ Relationships as well as a list of Inactive relationships.
 ![Contact-RelatoinshipTab_1](../img/CiviCRM_update-CiviCore-Contact-RelatoinshipTab_1-en.png)
 
 You can read more about when it makes sense to use relationships in the
-*relationships* chapter of the*organising your data* section. 
+*relationships* chapter of the *organising your data* section. 
 
 ### Activities tab
 
