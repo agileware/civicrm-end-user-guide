@@ -79,7 +79,7 @@ It is possible to create additional group types to reflect your specific
 needs. This is particularly useful if your organisation has hundreds of
 groups as group type can be used as a filter on the Manage Groups
 screen. To create additional group types go to **Administer>System
-Settings>Option Groups**and select Group Type.
+Settings>Option Groups** and select Group Type.
 
 ### Visibility
 
