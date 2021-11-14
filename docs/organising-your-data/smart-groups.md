@@ -114,7 +114,7 @@ Once a contact has been removed from a smart group, there will be an option to *
 
 For performance reasons, smart groups are often cached, i.e. the contacts that meet the smart group criteria are saved in memory for a certain amount of time.
 
-This speed things up because CiviCRM doesn't need to run the search each time you want to use the smart group. If you query is simple and involves a small number of contacts, the speed up may not be significant. If it is complex and involves a lot of contacts, it may be very significant and even necessary.
+This speed things up because CiviCRM doesn't need to run the search each time you want to use the smart group. If your query is simple and involves a small number of contacts, the speed up may not be significant. If it is complex and involves a lot of contacts, it may be very significant and even necessary.
 
 The down side of caching is that you need to wait up to 5 minutes for the query to be updated. Depending on how you use smart groups this may not be an issue.
 
