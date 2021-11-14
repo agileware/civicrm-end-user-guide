@@ -341,7 +341,7 @@ Matching Contacts.**
 name OR email address are required. For adding an Organization or
 Household record to the database, just Organization/Household name is
 required. You can fill out as many of these fields as you like, and
-donâ€™t forget, you can always go back and make changes as needed by
+do not forget, you can always go back and make changes as needed by
 using the edit screen.*
 
 Useful things to know when adding contacts:
