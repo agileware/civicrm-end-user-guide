@@ -399,8 +399,8 @@ settings, not all of them are necessary to consider for each use.
 7.  **Field Pre Help** and **Field Post Help**: These fields allow you
     to write text that appears in the user interface to guide people in
     filling out forms. Field pre help appears inline. Field post help
-    will create a small speech bubble which when clicked appear in a
-    yello
+    will create a small speech bubble which when clicked appear in 
+    yellow
 8.  **Order**: You can use this field to control the order in which
     fields display in the Profile. Lower numbers are displayed ahead of
     higher numbers.
