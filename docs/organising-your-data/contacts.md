@@ -362,11 +362,10 @@ ones you have made available at **Administer > Localization >
 Languages, Currency, Locations** under Available Countries.
 
 There may be fields here that you do not need. Available address fields
-can be edited at **Administer > Localization > Address settings.**The
+can be edited at **Administer > Localization > Address settings.** The
 "Address Name" field which can be used to label a particular address
 (for example "Summer Home") is hidden by default, but can be enabled
-from that screen.**
-**
+from that screen.
 
 Tags and Groups: Here you can specify which tags and groups to add your
 contact to. Please note that you may only add to existing groups and
