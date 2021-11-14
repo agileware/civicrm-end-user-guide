@@ -623,6 +623,7 @@ To include a profile form during the user registration process:
 1.  Create a profile that is used for User Registration:
 
     ![addprofile_usedfor_reg](../img/CiviCRM-CapturingExposing-buildprofile-addprofile_usedfor_reg-en.png "addprofile_usedfor_reg")
+    
 2.  Add the fields you want people to fill out as they register, using
     the same process described above. Make sure the field visibility is
     set to Public User Pages.
