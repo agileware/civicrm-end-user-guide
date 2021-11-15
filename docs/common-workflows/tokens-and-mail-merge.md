@@ -139,8 +139,7 @@ Developers can create custom tokens which can, for example, display the total am
 
 ## Date tokens {:#date}
 
-Dates and times are presented in many ways -- using full words (eg "September" or "Sunday"), abbreviations ("Sept", "Mon"), numbers, different regional formats (eg
-`MM/DD/YYYY` vs `DD/MM/YYYY`), and so on.
+Dates and times are presented in many ways -- using full words (e.g. "September" or "Sunday"), abbreviations ("Sept", "Mon"), numbers, different regional formats (e.g. `MM/DD/YYYY` vs `DD/MM/YYYY`), and so on.
 
 During system setup, the administrator may [configure date preferences](../initial-set-up/dates.md).  Tokens such as `{event.start_date}`, `{domain.now}`, and
 `{contact.created_date}` will be formatted automatically based on these preferences.
@@ -253,168 +252,168 @@ This section documents the available action tokens, their purpose and the place(
 
 ### `{action.forward}`
 * Purpose: Provides a link for each recipient to forward the mailing to others.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > To forward this mailing to friends or colleagues, click `<a href="{action.forward}" >here</a>`.
 
 ### `{action.optOutUrl}`
 * Purpose: Provides an opt-out link for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You can also `<a href="{action.optOutUrl}" >opt-out of all future mailings from us</a>`.
 
 ### `{action.optOut}`
 * Purpose: Provides an opt-out email address for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To opt-out of all mailings from us, send mail to {action.optOut}
 
 ### `{action.reply}`
 * Purpose: Provides a reply-to email address for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To reply to this mailing, send mail to {action.reply}
 
 ### `{action.resubscribeUrl}`
 * Purpose: Provides a re-subscribe link for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You may `<a href="{action.resubscribeUrl}" >resubscribe to this mailing</a>` at any time.
 
 ### `{action.resubscribe}`
 * Purpose: Provides a re-subscribe email address for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To resubscribe to this mailing, send mail to {action.resubscribe}
 
 ### `{action.subscribe.gid}`
 * Purpose: Provides an email address to subscribe to a specific group.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > To subscribe to our Monthly Newsletter, send mail to {action.subscribe}.
 
 ### `{action.subscribeUrl.gid}`
 * Purpose: Provides a link to subscribe to a specific group (gid = CiviCRM ID of that group).
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > You can `<a href="{action.subscribeUrl.2}" >subscribe to our Monthly Newsletter</a>`.
 
 ### `{action.subscribeUrl}`
 * Purpose: Provides a link to view and subscribe to any public mailing lists.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > If you're interested, `<a href="{action.subscribeUrl}" >view all our mailing lists and sign up!</a>`.
 
 ### `{action.unsubscribeUrl}`
 * Purpose: Provides an unsubscribe link for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You can `<a href="{action.unsubscribeUrl}" >unsubscribe from this mailing</a>` at any time.
 
 ### `{action.unsubscribe}`
 * Purpose: Provides an unsubscribe email address for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To unsubscribe from this mailing, send mail to {action.unsubscribe}
 
 ### `{contact.custom_nn}`
 * Purpose: Displays content of custom contact field nn
-* Used in: Mailing Body, Subject, not sure about elsewhere
+* Used in: Mailing Body, Subject, not sure about elsewhere.
 * Example:
 
     > Thanks for indicating your interest in {contact.`custom_1`}. We will keep you updated on that topic.
 
 ### `{contribution.custom_nn}`
 * Purpose: Displays content of custom field nn for the contribution
-* Used in: Mailing Body, Subject, not sure about elsewhere
+* Used in: Mailing Body, Subject, not sure about elsewhere.
 * Example:
 
     > Thanks for indicating that if your first choice for where we should use your contribution is {contribution.`custom_42`}.|
 
 ### `{domain.address}`
 * Purpose: Displays postal address for your domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > Mailing Address:  {domain.address}
 
 ### `{domain.email}`
 * Purpose: Displays email address of domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
      > Or send a mail to {domain.email}.
 
 ### `{domain.name}`
 * Purpose: Displays your domain name.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > This mailing is from {domain.name}.
 
 ### `{domain.phone}`
 * Purpose: Displays phone number of domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > To contact us call {domain.phone}.
 
 ### `{mailing.group}`
 * Purpose: Displays a listing of the names of the groups to which a mailing has been sent.
-* Used in: Mailing Body, Header, Footer,resubscribe,unsubscribe or optout
+* Used in: Mailing Body, Header, Footer, Resubscribe, Unsubscribe or Optout.
 * Example:
 
     > This mailing has been sent to the members of {mailing.group}.
 
 ### `{mailing.name}`
 * Purpose: Displays name of mailing.
-* Used in: Mailing Body, Header, Footer,resubscribe,unsubscribe or optout
+* Used in: Mailing Body, Header, Footer, Resubscribe, Unsubscribe or Optout.
 * Example:
 
     > Name of this mailing is {mailing.name}.
 
 ### `{mailing.viewUrl}`
 * Purpose: Will create a 'View in Browser' url
-* Used in: Mailing Body 
+* Used in: Mailing Body. 
 * Example:
 
     > Can't see this email? `<a href="{mailing.viewUrl}"><strong>View in Browser</strong></a>`
 
 ### `{resubscribe.group}`
 * Purpose: Displays group name in re-subscribe messages.
-* Used in: Resubscribe Message
+* Used in: Resubscribe Message.
 * Example:
 
     > As requested, you have been resubscribed to {resubscribe.group}.
 
 ### `{subscribe.group}`
 * Purpose: Displays group name in subscription confirmation requests.
-* Used in: Subscription confirmation request
+* Used in: Subscription confirmation request.
 * Example:
 
     > You requested to be subscribed to the {subscribe.group}.
 
 ### `{unsubscribe.group}`
 * Purpose: Displays group name in unsubscribe confirmation messages.
-* Used in: Unsubscribe Message
+* Used in: Unsubscribe Message.
 * Example:
 
     > You have been unsubscribed from {unsubscribe.group}.
 
 ### `{welcome.group}`
 * Purpose: Displays the newly joined group name in a welcome messages.
-* Used in: Welcome message
+* Used in: Welcome Message.
 * Example:
 
     > Welcome to {welcome.group}.
