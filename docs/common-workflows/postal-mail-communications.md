@@ -51,7 +51,7 @@ CiviCRM provides tools to create merge letters directly from the interface. You 
 
 To create the letter:
 
-1.  Conduct a search (for example **Search > Find Contacts, Find Contacts > Advanced
+1.  Conduct a search (for example **Search > Find Contacts > Advanced
     Search, or a Custom Search**. If you want to print letters for members of a Group, go
     to **Contacts > Manage Groups** and click "Contacts" next to the
     Group you want.
