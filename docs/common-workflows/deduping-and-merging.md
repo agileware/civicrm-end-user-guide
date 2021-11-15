@@ -151,7 +151,7 @@ being compared are flagged as suspected duplicates.
 
 6.  The rows on the merge screen are colour-coded.
     -  Green indicates the information is the same
- for each contact. These can be hidden by clicking on **Show/hide rows with the same data on each contact record**.
+ for each contact. These can be hidden by clicking on **Show/Hide rows with the same data on each contact record**.
     -  Red indicates the information is different for the two contacts. For each field, you can choose whether to keep the original data
     shown on the right (don't tick the check-box in the middle column),
     or use the value from the duplicate contact instead (tick the box).
@@ -159,8 +159,7 @@ being compared are flagged as suspected duplicates.
     both the value of the duplicate and of the original (tick both the
     checkbox in the middle column and the "add new" on the right column)
     to copy the duplicate data.
-    -  Yellow indicates a row where the default option is a tick in the  
-    check-box which means the data from the duplicate will be **added** to the data already
+    -  Yellow indicates a row where the default option is a tick in the check-box which means the data from the duplicate will be **added** to the data already
     in the original record. This applies to tags, groups and activity data
     (including event attendance, contributions, etc.).  If you untick
     the check-box the data belonging to the duplicate will be lost.
@@ -177,7 +176,7 @@ This can be done from the possible duplicates screen where you can display up to
 
 You can **Batch Merge All Duplicates** (This will merge **all** duplicates found,
 not just those displayed on your screen) or **Batch Merge Selected Duplicates**
-ie those you have selected by ticking the box on the left of the row.  These
+i.e. those you have selected by ticking the box on the left of the row.  These
 batch merging options are displayed beneath the list of duplicates discovered.
 In the same area you will find **Flip Selected Duplicates**. When duplicates
 are merged Contact 1 is kept and contact 2 is merged then deleted, so sometimes
@@ -217,9 +216,7 @@ Batch merging can also be done from the command line - e.g
 
 ```
 
-Would find any contacts that match any of 
-
-"the first 10000 contacts found with an id greater than 200" 
+Would find any contacts that match any of "the first 10000 contacts found with an id greater than 200" 
 and attempt to automtically merge them using the defaults of 'safe' mode 
 (skip when there are conflicts) and the default rules for individuals.
 
@@ -238,7 +235,7 @@ and attempt to automtically merge them using the defaults of 'safe' mode
 ## A multi-stage deduping process
 
 Often just using one deduping rule will mean some duplicate remain in your system.
-One process way to apply multiple systematically is given below. If you individual unsupervised rule is strict enough then you may be able to batch de-dupe during the first stage then dedupe manually for the second stage.
+One process way to apply multiples systematically is given below. If your individual unsupervised rule is strict enough then you may be able to batch de-dupe during the first stage then dedupe manually for the second stage.
 
 1.  Start by looking for dupes using the "Individual unsupervised" rule:
     click the **Use Rule** link (contact type "Individual" at the usage
