@@ -13,32 +13,32 @@ places for information that corresponds with your criteria in CiviCRM
 and then teach CiviCRM which action to take in response. Here is an
 example:
 
-> *Goal*: Automatically personalize acknowledgment letters
+> *Goal*: Automatically personalize acknowledgment letters.
 
 > *Focus Questions*: What letters do I edit and what information do I
 > add? Where do I find information that needs to be added? What CiviCRM
 > features can help accomplish this task?
 >
-> *Strategy*: Create custom [tokens](tokens-and-mail-merge.md) and Print/Merge Document function in CiviCRM
+> *Strategy*: Create custom [tokens](tokens-and-mail-merge.md) and Print/Merge Document function in CiviCRM.
 >
 > *Custom Fields*: Fund Name, Tag “Works with Organization,” Tax Receipt
 > Pull-Down (No Tax Receipt, Extra Tax Receipt to Soft Credit, Tax
-> Receipt to Hard Credit), Relationship “Known by Organization Staff”
+> Receipt to Hard Credit), Relationship “Known by Organization Staff”.
 >
-> *Existing Fields*: Thank You Letter Sent, Soft Credit
+> *Existing Fields*: Thank You Letter Sent, Soft Credit.
 >
 > *Custom Tokens*: First Gift Date, Financial Type, Soft Credit Address
-> and Main Contact
+> and Main Contact.
 >
 > *Variations in Template Language*:
 >
 > -   Include/Exclude Fund Name - based on the fact that the money was
->     donated to the fund or as a generic donation
+>     donated to the fund or as a generic donation.
 > -   Include/Exclude Tax Receipt - based on information if this
->     contribution is eligible for tax receipt
+>     contribution is eligible for tax receipt.
 > -   Include/Exclude Invitation for Sponsorship - based on the fact
 >     that the organization receiving this email was a sponsor in the
->     past
+>     past.
 > -   Include/Exclude Invitation to Visit Office - based on the address
 >     of the recipient; if constituent is located close by, include the
 >     invitation.
@@ -77,7 +77,7 @@ you change. If you are familiar with writing conditional statements,
 try explaining your decision making process in the following format:
 
 *If the Spouse Name field is not empty, include spouse name in the line
-address*
+address.*
 
 *If last contribution amount is greater than $10,000 and City is within
 the Zip Code Range 94110 to 94114, include as the last line in the
