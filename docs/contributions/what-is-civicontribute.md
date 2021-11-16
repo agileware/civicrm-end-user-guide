@@ -5,7 +5,7 @@ and in-kind contributions to your organization.  It allows you to:
 
 -  accept donations and other financial or in-kind contributions
 -  process membership signups and renewals
--  accept and manage events fees.
+-  accept and manage events fees
 -  run specific fundraising campaigns
 -  let your supporters fundraise for you through personalised campaign pages
 -  quickly enter contribution and membership payments using "batches"
@@ -63,7 +63,7 @@ be interested in attending.
 
 After every workshop, the Arts in Action accountant generates a report
 that shows the total income from each of the three sources for the
-workshop, using a report template. She also tracks trends in donations
+workshop, using a report template. Staff also tracks trends in donations
 and ensures that the Board are aware of who the larger donors are. Key
 statistics are displayed graphically on staff members' CiviCRM
 dashboard.
