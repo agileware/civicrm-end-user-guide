@@ -51,7 +51,7 @@ you receive in CiviCRM and track in your accounts. So if you report on tax
 appeal donations, festive appeal donations and recurring donations separately
 then having only one "Donation" financial type in CiviCRM will not work, you
 will need one financial type called "Tax Appeal", another called "Festive
-Appeal" and yet another called "Recurring donations".
+Appeal" and yet another called "Recurring Donations".
 
 To create a new financial type navigate to **Administer > CiviContribute >
 Financial Types**,  and click on **Add Financial Type**
@@ -135,7 +135,7 @@ All Contributions have one Status, the most common are:
 
 **Pending (Incomplete)** was entered into CiviCRM and sent to online processing.  However, either payment was not completed at the processor, or a response from the processor was not yet received.  Contributions perpetually stuck in this status in CiviCRM yet completed at the processor warrant investigation of the communications between the two systems.
 
-**Failed** was entered into CiviCRM and forwarded for processing.  However, the process declined, rejected or received an error and returned this result to CiviCRM..
+**Failed** was entered into CiviCRM and forwarded for processing.  However, the process declined, rejected or received an error and returned this result to CiviCRM.
 
 **Completed** entered into CiviCRM and payment processed and response received successfully.
 
