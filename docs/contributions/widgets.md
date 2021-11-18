@@ -10,7 +10,7 @@ When you create a widget you are given the code to embed the widget on your webs
 
 1. Go to the configuration for your Contribution Page.
 
-    **Contribution > Manage Contribution Pages** to display a list of contribution pages, click on the **Configure** link for your Contribution Page to open it.
+    **Contributions > Manage Contribution Pages** to display a list of Contribution Pages, click on the **Configure** link for your Contribution Page to open it.
 
 1. From the tabs at the top of the page select **Widgets**.
 1. Click **Enable Widget** to get started.  
@@ -24,7 +24,7 @@ When you create a widget you are given the code to embed the widget on your webs
     ![Contribution Widget Code](../img/contribution_widget_code.png)
 
 1. When selecting the code use the **Select Code** link to make sure you have all of the necessary code.
-1. Copy and paste into the appropriate place on your website where you would like the widget to display.
+1. **Copy and Paste** into the appropriate place on your website where you would like the widget to display.
 
 ## Customizing your widget
 
