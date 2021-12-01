@@ -4,11 +4,11 @@ CiviCRM's features include allowing your constituents to create their
 own fundraising pages - and then ask others to fund their cause. These
 pages are called Personal Campaign Pages or "PCPs".
 
-A personal campaign page allows your constituents to personalize the
+A Personal Campaign Page allows your constituents to personalize the
 fundraiser, event, organization, etc., by offering their personal
 reasons and/or experiences with the organization on their own personal
-page. Also, your contributors may in turn send the personal campaign
-pages to their circle of friends. You can enable the "tell a friend"
+page. Also, your contributors may in turn send the Personal Campaign
+Pages to their circle of friends. You can enable the "tell a friend"
 feature to help someone share their page even more.
 
 Examples of this feature in action are typically called "Sponsor My 5k
@@ -17,7 +17,7 @@ Walk", "Help Fund Our Trip" or "Let's Raise Money to Build A School".
 ## Administrator Features
 
 Administrators managing fundraising pages may use the following features
-via the contribution page configuration:
+via the Contribution Page Configuration:
 
 -   Requiring approval before a newly-created fundraising page becomes
     active
@@ -119,7 +119,7 @@ After PCP creation has been enabled, there are two ways to create a PCP:
     the prerequisite of donating or registering themselves, you can give
     your constituents a direct link. This link could be emailed to
     the constituent, embedded in a page or added as a menu item. Note
-    that
+    that.
 
 **The invitation button:**
 
@@ -131,7 +131,7 @@ After PCP creation has been enabled, there are two ways to create a PCP:
 
 To use this link, replace the following:
 
--   \*YOUR-SITE.ORG*: enter your domain's address
+-   \*YOUR-SITE.ORG*: enter your domain's address.
 -   \*CONTRIBUTION_OR_EVENT_ID*: give the ID number of the event or
     contribution page. This can be obtained through navigating to
     'Manage Events' or 'Manage Contribution Pages' and looking for the
