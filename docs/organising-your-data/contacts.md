@@ -137,18 +137,18 @@ with the 'do not email' privacy option.
 Here is a brief explanation of each of the privacy options in the
 CiviCRM contact record:
 
--   **Do not phone**- The end user has elected to not be contacted via
+-   **Do not phone** - The end user has elected to not be contacted via
     telephone.
--   **Do not email**- The end user has elected to not be contacted via
+-   **Do not email** - The end user has elected to not be contacted via
     email.
--   **Do not mail**- The end user has elected to not be contacted via
+-   **Do not mail** - The end user has elected to not be contacted via
     postal delivery (snail mail)
--   **Do not SMS**- The end user has elected to not be contacted via
+-   **Do not SMS** - The end user has elected to not be contacted via
     text messaging service to their mobile device.
--   **Do no trade**- The user has elected not to share their info with
+-   **Do no trade** - The user has elected not to share their info with
     other organizations. (ie. you may not share or sell user's
     information to other parties) 
--   **NO BULK EMAILS (User Opt Out)**- This is set when a user selects
+-   **NO BULK EMAILS (User Opt Out)** - This is set when a user selects
     the Opt Out action in a CiviMail Email. 
 
 #### Greetings and addressee fields
@@ -158,8 +158,8 @@ contacts name fields. For example the postal greeting for an individual
 called 'Jenny Soper' is 'Dear Jenny'.
 
 The default greetings can be configured at a global level here:
-**Administer CiviCRM** > **Communications** > **Email Greeting Formats
-*or*Email Greeting Formats*or*Addressee formats**.
+**Administer CiviCRM** > **Communications** > **Email Greeting Formats**
+or **Postal Greeting Formats** or **Addressee Formats**.
 
 Different formats can also be selected for each contact and can also be
 customised on a contact per contact basis. 
