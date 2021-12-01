@@ -7,7 +7,7 @@ ensure that final reporting is accurate.
 
 There are three steps within CiviCRM for offline fundraising: creating
 your lists, creating your mailings, and
-[manually entering contributions](manual-entry-of-contributions.md).
+[manually entering Contributions](manual-entry-of-contributions.md).
 
 ## Creating your lists
 
@@ -33,7 +33,7 @@ To export a list:
 1. Select all records or a subset using the checkboxes, and from
     the **Actions** dropdown menu choose **Export Contacts**.
 1. Choose whether to **Export PRIMARY fields** or **Select fields for
-    export**. If you elect to export primary fields, the CSV file will
+    Export**. If you elect to export primary fields, the CSV file will
     be immediately generated when you click **Continue**. If you opt to
     select which fields you want to export, click **Continue** and a
     list of dropdown options will appear.
