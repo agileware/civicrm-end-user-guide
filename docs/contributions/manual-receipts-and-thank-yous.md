@@ -18,7 +18,7 @@ search. After selecting the contacts you wish to send a receipt to, choose
 ![ContributionReceiptsManual](../img/civicontribute-receipts-manual.png)
 
 You will be given the option to email the receipts or make PDF receipts
-to post out to contributors.
+to send out to contributors.
 
 ![Contributions search result with the action menu expanded.](../img/Print_contribution_receipt_options.png)
 
