@@ -13,5 +13,5 @@ using the **Restore** link at the end of the row, or by choosing
 If you are sure that you no longer have a need for the particular
 contact, you can delete them permanently.
 
-Note that you can disable the trash function if you like in **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, Captcha,
-etc.)**
+Note that you can disable the trash function if you like in
+**Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, etc.)**

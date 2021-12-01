@@ -72,7 +72,7 @@ data current by asking people to review and update their contact
 information.
 
 !!! caution
-    For security purposes, checksum links only last for seven days, starting from the time the email is sent. To change this duration, go to **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, Captcha, etc.)**.
+    For security purposes, checksum links only last for seven days, starting from the time the email is sent. To change this duration, go to **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, etc.)**.
 
 !!! note
     Checksum URLs will not be tracked within CiviMail URL tracking as they are personalised to the recipient.
