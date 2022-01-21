@@ -10,7 +10,7 @@ It ships as an extension which you can enable on the Extensions screen from 5.29
     overhauling existing code. This allows us to demarcate rapidly evolving
     code and to keep long-standing code more stable. People can opt into 
     the extension or not. However, it is maintained as part of core against
-    the specific release it ships with (as it is closely tied to API v4 
+    the specific release it ships with (as it is closely tied to API v4
     functionality).
 
 ## Search components
@@ -18,7 +18,7 @@ It ships as an extension which you can enable on the Extensions screen from 5.29
 There are 3 components to Search Kit: search screen, displays and forms. Depending on what you are doing you may not use all 3.
 
 1. The Search screen (or Compose Search):
-    
+
     This is where the search criteria and available fields are configured.
 
 2. Displays
@@ -130,6 +130,41 @@ Displays can be customized to make them fit the results better with options like
 - custom column headers and styles.
 - linking the column result to the entity
 - rewriting the column results with custom text or tokens.
+- customisable action links
+
+### Action links
+
+There are several ways to create links from a display. Each individual field can have a link associated with it.
+In the table below links have been configured both on the fields and as actions.
+
+The contact id has been configured to have a pop up 'edit contact' modal. Note how in row 3 the contact ID is
+not a link - this is because the contact does not have permission to edit that contact (the edit link at the
+right is missing for the same reason). The display name has been configured to link to 'view the contact' in
+a new window (the view contact screen does not look nice in a popup) and the email field will load
+a popup to send an email. The same things have also been configured as action links on the right (mostly
+for demo purposes). 
+
+![Search display links](../img/the-user-interface/search-kit/search-display-links.png)
+
+Note that the right hand buttons also include a 'delete action'. However, this is only visible
+to the admin user who has permission to delete contacts.
+
+![Search display admin links](../img/the-user-interface/search-kit/search-display-admin-rights.png)
+
+When configuring a link per field you can choose from the listed drop down ones or construct your
+own.
+![Search display admin links](../img/the-user-interface/search-kit/per-field-link.png)
+
+If you choose to construct your own you can use another field available to search kit as a parameter
+in the url. In this case the email link is using email_id=[Contact_Email_contact_id_01.id] so that the
+url will open with the chosen email id.
+![Search link with token](../img/the-user-interface/search-kit/token-in-url.png)
+
+The configuration of the search actions is similar. As of 5.47 you can use conditions - such
+as only display the send email action if email is not empty
+
+![Condition for link](../img/the-user-interface/search-kit/conditional-link.png)
+
 
 ### URL filtering
 
