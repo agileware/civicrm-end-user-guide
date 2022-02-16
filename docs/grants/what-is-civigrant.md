@@ -3,6 +3,9 @@
 CiviGrant is designed to be used by organisations that distribute funds
 to others, for example foundations, grant givers, etc.
 
+As of 5.46 CiviGrant ships as an extension which can be enabled
+from the extensions screen.
+
 In contrast to CiviContribute, which tracks money going *into* your
 organisation, CiviGrant tracks money going *out of* your organisation.
 CiviGrant has a data structure and workflows that support the grant
