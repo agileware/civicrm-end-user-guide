@@ -55,6 +55,7 @@ nav:
     - 'Error handling': 'initial-set-up/error-handling.md'
     - 'Scheduled Jobs': 'initial-set-up/scheduled-jobs.md'
 - The user interface:
+    - 'Creating new forms' : 'creating-new-forms.md'
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
     - 'Searching': 'the-user-interface/searching.md'
     - 'Search kit': 'the-user-interface/search-kit.md'
