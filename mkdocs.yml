@@ -54,13 +54,18 @@ nav:
     - 'Logging': 'initial-set-up/change-logging.md'
     - 'Error handling': 'initial-set-up/error-handling.md'
     - 'Scheduled Jobs': 'initial-set-up/scheduled-jobs.md'
-- The user interface:
-    - 'Creating new forms' : 'the-user-interface/creating-new-forms.md'
-    - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
-    - 'Searching': 'the-user-interface/searching.md'
+- Searching and reporting  :
     - 'Search kit': 'the-user-interface/search-kit.md'
+    - 'Other Search functionality': 'the-user-interface/searching.md'
     - 'Search URL Filtering': 'the-user-interface/searching-url-support.md'
-    - 'Undelete': 'the-user-interface/undelete.md'
+    - 'Reporting':
+      - 'What is CiviReport?': 'reporting/what-is-civireport.md'
+      - 'What You Need To Know': 'reporting/what-you-need-to-know.md'
+      - 'Set-up': 'reporting/set-up.md'
+      - 'Everyday Tasks': 'reporting/everyday-tasks.md'
+- Customising the user interface:
+    - 'Form Builder' : 'creating-new-forms.md'
+    - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
 - Organising your data:
     - 'Overview': 'organising-your-data/overview.md'
     - 'Mapping your data': 'organising-your-data/mapping-your-data.md'
@@ -71,6 +76,7 @@ nav:
     - 'Relationships': 'organising-your-data/relationships.md'
     - 'Creating Custom Fields': 'organising-your-data/creating-custom-fields.md'
     - 'Profiles': 'organising-your-data/profiles.md'
+    - 'Undelete': 'the-user-interface/undelete.md'
 - Common workflows:
     - 'Importing Data into CiviCRM': 'common-workflows/importing-data-into-civicrm.md'
     - 'Exporting Your Contacts': 'common-workflows/exporting-your-contacts.md'
@@ -141,11 +147,6 @@ nav:
     - 'Set-up': 'sms-text-messaging/set-up.md'
     - 'Everyday tasks': 'sms-text-messaging/everyday-tasks.md'
     - 'Reports and Analysis (SMS)': 'sms-text-messaging/reports-and-analysis-sms.md'
-- Reporting:
-    - 'What is CiviReport?': 'reporting/what-is-civireport.md'
-    - 'What You Need To Know': 'reporting/what-you-need-to-know.md'
-    - 'Set-up': 'reporting/set-up.md'
-    - 'Everyday Tasks': 'reporting/everyday-tasks.md'
 - Case management:
     - 'What is CiviCase?': 'case-management/what-is-civicase.md'
     - 'What You Need To Know': 'case-management/what-you-need-to-know.md'
