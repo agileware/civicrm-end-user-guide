@@ -64,7 +64,7 @@ nav:
       - 'Set-up': 'reporting/set-up.md'
       - 'Everyday Tasks': 'reporting/everyday-tasks.md'
 - Customising the user interface:
-    - 'Creating new forms' : 'creating-new-forms.md'
+    - 'Form Builder' : 'creating-new-forms.md'
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
 - Organising your data:
     - 'Overview': 'organising-your-data/overview.md'
