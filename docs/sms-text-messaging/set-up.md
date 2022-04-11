@@ -143,8 +143,6 @@ in the registration step.
 1. From the [Console homepage](https://www.twilio.com/console), click the
 **Programmable SMS** product.
 
-![Programmable SMS](../img/twilio-programmable-sms.png)
-
 2. Click the red **Get Started** button.
 
 3. Click the **Get a number** button, near the top of the page. A mobile phone
