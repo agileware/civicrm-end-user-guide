@@ -51,9 +51,7 @@ There are two ways to import data:
 If you do not have a clear understanding of your existing data and how
 it will map to CiviCRM fields, you will experience frustrations and
 problems when you try to import the data. Please read about each type of
-data in other sections of this CiviCRM Manual and visit the CiviCRM
-online documentation for more information:
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Importing+Data](http://wiki.civicrm.org/confluence/display/CRMDOC/Importing+Data)
+data in other sections of this CiviCRM Manual.
 
 The following rules and recommendations will help you to import data
 with minimal problems:
