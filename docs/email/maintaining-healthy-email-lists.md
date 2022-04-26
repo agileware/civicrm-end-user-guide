@@ -36,8 +36,7 @@ contact email on **Hold.** When an email is on **Hold**, no future
 emails will be sent to it unless someone fixes it and removes the hold.
 
 A detailed table of each type of bounce and the number of bounces
-allowed before an address is put on hold is available on the wiki
-at: [http://wiki.civicrm.org/confluence/display/CRMDOC/Bounce+Handling](http://wiki.civicrm.org/confluence/display/CRMDOC/Bounce+Handling%20)
+allowed before an address is put on hold is available in the System Administrator Guide: [Inbound email](https://docs.civicrm.org/sysadmin/en/latest/setup/civimail/inbound/#why-is-a-contacts-e-mail-address-put-on-hold)
 
 ### What do I do if an address is put on hold?
 
