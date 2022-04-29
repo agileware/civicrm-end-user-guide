@@ -55,14 +55,20 @@ nav:
     - 'Error handling': 'initial-set-up/error-handling.md'
     - 'Scheduled Jobs': 'initial-set-up/scheduled-jobs.md'
 - Searching and reporting  :
-    - 'Search kit': 'the-user-interface/search-kit.md'
-    - 'Other Search functionality': 'the-user-interface/searching.md'
+    - 'Introduction': 'the-user-interface/searching.md'
     - 'Search URL Filtering': 'the-user-interface/searching-url-support.md'
     - 'Reporting':
       - 'What is CiviReport?': 'reporting/what-is-civireport.md'
       - 'What You Need To Know': 'reporting/what-you-need-to-know.md'
       - 'Set-up': 'reporting/set-up.md'
       - 'Everyday Tasks': 'reporting/everyday-tasks.md'
+    - 'External reporting': 'reporting/external_reporting.md'
+    - 'Search Kit':
+          - 'Introduction to Search Kit': 'searching/searchkit/what-is-searchkit.md'
+          - 'Example: Create a Soft Credit Search and Display': 'searching/searchkit/soft-credit-example.md'
+          - 'Example: Create an Upcoming Events Form': 'searching/searchkit/example-upcoming-events.md'
+          - 'Example: Create a filterable public Membership List with Logo Grid': 'searching/searchkit/example-membership-listing.md'
+          - 'Example: Create a List of Donor Members to Invite': 'searching/searchkit/example-donor-members-to-invite.md'
 - Customising the user interface:
     - 'Form Builder' : 'the-user-interface/creating-new-forms.md'
     - 'Menu, dashboard and dashlets': 'the-user-interface/menu-dashboard-and-dashlets.md'
