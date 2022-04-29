@@ -1,4 +1,4 @@
-# Searching
+# Introduction
 
 This chapter covers different ways to find information you've stored in
 CiviCRM. 
@@ -6,11 +6,29 @@ CiviCRM.
 We will start off with some simple searches and then move on to more
 advanced techniques. CiviCRM beginners should be familiar with
 Quicksearch, Advanced Search and the component searches. More advanced
-users should also look at [search kit](../search-kit/) reports, custom searches and Search Builder.
+users should also look at [Search Kit](../searching/searchkit/what-is-searchkit.md) reports, custom searches and Search Builder.
+
+## Overview
+In this introduction we will discuss at various level of detail:
+
+* **Quicksearch** - how to quickly search for contacts.
+* **Advanced search** - how to really dig deep for contacts with lots of search possibilities.
+* **SearchBuilder** - how to build your own searches (though if you are using CiviCRM version 5.20 or later you should really look into [Search Kit](../searching/searchkit/what-is-searchkit.md) too).
+* **Full-text search** - how to search for something in all the available text fields in the database.
+* **Component search** - on searching within specific component entities like events, memberships, cases, contributions etc.
+* **Custom searches** - using the available custom made searches that can be from CiviCRM core or from one or more of your specific extensions.
+* **Search actions** - what you can do with the results of your search (or sometimes report).
+* **The contact summary pop** - what you can see and change in the popup when hovering over a contact icon in your search results.
+* **The wildcard** - using "%" in your searches as a wildcard.
+* **Case sensitivity** - what you can do with upper or lower case in your search.
+* **Default number of rows** - how many results are returned in your searches and how you can change that number.
+* **Search Kit** - a brief link to the [Search Kit](../searching/searchkit/what-is-searchkit.md) functionality.
+
+## Searching and reporting
 
 There are three main reasons to search:
 
--   To find a specific contact: the Quick search box can find contacts
+-   To find a specific contact: the Quicksearch box can find contacts
     by name, email address or a variety of other characteristics.
 -   To perform an action on a contact or contacts that meet certain
     criteria. For example, you might want to find all contacts in
@@ -25,11 +43,11 @@ limitations. For example, you can't group results by particular
 criteria, summarize, or easily produce graphs of the results. For more
 advanced reporting, see the [CiviReport](../reporting/what-is-civireport.md) section.
 
-## Quick search
+## Quicksearch
 
 ![Quicksearch](../img/the-user-interface/searching/quicksearch.png)
 
-The easiest way to find a specific contact is to use the Quick search box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. The criteria can be modified by going to **Administer > Customize Data and Screens > Search Preferences**. On the *Search Preferences* page, options are available to customize CiviCRM's QuickSearch to hide contact's basic fields that are not normally used in a quicksearch and to add custom field options.
+The easiest way to find a specific contact is to use the Quicksearch box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. The criteria can be modified by going to **Administer > Customize Data and Screens > Search Preferences**. On the *Search Preferences* page, options are available to customize CiviCRM's Quicksearch to hide contact's basic fields that are not normally used in a Quicksearch and to add custom field options.
 
 Once you click in the Quicksearch box, you can start typing immediately to use the default Name/Email search or you can click again to expose several other criteria in a dropdown selection list. Contacts that match the phrase you enter will appear in a dropdown list below the box. For example, if you are searching with Name/Email and you have left
 automatic wildcard enabled via *Search Preferences*, entering "peter" will find:
@@ -44,7 +62,7 @@ automatic wildcard enabled via *Search Preferences*, entering "peter" will find:
 
 You often don't need to type the full name of the person - just the first few letters.  However, if you don't see the contact you are looking for, either refine the search by typing more characters, or hit the 'Return' key to convert your search into an Advanced search.
 
-Quick search displays up to 10 results (by default). You can change the number of results returned from the *Search Preferences* screen described above by changing the *Autocomplete Results* setting.
+Quicksearch displays up to 10 results (by default). You can change the number of results returned from the *Search Preferences* screen described above by changing the *Autocomplete Results* setting.
 
 CiviCRM also allows for the collection of a nickname when entering new contacts.  For example, "Joe" can be a nickname for "Joseph" and "IBM" can be a nickname for "International Business Machines".  When you first install CiviCRM you will find "Joseph" when searching for "Joe" and you'll find "International Business Machines" when searching for "IBM".
 
@@ -470,3 +488,6 @@ In CiviCRM Advanced Searches and in CiviCRM reports the number of rows displayed
 As of CiviCRM version 5.39 System Administrators can under **Administer** > **Customize Data and Screens** > **Search Preferences** 
 change the number of rows to be outputted on the screen. You should not set a too high a number as higher the number the slower the screen will be 
 to load.
+
+## Search Kit
+As of CiviCRM version 5.29 [Search Kit](../searching/searchkit/what-is-searchkit.md) is new functionality with lots of exciting possibilities for searching, reporting and potentially much more. The development continues, the functionality will evolve over time and so will the documentation. The section [Search Kit](../searching/searchkit/what-is-searchkit.md) covers that current state.
