@@ -6,6 +6,8 @@ individual contacts which have a **mobile phone number** defined, ie. **Phone Ty
 
 **Note**: Contacts which do not have a mobile phone number defined **will not** receive a SMS text message.
 
+**Permissions**: Users require the `CiviCRM: send SMS` permission to see SMS menu items and send SMS
+
 ## Configuring a Clickatell SMS Gateway
 
 ### Registering for a Clickatell account
