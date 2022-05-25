@@ -25,7 +25,7 @@ There are always 2 and potentially 3 components to Search Kit: search screen, di
    Displays is where you decide and define how you are going to present your search results. One search defined in the Compose Search section can have more displays presenting the results in a different way. Search displays
    currently available are table views, list views, grid views, or Smart Groups.
 3. Forms
-   Forms (only in the screen if you have enabled the [Form Builder](the-user-interface/creating-new-forms/creating-new-forms.md) extension that is shipped with CiviCRM core) allow you to create a form to present your search results on. 
+   Forms (only in the screen if you have enabled the [Form Builder](../../the-user-interface/creating-new-forms.md) extension that is shipped with CiviCRM core) allow you to create a form to present your search results on. 
 
 ## How to create searches and displays
 
