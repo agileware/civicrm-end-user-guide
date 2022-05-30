@@ -14,7 +14,7 @@ processes. A case can be used to:
 -   allow staff to manage and track interactions while avoiding
     duplication
 -   automate the task of remembering and scheduling follow-up
-    activities.
+    activities
 
 CiviCase relies heavily on [Activities](../organising-your-data/activities.md), and a solid understanding of activities will help you understand CiviCase more easily.
 
@@ -84,7 +84,7 @@ one reason or another. In this process the main options were:
 -   suppliers approved
 -   suppliers disallowed
 -   deferred to next round
--   accepted.
+-   accepted
 
 Even though there were thousands of applications and tens of thousands
 of parts of the application review process, the coordinators from the

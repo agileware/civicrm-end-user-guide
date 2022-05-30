@@ -12,9 +12,8 @@ begin to plan and configure the component based on your requirements.
 are particularly useful for single interactions. For example, if a
 constituent calls to request information and the staff person directs
 them to a web site, this would be recorded as an activity. Activities
-have a start date/time, a duration, a status, a priority. They have a
-creator and a subject/target and can be assigned to someone for action.
-
+have a start date/time, a duration, a status, and a priority. They also have a
+creator, a subject/target and can be assigned to someone for action.
 
 **Cases** are used to track more complex interactions or communication
 processes than can be handled by a single activity. CiviCase provides
@@ -142,7 +141,7 @@ automatically. Any changes to dates must be made manually.
 
 Each case type must have a **standard timeline.** The **standard
 timeline** is created automatically when a new case is opened. At its
-simplest it consists of just one completed "Open Case" activity. You can
+simplest it consists of just one completed Open Case activity. You can
 leave it at that or add more activities as required. In a standard
 timeline you define the expected number of days between the beginning of
 the case and each of the subsequent activities in the timeline. 
