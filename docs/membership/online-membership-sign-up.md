@@ -142,10 +142,10 @@ use a [Membership price set](membership-price-sets.md).
 Some of the things you can do with price sets include:
 
 -   allow users to sign up for multiple classes of membership (e.g.
-    "national" and "local" memberships) at the same time
+    national and local memberships) at the same time
 -   let people sign up for multiple membership terms at the same time
 -   offer other options such as a paid subscription in addition to
-    membership signup.
+    membership signup
 
 ### The Receipt tab
 
@@ -239,7 +239,7 @@ to your membership sign-up/renewal page and click **Test-drive**. Any
 membership data you send through the form in test mode will be added to
 CiviCRM as test data and not be included in any membership stats or when
 searching for members, etc. If you want to find and delete test
-memberships, you can do so by clicking the 'is test' check box in **Find
+memberships, you can do so by clicking the **is test** check box in **Find
 Memberships**.
 
 Try and put yourself in the eyes of someone who wants to become a member
@@ -255,7 +255,7 @@ really debited from your card (see *Payment processors* for more
 information on dummy processors and card details you can use for test
 transactions).
 
-It is worthwhile periodically testing and reviewing your membership
+It is worthwhile to periodically test and review your membership
 process to make sure that it is as smooth as possible. You will receive
 indirect feedback from your members as they use the form. If they are
 not entering data in the way you intended then you will need to make
@@ -302,7 +302,7 @@ or post.
 ### In Joomla!
 
 The most direct way to expose your membership signup/renewal page to the
-front of your website in Joomla is by creating a menu item.
+front of your website in Joomla! is by creating a menu item.
 
 -   Navigate to a menu and create a new CiviCRM item.
 -   From the list of menu options, choose Contributions.
