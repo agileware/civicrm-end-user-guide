@@ -13,13 +13,13 @@ The CiviEvent Dashboard (**Events > Dashboard**) brings all your events
 and participant information together in one place (see screenshot).
 It displays an Event Summary table, providing a summary of up to ten
 scheduled and recent Events. Click the **Event name** to view the event
-as it will be displayed to site visitors. Click the **Participants
-count** to see a list of participants.
+as it will be displayed to site visitors. Click the **Participants count** 
+to see a list of participants.
 
 ![Event Summary](../img/CiviCRM-EverydayTasks-EventSummary-en.png "EventSummary")
 
-To run your own customized searches, click ** Find more event
-participants** at the end of the page. Here you can search by
+To run your own customized searches, click **Find more event participants** 
+at the end of the page. Here you can search by
 Participant Name, Event, Date Range and Status.
 
 From the Dashboard you can also:
@@ -61,7 +61,7 @@ the *Manual event registration* chapter.
 
 If any count is zero, the associated text will not be a hyperlink. Some
 participant roles may not count for the event total, such as someone who
-is on the clean-up duty.
+is on clean-up duty.
 
 ### Find participants for any event with a variety of criteria
 
@@ -110,7 +110,7 @@ them. Available **Actions** include:
 
 -  **Participant status - change (emails sent)** When using this feature emails will be sent to participants when the status is changed from one which belongs to the pending class (eg Pending (pay later), Pending from approval) to either **Registered** or **Attended** (positive class).  Emails will also be sent if the status is changed to Expired or Cancelled.
 
--  **Print selected rows** This prints that are shown on the screen for the rows you have selected.
+-  **Print selected rows** This prints what is shown on the screen for the rows you have selected.
 
 -  **Update multiple participants:** This feature is useful if
     you wish to edit multiple fields for multiple participants in a
@@ -139,9 +139,9 @@ Some examples are:
     conference dinner and requests a refund of the dinner fee.
 -   A participant decides after registering online that they do want to
     attend the pre-conference workshop and contacts the registration
-    office with that request giving their credit card details for the
+    office with that request and give their credit card details for the
     extra charge.
--   A child registered for a holiday program decides she want to do
+-   A child registered for a holiday program later decides she wants to do
     archery rather than pottery one afternoon. Although there is no
     difference in fees, back-office staff need to change her event
     registration so that they know where the child should be for that
@@ -150,7 +150,7 @@ Some examples are:
 All of these situations can be managed by back-office staff editing the
 participant's event registration as follows:
 
-1.  Navigate to the participant"s event registration (One way to do this
+1.  Navigate to the participant's event registration (One way to do this
     is via **Events > Find Participants**)
 2.  Select **View** or **Edit** (towards the right of the event record)
 

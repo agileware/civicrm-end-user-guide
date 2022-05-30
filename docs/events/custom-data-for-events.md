@@ -11,11 +11,11 @@ give you that understanding.
 
 The key question to ask when adding custom data for event management is
 *where* should this custom data go? There are three places that you
-typically want to add custom data
+typically want to add custom data:
 
 -   the participant record
 -   the contact record
--   the event record. 
+-   the event record 
 
 It's important to add custom data in the right place. Adding
 it in the wrong place might cause you headaches further down the line.
@@ -23,7 +23,7 @@ People often add custom data to the participant record, when they should
 probably add it to the contact record, and vice versa. A couple of
 examples might help to clarify.
 
--   dietary preference should be added to contacts since this is
+-   Dietary preference should be added to the contact's record since this is
     unlikely to change between events.
 -   Session preference should be added to the participant record since
     it is only of interest in the context of the event.

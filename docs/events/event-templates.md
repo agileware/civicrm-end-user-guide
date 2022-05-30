@@ -18,7 +18,7 @@ Click **Events > Event Templates**.
     Templates** and clicking **Add Event Template**. Enter template
     title and event type. 
 -   Select campaign if all events created from this template should be
-    associated with a campaign.
+    associated with a Campaign.
 -   Continue the normal event set-up process using the settings that
     will be constant for all events to be created using this template.
 -   Common characteristics might include location, event fees, online
