@@ -21,12 +21,10 @@ Permissions** allows you to control access to various CiviMember features.
 
 -   For users who need to find and view memberships - assign the
     **access CiviMember** permission, the **view contributions**
-    permission if payments are involved and make sure the user has view
-    contact permissions for the associated record.
+    permission if payments are involved and make sure the user has **view contact** permissions for the associated record.
 -   For users who need to create and/or edit membership records - assign
     the **edit memberships** permission, the **edit contributions**
-    permission if payments are involved and make sure the user has edit
-    contact permission for the associated contact record.
+    permission if payments are involved and make sure the user has **edit contact** permission for the associated contact record.
 
 More details on permissions can be found at
 [http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles](http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Roles)
@@ -35,7 +33,7 @@ More details on permissions can be found at
 ## Creating a New Membership Record
 
 You can create a new membership record in a couple ways, by looking at
-an existing contact's record, or through the Memberships menu. Using
+an existing contact's record, or through the **Memberships** menu. Using
 the membership menu is useful because you can create a new contact at
 the same time as adding the new membership record.
 
@@ -65,7 +63,7 @@ left blank. Fields include:
 
 -   **Membership Organization and Type**: select the name of the
 organization that the contact has a membership with and the type of
-membership ***OR***
+membership *OR*
 
 -   **Choose Price Set**: If you have various fee structures for different classes of memberships, you can use [Membership Price Sets](membership-price-sets.md) by selecting Choose Price Set (rather than Membership Organization and Type).
 

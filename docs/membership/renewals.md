@@ -48,7 +48,7 @@ then you will need to link your membership types to different
 organisations. (One can be a dummy organisation created purely for this
 purpose and invisible to the user. See the
 [Membership types](defining-memberships.md#membership-types)
-section of the **Defining Memberships** chapter
+section of the *Defining Memberships* chapter
 for a more detailed explanation.)
 
 If you are using CiviCRM to manage memberships for more than one

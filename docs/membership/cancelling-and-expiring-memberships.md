@@ -40,8 +40,8 @@ permission to delete memberships to trusted staff.
 
 You can delete membership records by:
 
--   Searching for a particular contact, then click on the "Membership"
-    tab > click **More** next to the membership record > click
+-   Searching for a particular contact, click on the **Membership**
+    tab, click **More** next to the membership record, and then click
     **Delete**
 
 or

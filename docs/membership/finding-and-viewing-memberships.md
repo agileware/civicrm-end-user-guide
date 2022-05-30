@@ -35,7 +35,7 @@ contact's record and looking at the Membership tab.
     If a contact's membership is "pending", the membership will show up when
     the tab is clicked but it will NOT be counted in the number on the tab.
 
-After finding the contact you wish to manage, click the "Membership" tab to
+After finding the contact you wish to manage, click the **Membership** tab to
 view a summary of the contact's membership records.
 
 ![image](../img/CiviCRM_update-CiviCore-Contact_MembershipTabs-en.png)
