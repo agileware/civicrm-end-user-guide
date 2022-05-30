@@ -177,7 +177,7 @@ When batch entering pledge payments you can assign the payment to any of
 the pending pledges for that contact. If you have the appropriate
 permissions, you can also alter the amount or schedule for the pledge
 payment. (Click on **adjust payment amount** next to the **Amount**
-field.)The extra fields in the standard profile are:
+field.) The extra fields in the standard profile are:
 
 -   **Source**: enter text that describes the source of the payment
 -   **Paid by**: enter the type of payment vehicle, e.g. cash, check,
@@ -196,8 +196,8 @@ time, click **Save & Continue Later**.
 To find and add/edit more transactions into the batch later:
 
 -   From the menu, click on **Contributions > Batch Data Entry** or
-    click on **Membership > Batch Data Entry**, then click on** Enter
-    Records** next to the batch you want.
+    click on **Membership > Batch Data Entry**, then click on **Enter Records** 
+    next to the batch you want.
 
 Then continue entering more transactions in the batch.
 
@@ -207,13 +207,13 @@ Process the Batch**. The status of the batch will be set to
 
 If the total amount or count of items do not match the values you
 entered when you created the Batch, you will be alerted when closing if
-the count or total don't match. In this case, you either:
+the count or total don't match. In this case, you can either:
 
--   You can override the entered count and total by clicking **Ignore
+-   override the entered count and total by clicking **Ignore
     Mismatch & Process the Batch?** button, in which case the batch
     values are updated to match the transactions in the batch, and then
     the status of the batch will be set to “**Closed**”, OR
--   You can continue entering or editing the payments for the batch,
+-   continue entering or editing the payments for the batch,
     then **Validate & Process the Batch** again.
 
 ![Batch entry form with validation errors.](../img/CiviCRM-Contributions-everydaytasks-ignoremismatchbatch.png)
@@ -225,22 +225,22 @@ processed batches in a several ways:
 
 -   From the menu, click on **Searches > Find Contributions** , enter
     criteria for the contributions, and under **Batch Name**, select the
-    batch you want;
+    batch you want
 -   From the menu, click on **Searches > Advanced Search**, enter
     criteria about the contact, then open the Contributions area and
     enter any contribution criteria, and under **Batch Name**, select
-    the batch you want;
+    the batch you want
 -   From the menu, click on **Contributions > Batches** , then select
-    **Closed** in the **Status** field;
+    **Closed** in the **Status** field
 -   From the menu, click on **Memberships > Batches** , then select
-    **Closed** in the **Status** field;
+    **Closed** in the **Status** field
 -   From the menu, click on **Pledge Payments > Batches**, then
-    select **Closed** in the **Status** field;
+    select **Closed** in the **Status** field
 -   From the menu, click **Reports > Create Reports from Templates**,
     then click **Contribution Report Detail**, enter your report
     criteria and under Set Filters area, next to **Batch Name**, select
     “**is one of**” or “**is not one of**” and select the name(s) of the
-    batch(es) you want.
+    batch(es) you want
 
 ### Configuring Profiles for Batch Entry of Contribution, Membership and Pledge Payments
 

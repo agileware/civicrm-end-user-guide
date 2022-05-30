@@ -72,9 +72,9 @@ will be selected by default. Specify the criteria for the contributions
 you want to add to the Batch.
 
 At the bottom of the page is the search results list. You may assign a single
-transaction to the Batch by clicking "Assign" at the end of the result row. Or
+transaction to the Batch by clicking **Assign** at the end of the result row. Or
 you may select multiple transactions and use the action menu above the results
-to select "Assign to Batch." The transactions will be added to the
+to select **Assign to Batch.** The transactions will be added to the
 assigned transaction list, and will be removed from the search results
 list.
 
@@ -82,16 +82,16 @@ list.
 
 Once you have Assigned Transactions to the batch, they will appear in
 the Assigned Transactions list in the middle of the page. If you need to
-remove transactions from the batch, select "Remove" at the end of a row
+remove transactions from the batch, select **Remove** at the end of a row
 of an individual transaction, or select multiple transactions and use
-the action menu above the list to select "Remove from Batch."
+the action menu above the list to select **Remove from Batch**.
 
 You will also see changes to the parameters table at the top of the
 page, reflecting the new number and total amount of Assigned
 Transactions.
 
 If you want to return and edit the batch later, simply return to the
-Accounting Batch main page. The batch status will remain "Open."
+Accounting Batch main page. The batch status will remain Open.
 
 ## Close and Export a Completed Batch
 
@@ -103,7 +103,7 @@ transactions does not match the entered number of transactions, or if
 the assigned total transaction amount does not match the entered total
 amount, a "Mismatch" error message will appear. You may close the error
 message and return to the Batch to correct the mismatch, or you may
-click "OK" to override the error; the entered transaction number and
+click **OK** to override the error; the entered transaction number and
 total amount will update to match the assigned transaction number and
 total amount, and the Batch will be closed.
 
@@ -126,18 +126,18 @@ displayed Batches by Status (Open, Closed, or Exported); Batch Name; the
 User who created it; the Payment Instrument; the entered number of
 transactions; and the entered total amount.
 
-If a batch has the Status Open, select "Transactions" to assign or
-remove transactions, or select "Edit" to edit the Batch parameters.
-Under "more" you can choose to close, export, or delete the Batch.
+If a batch has the Status Open, select **Transactions** to assign or
+remove transactions, or select **Edit** to edit the Batch parameters.
+Under **more** you can choose to close, export, or delete the Batch.
 
-If a batch has the status Closed, select "Transactions" to view the
-Assigned Transactions, or select "Export" to Export the Assigned
-Transactions to a CSV or IFF export file. Under "more" you can choose to
+If a batch has the status Closed, select **Transactions** to view the
+Assigned Transactions, or select **Export** to Export the Assigned
+Transactions to a CSV or IFF export file. Under **more** you can choose to
 re-open or delete the batch.
 
-If a batch has the status Exported, select "Transactions" to view the
-transactions assigned to the batch; select "Download" to export the CSV
-or IIF file of assigned transactions; or select "Delete" to delete the
+If a batch has the status Exported, select **Transactions** to view the
+transactions assigned to the batch; select **Download** to export the CSV
+or IIF file of assigned transactions; or select **Delete** to delete the
 batch. Once a batch is Exported it cannot be re-opened.
 
 From the search results page, you may also take action on more than one

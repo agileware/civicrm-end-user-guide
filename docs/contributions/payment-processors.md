@@ -42,7 +42,7 @@ users card details as they are transmitted over the internet. SSL
 certificates cost money (typically an annual fee) and they are not
 straight forward to set up. Your hosting provider or system
 administrator can help you here. You may also want to read the
-'security' chapter in the initial set up section of this book.
+*Security* section in the *Initial set up* chapter of this book.
 
 It is worth noting at this point that CiviCRM never stores credit card
 details on your server. It only transmits them to the payment
@@ -62,7 +62,7 @@ merchant account through a bank, however these usually have monthly
 charges which may not suit smaller organizations (though they generally
 have lower percentage payments). You can expect to pay a fee for the
 merchant account and to the Payment Processor, though these may be
-bundled together. Some, like World Pay & Paypal, do not require separate
+bundled together. Some, like World Pay and Paypal, do not require separate
 merchant accounts.
 
 ### Support for Recurring Contributions
@@ -143,7 +143,7 @@ been configured for your site,
     Membership and Event money you receive will also get recorded into
     different revenue Financial Accounts as well, based on the
     configuration of contribution pages and events. For a partial
-    explanation of how this works, see Double Entry Accounting in
+    explanation of how this works, see *Double Entry Accounting* in
     Wikipedia.
 5.  Make the Processor active so that it is available for use with paid
     Events and Online Contribution Pages. If the Processor allows you to

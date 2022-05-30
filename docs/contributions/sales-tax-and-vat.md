@@ -5,7 +5,7 @@ this feature.
 
 To enable Sales Tax/VAT go to
 **Administer > CiviContribute > CiviContribute Component Settings** and check
-the "Enable Tax and Invoicing" box.
+the **Enable Tax and Invoicing** box.
 
 In this screen you can set certain settings for Sales Tax/VAT as well:
 
