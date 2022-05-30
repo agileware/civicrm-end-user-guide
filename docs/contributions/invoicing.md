@@ -3,7 +3,7 @@
 Invoicing works for all Financial Types and Completed and Pending
 Contribution Statuses and has to be enabled. To enable Invoicing go
 to **Administer > CiviContribute > CiviContribute Component Settings** and
-check the "Enable Tax and Invoicing" box.
+check the **Enable Tax and Invoicing** box.
 
 In this screen you can set certain settings for Invoices as well:
 
@@ -25,7 +25,7 @@ Tab.
 
 ![List of contributions for a specific contact.](../img/contribution_summary.png)
 
-Once you are viewing the record you have the option to Print Invoice or Email Invoice. Printing an Invoice will download a pdf and Emailing an Invoice will provide an additional Options screen.
+Once you are viewing the record you have the option to **Print Invoice** or **Email Invoice**. Printing an Invoice will download a pdf and Emailing an Invoice will provide an additional Options screen.
 
 ![The print Invoice and email Invoice buttons are at the bottom of the contrbution screen.](../img/contributiion_view_Screen.png)
 
@@ -66,4 +66,4 @@ To change the image on the Invoice you will need to modify the code see below, r
 For more advanced configuration with accounting software packages like
 QuickBooks, you should involve your organization's bookkeeper or
 accountant in setting up your Financial Types and Financial Accounts.
-See Accounting Integration and the Wiki Page for more information.
+See *Accounting Integration* and the Wiki Page for more information.

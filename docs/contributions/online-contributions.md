@@ -76,13 +76,13 @@ want **all** users to submit their payments offline.
 -  Select the **Currency**.
 -  Select one or more previously configured [Payment Processors](payment-processors.md)
 for this page. Some organizations find it is a good idea to offer a choice of
-processors. You can do this by setting up multiple processors, and checking the
+processors. You can do this by setting up multiple processors and checking the
     corresponding boxes on this form.
 -  Check the **Pay Later** box if you want to give users the option to
     submit payment offline (e.g. mail in a cheque, call in a credit card, deposit directly into your bank account etc.). If you allow pay later Contributions you will need to decide on a checkbox label to display to your users and the instructions for submitting these delayed payments.
 -  If you uncheck the **Contribution Amounts Section Enabled** the remaining fields on this page will vanish. You will only be able accept fixed-amount membership fees, or, if you configure a membership Price Set, fixed-amount memberships fees and other Contributions as specified in the Price Set all charged in a **single** transaction.
 -  Select a pre-defined **Price Set** (for more complex payment options), OR enter up to 10 fixed Contribution amounts in the table at the bottom of the page.)
--  You can check **Recurring Contributions** if you payment processor and its integration with CiviCRM support recurring billing and you want to allow this feature. (There are restrictions on recurring payments when [membership fees](../membership/defining-memberships.md) are being paid.) If you check **Recurring Contributions** further settings become visible.
+-  You can check **Recurring Contributions** if your payment processor and its integration with CiviCRM support recurring billing and you want to allow this feature. (There are restrictions on recurring payments when [membership fees](../membership/defining-memberships.md) are being paid.) If you check **Recurring Contributions** further settings become visible.
   - You can either set one frequency (e.g. a user can donate their chosen amount monthly) or allow for more user flexibility, where they can decide their own interval and/or number of installations (e.g. a user can donate their chosen amount once every three months for 12 installments).
 -  Check the **Pledges** box to give users the opportunity to [pledge
     future payments](../pledges/what-is-civipledge.md).
@@ -278,7 +278,7 @@ A pretty URL is simply a URL redirect (automatically taking people from
 one page of your web site to another). Drupal provides a helpful module
 called Path Redirect
 ([http://drupal.org/project/path_redirect](http://drupal.org/project/path_redirect))
-that lets you can create URL redirects from the user interface without
+that lets you create URL redirects from the user interface without
 complicated web server configuration. Joomla! users also have a
 work-around if Search Engine Friendly URLs are enabled in Global
 Settings. You can then create a menu link to the Contribution page and
