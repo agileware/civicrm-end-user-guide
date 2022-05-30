@@ -14,14 +14,14 @@ remind donors of their commitment.
 
 For further information on pledges, and creating pledges internally on
 behalf of constituents (i.e. not through an online form), see the
-chapter 'Pledges'.
+chapter *Pledges*.
 
 ## Enabling pledges
 
 Setting up pledges for online forms is a simple check-box affair. Once a
 contribution page has been created (see the chapter [Creating Contribution Pages](../contributions/online-contributions.md)), while
-editing the page's settings go to the 'Amounts' tab and tick the option
-'**Pledges**'. Several options will appear, as below.
+editing the page's settings go to the **Amounts** tab and tick the option
+**Pledges**. Several options will appear, as below.
 
 ![image](../img/pledge-setup.png)
 

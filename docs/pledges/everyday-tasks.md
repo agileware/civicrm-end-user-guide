@@ -7,7 +7,7 @@ cheque, you will need to manually record the receipt of payment within
 the pledge. To do this:
 
 1.  Look up the Contact in CiviCRM (**Search >> Find Contacts**).
-2.  Go to the 'Pledges' tab within their contact record. 
+2.  Go to the **Pledges** tab within their contact record. 
 3.  Click the small (view payments) arrow on the far left of the "pledged table" to open up the
     scheduled pledge payments
 4.  Find the next scheduled Pledge Payment and record the payment as
@@ -52,8 +52,7 @@ Enter the following information:
 -   **Total Amount**: Total Amount of all the payment items in the batch.
     (required field) 
 
-You can **Edit** or **Delete** Batch information by going back to the **Bulk
-Data Entry** screen then clicking on **Edit** or **Delete** next to the
+You can **Edit** or **Delete** Batch information by going back to the **Bulk Data Entry** screen then clicking on **Edit** or **Delete** next to the
 batch you want.
 
 ![image](../img/pledge_batch_edit.png) 
@@ -119,19 +118,18 @@ To find and add/edit more transactions into the batch later:
 
 Then continue entering more transactions in the batch. 
 
-Once you are finished entering payments into a batch, click **Validate &
-Process the Batch**. The status of the batch will be set to
-“Closed” and will available for searches and reporting later.
+Once you are finished entering payments into a batch, click **Validate & Process the Batch**. The status of the batch will be set to
+Closed and will be available for searches and reporting later.
 
 If the total amount or count of items do not match the values you
 entered when you created the Batch, you will be alerted when closing if
-the count or total don't match. In this case, you either:
+the count or total don't match. In this case, you can either:
 
--   You can override the entered count and total by clicking **Ignore
+-  override the entered count and total by clicking **Ignore
     Mismatch & Process the Batch?** button, in which case the batch
     values are updated to match the transactions in the batch, and then
-    the status of the batch will be set to “Closed”, OR
--   You can continue entering or editing the payments for the batch,
+    the status of the batch will be set to Closed, OR
+-   continue entering or editing the payments for the batch,
     then **Validate & Process the Batch** again. 
 
 ![image](../img/CiviCRM-Contributions-everydaytasks-ignoremismatchbatch.png)
@@ -141,8 +139,8 @@ the count or total don't match. In this case, you either:
 ## Canceling pledges
 
 Sadly, some pledges will not come to fruition. To cancel a pledge, find
-it through a contact or the 'Find Pledges' search tool, use the 'more'
-link to the right side of the pledge and click 'Cancel'.
+it through a contact or the Find Pledges search tool, use the **more**
+link to the right side of the pledge and click **Cancel**.
 
 ![image](../img/pledge-cancel.png)
 
