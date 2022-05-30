@@ -24,13 +24,13 @@ training sessions, meals and lodging:
 
 To create a new price set:
 
-1.  Navigate to**CiviEvent > New Price Sets**
+1.  Navigate to **CiviEvent > New Price Sets**
 2.  In the Price Set form, enter the name of your price set, and check
-    **Used For** > Event
+    **Used For > Event** 
 3.  Select the **financial type** to be used (in this case it will be
     Event Fee)
-4.  It may be helpful to also add some pre or post form help: some help
-    text for the user
+4.  It may be helpful to also add some pre or post form help (some help
+    text for the user)
 5.  Check the **Is this price set active** box  
 6.  Press **Save**
 7.  A form appears for you to create the first field in your price set.
@@ -68,14 +68,13 @@ For Select, Radio and Checkbox types you will enter a price for each
 option in the table of options (shown in the screenshot above).
 
 If you want to display the price next to the event item, check the
-Display Amount? box.
+**Display Amount?** box.
 
 As when creating other custom data, you can enter a description for the
 Field Help, decide whether the event item is required, select whether
 the event item is visible to the public or only to the administrator in
 the Visibility field, and indicate whether the event item is Active.
-These fields are described in the Custom fields chapter in Organising
-your data.
+These fields are described in the *Custom fields* chapter in *Organising your data*.
 
 In addition you can choose the dates when this price field is active.
 This means you can have a series of price fields offering, for example,
@@ -109,7 +108,7 @@ a regional training seminar program.
 
 To manage and administer existing CiviEvent price sets:
 
--   navigate to **Manage Price Sets** and choosing the **Events** link
+-   navigate to **Manage Price Sets** and choose the **Events** link
     OR
 -   navigating to **CiviEvent > Manage Price Sets** and
     choose **Administer**

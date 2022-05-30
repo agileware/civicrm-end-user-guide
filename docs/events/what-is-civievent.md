@@ -67,7 +67,7 @@ next event.
 
 The chapters in this section take you through everything you need to
 know in order to get the most from CiviEvent. Below are a few concepts
-you might find helpful for you before you begin to set up your event.
+you might find helpful before you begin to set up your event.
 You will put these concepts into practical use when following the
 step-by-step tasks in the next chapters of this section.
 

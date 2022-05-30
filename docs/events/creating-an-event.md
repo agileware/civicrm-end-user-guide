@@ -193,7 +193,7 @@ message in the HTML format box.
 ![screenshot](../img/scheduled-reminder-events-compose.png)
 
 As well as setting up reminders on an event by event basis, you can also
-set them up for specific event types. and add them to specific event
+set them up for specific event types and add them to specific event
 templates.  The idea is basically the same as above, but you can access
 this functionality from **Administer > Communications > Scheduled
 reminders**.
