@@ -9,12 +9,11 @@ using the Send Email activity.
 There are two categories of Message Templates in CiviCRM:
 
 * **User-driven Messages** - These are messages created by your staff to communicate with constituents that you want to be able to re-use. Examples include thank-you letters, meeting announcements, etc.
-* **System Workflow Messages** - These are pre-configured messages used by CiviCRM "features". Examples include contribution receipts, event registration confirmations.
+* **System Workflow Messages** - These are pre-configured messages used by CiviCRM features. Examples include contribution receipts, event registration confirmations.
 
 ## Creating user-driven templates
 
-The easiest way to create a new message template is to check the Save as
-New Template box on the message creation screen. This is available both
+The easiest way to create a new message template is to check the **Save as New Template** box on the message creation screen. This is available both
 when using the Send Email activity and when sending a mass mailing.
 
 You can also create message templates from scratch or edit existing
@@ -77,8 +76,8 @@ template that will look good in all mail clients:
     and TinyMCE) and Textarea, a plain text editor. If you have another
     editor configured as part of your Drupal, Joomla, or WordPress
     installation, you can choose to use that instead. go to:
-    **Administer** > **Customize Data and Screens** > **Display
-    Preferences** > and select a different WYSIWYG Editor.
+    **Administer > Customize Data and Screens > Display Preferences** 
+    and select a different WYSIWYG Editor.
 
 ### Plain text and HTML formats
 
@@ -161,7 +160,7 @@ Create the **Message Subject** for your email. Use tokens if desired.
 
 Create your **Text Message** and **HTML Message**. Include tokens to personalize your messages.
 
-Choose *Enabled?" to enable the message template for use.
+Choose **Enabled?** to enable the message template for use.
 
 Click **Save** to save the template or **Cancel** to cancel.
 

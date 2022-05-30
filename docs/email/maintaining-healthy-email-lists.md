@@ -2,10 +2,10 @@
 
 In the setup chapter we discussed setting up and configuring Email
 lists. In this chapter we are going to delve a bit further into list
-management and discuss compliance. It is important that you keep you
+management and discuss compliance. It is important that you keep your
 email lists healthy with low rates of bounced emails and unsubscribes.
 
-There is always fear of the dreaded 'blacklist' if you have very high
+There is always fear of the dreaded 'blacklist' if you have a very high
 bounce rate, or the fear of being scolded by your SMTP provider for the
 same. However, the reality is high bounce rates and unsubscribes
 typically represent a deeper organization issue... and that's really

@@ -35,7 +35,7 @@ template.
 6.  Click **Send** to send your message.
 
 To see the activity that was just recorded of the email sent, click the
-Activities tab of the contact.
+**Activities** tab of the contact.
 
 ## Sending a quick email to less than 50 contacts
 
@@ -48,7 +48,7 @@ this method for mass mailings, which is why it is limited to 50
 contacts. For mass mailings, use CiviMail.
 
 1.  Click **Search > Find Contacts** (or **Advanced
-    Search**). Choose your search criteria and click Search (or use
+    Search**). Choose your search criteria and click **Search** (or use
     any other search to find the contacts that you wish to email).
 2.  From the search results screen, choose some or all of the contacts
     and click **Actions > Email -send now (to 50 or less)**.
@@ -77,9 +77,10 @@ The Image Properties window will appear. Click **Browse Server** to look
 for image files on your server.
 
 ![](../img/civimail_window_to_browse_server_2.png)
+
 In the left sidebar, you will see a directory of files. If the image you
 need is already uploaded to your server, navigate to it in the directory
-and select it. If not, Click **Upload** to choose a file from your
+and select it. If not, click **Upload** to choose a file from your
 computer.
 
 ![](../img/civimail_file_directory_3.png)
