@@ -4,7 +4,7 @@ When you click the **Event** tab from the toolbar and then select **Manage Event
 
 ![Default Magange Events screen](../../img/search-kit/default-manage-events.png)
 
-Search Kit gives the option to create an alternative to the Manage Event overview screen that could be customized in many ways, such as to like this:
+Search Kit gives the option to create an alternative to the Manage Event overview screen that could be customized in many ways:
 
 ![upcoming event](../../img/search-kit/upcoming-events-final.png)
 
