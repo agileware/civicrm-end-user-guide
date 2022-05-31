@@ -33,8 +33,8 @@ This will create a pull request (PR) for your changes.  Edit will be published a
 
 ![New PR in Github Interface](../img/new_pr.png)
 
-6. Click *Create pull request*. 
-7. Leave a descriptive message and then click *Create pull request *. 
+6. Click **Create pull request**. 
+7. Leave a descriptive message and then click **Create pull request**. 
 
 Your PR will be reviewed by someone on the documentation team and published once they are approved.  
 
