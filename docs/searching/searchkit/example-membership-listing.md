@@ -1,110 +1,116 @@
-# Case: Creating a public Membership List
+# Case: Creating a Public Membership List
 
-There are many use cases where you'd like to show structured data from CiviCRM on a public page of your website. Let's say you are using CiviCRM as a membership organization and you are having several membership levels. Now wouldn't it be nice to have a filterable or searchable list of them with live data from CiviCRM exposed on your website? With the help of Search Kit and Form Builder it is an easy thing to do this. To show how we will create a Logo Grid with tooltips and links to our member's websites that can be filtered by membership types:
+There are many use cases for showing structured data from CiviCRM on a public page of a website. As an organization with several levels of membership, for example, it would be useful to have filterable and searchable lists on your website that are populated by live data from CiviCRM. With the help of Search Kit and Form Builder, this is an easy feature to add!
+ 
+The following demo will show, step-by-step, how to create a Logo Grid with tooltips and links to external(e.g. members') websites that can be filtered by (membership) type.
 
 ![Grid showing filterable Memberships](../../img/search-kit/membership-listing-goal.png)
 
-Let's build this step by step.
-
-## Step 1: Create a New Search and define the Data Sources you need
+## Step 1: Create a New Search and Define the Data
 
 Go to **Administer > Search > Search Kit** and click **New Search**.
 
 Then:
 
-* fill in the name of the search (e.g. Our Members)
-* select 'Memberships' from the **Search for** list
-* add one **With** for 'Membership Contact' as we need data from the contact being a member – e.g. the display name to show it in a tooltip 
-* add a second **With** for 'Contact Websites' as we want to link to the member's homepage
+* give the search a title name (e.g. "Our Members") in the box labeled "Untitled Search" 
+* select Memberships from the **Search for** list
+* add a **With** for Membership Contact so that data can be pulled from the member's contact record (e.g. the display name to show in a tooltip) 
+* add a second **With** for Contact Websites as this will give access to the link of the member's homepage
 
 ![Search Screen](../../img/search-kit/membership-listing-creating-search.png)
 
-You can always tap **Search** to check the results of your current configuration. Here we have six memberships in total as a result. Note that when adding Membership Contact and Contact Websites Search Kit automatically added some colums with data from these sources:
+Tap **Search** to check the results of the current configuration. The above criteria returned six memberships as a result. Note that when adding Membership Contact and Contact Websites, Search Kit automatically added some columns with data from these sources:
 
 ![Search results](../../img/search-kit/membership-listing-search-results.png)
 
-## Step 2: Add Columns to output additional Data
+## Step 2: Add Columns to Output Additional Data
 
-The columns we see in our search result will be the data we can later use on our public website, too. So we need to add what is missing before we proceed. In our case this is only the URL of the logo:
+The columns displayed determines the data that are returned from the search. These results can be customized, such as by adding a new column for the URL of the logo.
+To do this:
 
-* tap **+Add** top right of the results table
-* choose 'Membership Contact: Image URL'
-* again check the results clicking **Search**
+* tap the **+Add** button on the top right of the results table
+* choose the desired column to display (e.g. Membership Contact: Image URL)
+* refresh the results display by clicking **Search**
 
-This means that in our case we use the standard contact image. You could also use custom fields for that but would have to add another data source then. 
+This particular selection means that the standard contact image is choosen. To use custom fields, like a different image, requires first adding another data source.
 
-Your result will now look like this:
+The results will now look like this:
 
 ![Search results with one more column](../../img/search-kit/membership-listing-search-results-url.png)
 
 !!! Tip
     Don't forget to **Save** your work.
 
-## Step 3: Adding and configuring Grid as Display
+## Step 3: Adding and Configuring a Grid Display
 
-To show our search results we now need to add a display. In our case we choose a 'Grid' for that with which we can organize our Output in tiles:
+To format the search results, a display must ne added, which can be done by clicking the **+Add** button underneath the search's title field. A Grid display best suits this demo so that the output can be organized into tiles.
 
 ![Adding Grid as Display](../../img/search-kit/membership-listing-add-grid.png)
 
-You could name this view 'Our Members'. By default Search Kit will now add all the fields (columns) of your search as dragable items:
+Give this display configuration a title (e.g. "Our Members"). By default, Search Kit will now add all the fields (columns) of the search to the new display. These fields can be further customized, including dragging and dropping them into a new order.
 
 ![Adding Grid as Display](../../img/search-kit/membership-listing-grid-items.png)
 
-When you tap **Preview** you will see the output in a 3x3 pattern grid. You will see now that this is not yet the output we want to have there. So now we are going to change this to what you can see on the screenshot below. Take the following steps:
+Clicking **Preview** will provide the results in a 3x3 pattern grid directly below the button at the bottom of the page. However, at this stage, the display does not meet the desired output. To achieve the logo display:
 
-* **Remove** all items not needed (red arrow in screenshot above) – only leave 'Membership Contact: Image URL' there
-* Check the **Image checkbox** as we want to show a logo as an image
-* optional: set size attributes to make the logo sizes match – here we just adjust the height to 200px
-* Check **Link** > select **'Other...'** in dropdown > select 'Membership Contact - Contact Websites: Website' in the **token dropdown** appearing now
-* **Attention:** remove the '/civirm' in front of the token: 'civicrm/[Membership_Contact_contact_id_01_Contact_Website_contact_id_01.url]' becomes '[Membership_Contact_contact_id_01_Contact_Website_contact_id_01.url]' only as the token will fill in the absolute url of the member's website
-* Check **Tooltip** and also add it using a token representing the display name
+* **Remove** all items that are not needed by clicking on the remove symbol (indicated by the red arrow in the screenshot above) in each item's section. Only leave Membership Contact: Image URL for this example.
+* Check the **Image** checkbox to display the logo as an image.
+* (Optional) Set size attributes to make the logo sizes match (e.g. adjust the height to 200px).
+* Check the **Link** checkbox, select **'Other...'** from the dropdown menu, select Membership Contact - Contact Websites: Website from the **token dropdown**.
+* **Attention:** remove `/civirm` from the front of the token: 
+  `civicrm/[Membership_Contact_contact_id_01_Contact_Website_contact_id_01.url]` 
+  so that it becomes:
+  `[Membership_Contact_contact_id_01_Contact_Website_contact_id_01.url]`
+  as the `/civicrm` portion would inhibit the url from reaching the member's external website.
+* Check the **Tooltip** checkbox and make sure the ;abel that pops up to the right is a token for the Display Name.
 
-When you tap **Refresh** now you should see the logos as we want them to be there:
+Click **Refresh** to see the logos displayed as intended:
 
 ![changing Grid items and preview](../../img/search-kit/membership-listing-change-grid-items.png)
 
-Note that this configuration will only show members with logos in their data. If you want to output those without, too, you could use the checkbox **Alternative image** in addition.
+!!! Note
+    This configuration will only show members who have logos associated with their record. To include those without logos, check the **Alternative image** box.
 
-## Step 4: Adding and configuring a Form
+## Step 4: Adding and Configuring a Form
 
-In order to show the results on our public website we need to create an Afform Form now. To do so navigate back to the Search Kit dashboard an tap **Forms > + Create Form for Our Members Grid**:
+In order to show the results on a public website, a Form needs to be created. Return to the Search Kit dashboard and click **Forms > + Create Form for Our Members Grid**:
 
 ![adding Form from Search Kit dashboard](../../img/search-kit/membership-listing-add-form.png)
 
 Then:
 
-* Give the Form a name and a description
-* enter a URL for the page on which you want your membership grid to be shown – here we use 'civicrm/members':
+* Give the Form a name and a description.
+* Enter the URL for the page on which you want the results displayed (e.g. 'civicrm/members').
 
 ![configuring new Afform Form](../../img/search-kit/membership-listing-form-created.png)
 
-As soon as you tap 'Save' the link **View Page** will appear. You should now see our grid as we know it.
+After clicking **Save**, the link **View Page** will appear. This link will show the fully formatted results grid.
 
-Let's add a filter to influence which membership types shall be shown to us. To do so switch from 'Form Settings' tab to the tab 'Our Members Grid' and **drag the item 'Membership type' into the tab 'Form Layout'**:
+To filter which membership types are shown, switch from the **Form Settings** tab to the **Our Members Grid** tab and drag the item Membership Type into the **Form Layout** tab.
 
 ![adding a filter](../../img/search-kit/membership-listing-form-adding-filter.png)
 
 Then:
 
-* change the preset of our filter so that it shows the membership types we want and
-* change details in layout – we could add texts etc., here we only change the title of a container element:
+* Change the preset of the filter so that it shows the desired membership types. 
+* Change the layout details, such as the title of a container element.
 
 ![configuring a filter](../../img/search-kit/membership-listing-form-configuring-filter.png)
 
-When you now open the specified URL (your.civicrm.tdl/civicrm/members/) everything looks fine already – unless you're logged out...
+So long as you are logged into your CiviCRM account, the specified URL (e.g. your.civicrm.tdl/civicrm/members/) will display the configured Form.
 
 ## Step 5: Setting Permissions
 
-That brings us to our last step: We need to allow our form to be accessible for anonymous users. To do that you first have to go back to the configuration of the search display and **switch of the Permission handling** there so that it looks like this:   
+The last step in this process is to allow the form to be accessible for anonymous users. To do so, return to the search's display configuration and unlock (by clicking) the **Enforce Permissions** button. Once clicked, the button will read **Bypass Permissions**, as shown below.
 
 ![switching permissions for search display](../../img/search-kit/membership-listing-grid-permissions.png)
 
-Don't forget to **save changes** before you go back to the form configuration.
+Don't forget to **Save** before going back to the Form configuration.
 
-Now we can define who can view the page showing our grid. In our case we simply need to do two things:
-* **remove all restrictions** by choosing 'Generic: Allow all users (including anonymous)' from the dropdown list. 
-* check **Accessible on front-end of website**:
+Who can view the page that contains the results grid can now be defined. To make the displaay viewable on a public website:
+* Remove all restrictions by selecting 'Generic: Allow all users (including anonymous)' from the dropdown list. 
+* Check the **Accessible on front-end of website** box.
 
 ![switching permissions for search display](../../img/search-kit/membership-listing-form-permissions.png)
 
-Now with the help of Afform logged out users will also be able to load our form and filter them, too.
+Now users, whether logged in or not, will be able to view and filter the form.
