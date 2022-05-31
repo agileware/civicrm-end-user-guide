@@ -53,15 +53,16 @@ work. Most of these fields are multiple choice fields which have been
 pre-populated with sample options. Before you start using CiviEngage,
 you need to review and modify the supplied options to meet your needs.
 
-Note that CiviEngage has been developed with the North American context;
+Note that CiviEngage has been developed within a North American context;
 if your organisation operates outside the USA you may need to customise
 the language but most of the concepts will be similar and useful to your
 organisation.
 
-We strongly suggest that you do not delete any custom fields or custom
-field sets, since other features such as reports and searches may rely
-on these fields; deleting fields could potentially break these and other
-CiviEngage features.
+!!! warning
+    It is strongly advised that you do not delete any custom fields or custom
+    field sets, since other features such as reports and searches may rely
+    on these fields; deleting fields could potentially break these and other
+    CiviEngage features.
 
 To review the custom field sets, go to **Administer > Customize >
 Custom Data** in the navigation menu. 
@@ -70,7 +71,7 @@ Custom Data** in the navigation menu.
 
 The following list describes each of the custom field sets provided by
 CiviEngage; the bulleted items are custom fields within those custom
-field sets. You should add, edit, or disable (we highly suggest that you
+field sets. You should add, edit, or disable (it is strongly advised that you
 do not delete) the available options for each custom field to make them
 better fit your organisation's needs.
 
@@ -78,15 +79,15 @@ See [Creating Custom Fields](../organising-your-data/creating-custom-fields.md) 
 
 ### Communications Details
 
-This custom field set can be used to provide more details about when to
-best contact your constituents, if they have good addresses, email
-addresses, or phone numbers, and the reason why they don't want to be
-contacted by email, or phone, or mail.
+Custom field sets can be used to provide more details. In this instance, it provides the
+best time to contact your constituents, if they have valid addresses, email
+addresses, or phone numbers, and even a reason why they don't want to be
+contacted by a given method.
 
--   Best Time to Contact: indicate if the best time to contact your
+-   Best Time to Contact: indicates whether the best time to contact your
     constituent is in the morning, afternoon, or evening.
--   Communication Status: indicate if you have a bad email, bad address,
-    or bad phone for the contact
+-   Communication Status: indicates whether you have a bad email, address,
+    or phone number for the contact
 -   Reason for Do Not Mail
 -   Reason for Do Not Phone
 -   Reason for Do Not Email
@@ -99,8 +100,8 @@ that apply to you.
 
 -   State Voter ID
 -   Party Registration
--   If Other Party: use this field only if you don't want to add another
-    option value in the Party Registration custom field
+-   If Other Party (use this field only if you don't want to add another
+    option value in the Party Registration custom field)
 -   Precinct
 -   Ward
 -   State District
@@ -113,10 +114,10 @@ that apply to you.
 
 ### Constituent Info - Individuals
 
-This custom field set may be used to describe additional information
+This custom field set may be used to describe additional information about 
 your individual contacts, such as how you want to classify your contacts
 for ease of searching and targeting form communications, which staff
-person is responsible for outreach to the individual, and how and when
+person is responsible for outreach to the individual, and how/when
 the individual was brought into your organisation.
 
 -   Constituent Type: This is a required field used to categorize the
@@ -135,9 +136,9 @@ the individual was brought into your organisation.
 
 ### Grassroots Info
 
-This custom field set may be used the to further capture information
+This custom field set may be used to further capture information
 about how a constituent likes to engage with your organisation, the
-types of issues and volunteer activities they're interests, their level
+types of issues and volunteer activities they're interested in, their level
 of leadership, and their status as a member. These fields provide
 another way to categorise your constituents to better target your
 audience for outreach and communications.
@@ -149,7 +150,7 @@ audience for outreach and communications.
     leadership level within your organisation are 1-5. Change this to
     match however your organisation tracks this information.
 -   Issue Interest: this may be used to capture what issues your
-    contacts are interest in. This custom field shares the same set of
+    contacts are interested in. This custom field shares the same set of
     options as the Funding Areas (for organisations), Media Issue
     Interest and Funder Issue Interest fields. It is a list of issues
     that your organisation works on or tracks.
@@ -163,7 +164,7 @@ contact so that you can target your outreach and communications.
 
 -   Constituent Type - Org: this custom field is required and may be
     used to classify the type of organisation contact, such as Member
-    Organisation, Affiliate Organisation, Business, Government.
+    Organisation, Affiliate Organisation, Business, or Government.
 
 ### Grant Info
 
@@ -193,13 +194,15 @@ individual contact with type Funder Contact) or for a foundation contact
 
 ### Participant Info
 
-This custom field set, which is available when you create a participants
-for your events, may be used to capture information about participants
-to your events, such as if they need childcare or rides to and from the
-event. Organisers who contact potential participants multiple times
-before an event can also capture responses from participants to track
+This custom field set, which is available after you add a participant
+to your event, may be used to capture additional information such as if 
+they need childcare or rides to and from the event. 
+Organisers who contact potential participants multiple times
+before an event can also capture responses to track
 over time if they were able to get their constituents to participate and
-how many contacts it takes to encourage them to come to the event.
+how many contacts it took to encourage them to attend.
+
+Examples of fields that can capture participant info includes:
 
 -   Childcare Needed
 -   Ride To
@@ -214,7 +217,7 @@ how many contacts it takes to encourage them to come to the event.
 ### Event Details
 
 This custom field set is used to capture additional information about
-your event.
+your event, such as:
 
 -   Event Contact Person: also used for Staff Responsible. Add all
     appropriate people to this list.
@@ -222,7 +225,7 @@ your event.
 ### Organizational Details
 
 This custom field set may be used to store information that is specific
-to organisations.
+to organisations, such as:
 
 -   Rating: if you need to evaluate organisations in some way, change
     the options to reflect that.
@@ -230,7 +233,7 @@ to organisations.
 ### Demographics
 
 This custom field set may be used to capture demographic information
-about your constituents.
+about your constituents, such as:
 
 -   Ethnicity
 -   Secondary Language
@@ -287,7 +290,7 @@ and modifying to match the kinds of information you need to track for
 your work.
 
 To learn more about working with value options or multiple choice
-options, see the chapter called [Creating Custom Fields](../organising-your-data/creating-custom-fields.md).
+options, see the [Creating Custom Fields](../organising-your-data/creating-custom-fields.md) section in the *Organising your data* chapter.
 
 ### Value Options for Issue Interests
 
@@ -344,85 +347,84 @@ for recording responses.
 
 ## Custom profiles
 
-CiviEngage creates several [custom Profiles](../organising-your-data/profiles.md) for easier batch updating of
+CiviEngage creates several custom [Profiles](../organising-your-data/profiles.md) for easier batch updating of
 individual or organisation information, such as voter demographics,
 issue interests, volunteer interests or event participant information.
 
 ## Setting up Surveys for Walklists and Phonebanking
 
-CiviEngage in combination with CiviCampaign allows you to easily set up
+CiviEngage, in combination with CiviCampaign, allows you to easily set up
 your surveys for walklists during door-knocking canvasses and for
 phonebanking. You will want to think about the questions and responses
 you want to collect from your target audience in a manner that will be
-useful in analysing results from your efforts after you've conducted
-your canvass or phonebank.
+useful in analysing the results from your efforts.
 
 There are a few steps to think about when creating your surveys (you can
-find out more about creating surveys in the Survey section of this
+find out more about creating surveys in the *Survey* chapter of this
 book):
 
-1.  create your custom data set of questions and responses you plan to
-    use for your survey if you plan to ask more than 1 question that
-    extends Activities of type Walklist or Phonebank. 
-2.  create the custom profile that includes the questions you will want
-    to ask your audience. **Hint:**If you plan on doing a phonebank and
-    want to do the data entry directly into civicrm, then you may want
-    to add the phone number in the profile, and set it to view only, so
-    that you can see the phone numbers when you're interviewing the
-    respondents. The profile will allow you to display (view only or you
-    can edit data) other fields of information when you're ready to
-    interview and enter the data. 
-3.  create the group or smart group of the individual contacts you plan
-    to survey, which is your target audience.
-4.  Make a decision if this survey is part of a larger campaign, and if
-    so create the Campaign and indicate this campaign when creating the
-    survey (you can find out more about create campaigns in the
-    Campaigns section of this book).
+1.  If you plan to ask more than one question that
+    extends Activities of type Walklist or Phonebank, create a custom data set of questions and responses for your survey. 
+2.  Create the custom Profile that includes the questions you will want
+    to ask your audience. 
+    
+    !!! tip
+        If you plan on doing a phonebank and want to do the data entry directly into civicrm, then you may want to add the phone number in the profile, and set it to view only, so
+        that you can see the phone numbers when you're interviewing the
+        respondents. The profile will allow you to display (view only or enable editing) other fields of information when you're ready to interview and enter the data. 
+
+3.  Create the Group or Smart Group of the individual contacts you plan
+    to survey (i.e. your target audience).
+4.  Decide whether this survey is part of a larger campaign. If
+    so, create the Campaign and indicate it when creating the survey 
+    (see the *Campaign* chapter for more details).
 5.  When you create your survey, you can then:
 
      -   indicate if the survey is for a walklist or phonebank
-     -   specify if the survey is part of a campaign
-     -   include the custom profile of the questions you plan to ask during
+     -   specify if the survey is part of a Campaign
+     -   include the custom Profile of the questions you plan to ask during
          the survey, if you plan on asking more than one question
-     -   use the Survey Default Result Set Options that's created by
+     -   use the Survey Default Result Set Options that is created by
          CiviEngage to help you track the status of the responses to the
          survey if appropriate. 
 
-**Tips:**
-
--   If you plan on conducting many surveys throughout the year (let's
-    say 20 - 30 surveys in a year) with only a few questions per survey
-    (let's say 3-4 questions per survey), then we strongly suggest that
-    you create ONE custom data set that includes all the questions for
-    each of the survey. Then you can create individual custom profiles
-    for each survey that pull in the questions that are particular to
-    that survey.
--   If you plan on conducting just a few surveys per year (let's say
-    about 3-4 surveys per year) with the number of questions no more
-    than 10 per survey, then we suggest that you create different custom
-    data sets for each group of questions per survey. Then you can use
-    custom profiles to pull in in the questions that are particular to a
-    survey.
+    !!! tip  "Many Surveys per Year"
+            If you plan on conducting many surveys throughout the year (approx. 20 - 30        
+            surveys in a year) with only a few questions per survey
+            (aprrox. 3-4 questions per survey), then it is strongly suggested that
+            you create ONE custom data set that includes all the questions for
+            each of the surveys. Then you can create individual custom profiles
+            for each survey that will pull in the questions that are particular to
+            that survey.
+    
+    !!! tip "Few Surveys per Year"
+        If you plan on conducting just a few surveys per year (approx.
+        3-4 surveys per year) with no more than 10 questions per survey, 
+        then we suggest that you create different custom
+        data sets for each group of questions per survey. Then you can use
+        custom profiles to pull in in the questions that are particular to a
+        survey.
 
 ### Setting up custom data sets and profiles for use with Walklist or Phonebank Surveys
 
 1. Create your custom data set to hold your questions (to learn more
-about creating custom data sets and fields, see the *Organising Your Data*
+about creating custom data sets and fields, see the *Organising your data*
 section of this book). 
 
- -  For WalkList surveys: -   Create your custom data set for use with Activities of type Walklist 
-
- -  For PhoneBank surveys: -   Create your custom data set for use with Activities of type PhoneBank 
+ -  For WalkList surveys: create your custom data set for use with Activities of type Walklist 
+ -  For PhoneBank surveys: create your custom data set for use with Activities of type PhoneBank
+   
 ![screenshot](../img/create_custom_data_sets.png)
 
 2. Then for both Walklist or Phonebank surveys you can create the
 questions as the custom field labels and the responses you want to
 collect as the option values.
+
 ![screenshot](../img/custom_data_for_walklists.png)
 
 3. Next, create the custom profile that will pull in the questions for
-your survey (to learn more about creating profiles, see the *Organising
-Your Data* section of this book). 
+your survey (to learn more about creating Profiles, see the *Organising
+your data* chapter of this book). 
 
 ![screenshot](../img/custom_profile_for_walklist.png)
 
