@@ -13,7 +13,7 @@ best use of CiviGrant.
 ### CiviGrant workflow
 
 The standard CiviGrant workflow starts with the details of the grant
-that a contact is applying for, including the amount applied for and
+to which a contact is applying, including the amount applied for and
 when the application was received. You can then record the stages of the
 process including when the grant decision was made, how much was
 granted, when money was transferred, when the grant report was due and
@@ -47,7 +47,7 @@ before you begin to work with CiviGrant, answer the following questions:
     CiviGrant statuses?
 -   Do you have an application form, and if so, how can you model it
     using custom data?
--   What kinds of reports to you want to generate from the grant
+-   What kinds of reports do you want to generate from the grant
     process?
 
 

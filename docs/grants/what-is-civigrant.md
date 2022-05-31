@@ -3,12 +3,12 @@
 CiviGrant is designed to be used by organisations that distribute funds
 to others, for example foundations, grant givers, etc.
 
-As of 5.46 CiviGrant ships as an extension which can be enabled
+As of CiviCRM version 5.46, CiviGrant ships as an extension which can be enabled
 from the extensions screen.
 
 In contrast to CiviContribute, which tracks money going *into* your
 organisation, CiviGrant tracks money going *out of* your organisation.
-CiviGrant has a data structure and workflows that support the grant
+CiviGrant has a data structure and workflows that supports the grant
 application process with the ability to manage the amount applied for,
 amount received and any reports necessary for the process.
 
@@ -52,5 +52,5 @@ thank-you which they email to all organisations that gave funds toward
 the festival. The report details how their funds benefited the local
 community. Wookie Hole Community Action also prints a certificate for
 each local business and funder (directly from CiviCRM) which they can
-proudly display in their premises. 
+proudly display on their premises. 
 
