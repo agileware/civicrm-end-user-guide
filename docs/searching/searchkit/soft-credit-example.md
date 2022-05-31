@@ -19,7 +19,7 @@ This page gives an overview of the existing searches. As you can see, the Soft C
 
 ## Creating the Search
 
-AFter clicking the **New Search** button, you will get an empty form where you can create the search:
+After clicking the **New Search** button, you will get an empty form where you can create the search:
 
 ![Create New Search](../../img/search-kit/soft-credit-empty-new-search.png)
 
