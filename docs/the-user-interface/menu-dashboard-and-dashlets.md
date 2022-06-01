@@ -35,13 +35,14 @@ After refreshing the page, the icon will appear next to the navigation menu item
 
 ![NavMenu_SearchMenuIcon](../img/the-user-interface/menu-dashboard-and-dashlets/47SearchMenuIcon-en.png)
 
-Remember that changes you make to the navigation
-menu will be seen by everyone who has the appropriate permissions to see
-the menu, for better or for worse, so be careful when modifying the
-navigation menu.
+!!! Note
+    Remember that changes you make to the navigation
+    menu will be seen by everyone who has the appropriate permissions to see
+    the menu, for better or for worse, so be careful when modifying the
+    navigation menu.
 
 To the left of the navigation menu is the Quick search field. See the
-chapter on Searching for more details. 
+*Searching* chapter for more details. 
 
 ## The home dashboard & dashlets {:#dashlets}
 
@@ -89,7 +90,7 @@ To save click on **Actions** > **Save**.
 
 Almost any CiviCRM report can be made available as a dashlet.
 
-To create a dashlet, do the following: 
+To create a dashlet: 
 
 -   Click **Reports** > **My Reports** and subsequently on the button
     **New Report**.
