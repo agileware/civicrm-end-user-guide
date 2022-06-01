@@ -2,7 +2,7 @@
 
 CiviCRM allows you to represent connections between contacts by creating
 relationships. For example, if a mother and son are both in your
-database, it can be useful to be able to look at either record and see
+database, it is useful to be able to look at either record and see
 that they are related to each other.
 
 You can also track relationships between organisations, or between
@@ -39,7 +39,7 @@ organisation to the individual.
 If a relationship is created between two contacts User 1 and User 2 and
 the **Permissions** box is set to allow User 1 'View' access to User 2,
 then when User 1 is logged in they can view details about User 2 using
-a [profile](profiles.md) in View mode. If the
+a [Profile](profiles.md) in View mode. If the
 permission is set to 'View and Update' then User 1 can also update
 details about User 2 with a profile in Edit mode.
 
@@ -56,7 +56,7 @@ between the contacts.
 
 1.  Navigate to the record of the individual who you want to connect to
     an organisation.
-2.  Click the Edit button to edit the individual's record.
+2.  Click the **Edit** button
 3.  Begin typing the organisation name into the Current Employer field.
     As you type, matching names of organisations that already exist as
     contacts in CiviCRM will appear in a dropdown autocomplete list
