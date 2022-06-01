@@ -107,9 +107,9 @@ If you enter text in Pre-form Help, your help text appears above the form field,
 
 ## Custom fields
 
-Once you have created a custom field set, you can create custom data fields within the set. Click "View and Edit Custom Fields" followed by "New Custom Field" and you will see the screen in the image below. We'll explain each of the options in this section.
+Once you have created a custom field set, you can create custom data fields within the set. Click **View and Edit Custom Fields** followed by **New Custom Field** and you will see the screen in the image below. We'll explain each of the options in this section.
 
-After completing the field configuration options, click 'Save' to record the field and return to the field listing for your current custom field set, or click 'Save and New' to save the field and begin defining a new field.
+After completing the field configuration options, click **Save** to record the field and return to the field listing for your current custom field set, or click **Save and New** to save the field and begin defining a new field.
 
 With the exception of the data and input field type selection, all of the configuration options may be modified after your initial creation of the field. You may also find it useful to preview your custom fields, as well as the whole set of custom fields, as you are defining them. This is particularly useful for checking the layout of radio button and check-box fields with a large number of choices.
 
@@ -155,8 +155,7 @@ The types of fields are:
     -   radio list
 -   **Date**: a way of entering a date (and optionally time) value using a calendar widget. You can set a range of years which can be
     selected prior to and after the current date.
--   **State/Province**: a list of available geographical locations as configured in CiviCRM's Localization settings (Administer >
-    Configure > Global Settings >> Localization). Can be offered as either a select box or a multi-select box.
+-   **State/Province**: a list of available geographical locations as configured in CiviCRM's Localization settings (**Administer > Configure > Global Settings > Localization**). Can be offered as either a select box or a multi-select box.
 -   **Country**: a list of geographical locations. Can be offered as either a select box or a multi-select box.
 -   **File**: offered as a browser where the user can select and upload a file.
 -   **Link**: an active internet hyperlink.
@@ -190,7 +189,7 @@ Where applicable, you may designate a default value for a field. This value is a
 
 Ideally, your field name is self-explanatory and users will immediately know what to enter. But in those cases where there is some ambiguity, or where you wish to help regulate how a certain field is used, you may enter help text here. If you enter it in Pre-form Help, your help text appears above the form field, and if you enter text in Post-form Help it appears below the form field.
 
-The help text appears in all uses of the field in administration pages and is inserted as the default help text when fields are assigned to a profile (see 'profiles'). The person creating the profile can remove or change the help text there without impact on the original custom field definition.
+The help text appears in all uses of the field in administration pages and is inserted as the default help text when fields are assigned to a profile (see the *Profiles* section in this chapter). The person creating the profile can remove or change the help text there without impact on the original custom field definition.
 
 ### Required
 
@@ -219,7 +218,7 @@ For field types that involve selecting from a set of multiple options (such as S
 
 If you choose to use the same set of options for several fields, you will be notified when making any changes that this will affect an option set used by several fields.
 
-When you create a new set, you have the option of initially entering up to ten multiple choice options in a table. If you need more than ten options, you can create an unlimited number of additional choices after saving this new field by using the 'Edit Multiple Choice Options' link. Go to: **Administer** > **Customize** > **Custom Data** > **View and Edit Custom Fields** > **Edit Multiple Choice Options**. You may go to this screen at a later date to modify the label, order and active status of any multiple choice option, or add more choices. 
+When you create a new set, you have the option of initially entering up to ten multiple choice options in a table. If you need more than ten options, you can create an unlimited number of additional choices after saving this new field by using the **Edit Multiple Choice Options** link. Go to: **Administer** > **Customize > Custom Data > View and Edit Custom Fields > Edit Multiple Choice Options**. You may go to this screen at a later date to modify the label, order and active status of any multiple choice option, or add more choices. 
 
 ![CustomMultipleOptions](../img/CiviCRM-Configuring-CustomMultipleOptions-en.png "CustomMultipleOptions")
 
@@ -229,7 +228,7 @@ Inactive options are hidden when the field is presented.
 
 ### Managing custom field sets. 
 
-You can view a listing of all the custom fields in a custom field set at any time by navigating to **Administer > Customize Data and Screens > Custom Data** and clicking 'View and Edit Custom Fields' for the relevant field set.
+You can view a listing of all the custom fields in a custom field set at any time by navigating to **Administer > Customize Data and Screens > Custom Data** and clicking **View and Edit Custom Fields** for the relevant field set.
 
 ![image](../img/Move_custom_fields.png) 
 
@@ -249,8 +248,8 @@ To put headings in your options, follow these steps:
     
 1. When configuring the options for the field, add your headings as follows:
 
-    * Set the "Label" for your heading to be the text displayed to the user
-    * Set the "Value" for your heading to be some piece of text prefixed by "crm_optgroup_".
+    * Set the Label for your heading to be the text displayed to the user
+    * Set the Value for your heading to be some piece of text prefixed by "crm_optgroup_".
 
     ![Screenshot of configuring select options by prefixing the "value" field in the heading options with "crm_optgroup_"](../img/option_list_headings_1.png)
 
