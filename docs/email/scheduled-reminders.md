@@ -237,8 +237,8 @@ The configuration options specifically for Event reminders consist of:
     participants with specified participant statuses (e.g. registered
     and attended, or cancelled and no-show)
 -   Sending to all participant roles with the appropriate statuses or
-    only to specified participant roles (e.g., volunteer and host, or
-    attendee or speaker)
+    only to specified participant roles, eg. participants assigned either
+    the volunteer or host role.
 
 Since you have so many configuration options, you could set up an event
 reminder for almost any purpose you can think of. Here are a few
