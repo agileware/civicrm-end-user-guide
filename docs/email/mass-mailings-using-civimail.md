@@ -3,7 +3,7 @@
 Using the Mailings functionality offered by CiviMail provides many
 benefits over the Send Email activity, allowing you to track respondents
 to your mailing, process bounces, and allow people to unsubscribe from
-your mailings. These benefits will discussed later; first we will deal with
+your mailings. These benefits will be discussed later; first we will deal with
 creating and sending a mass mailing.
 
 ## Choosing recipients: Groups versus search results
@@ -16,7 +16,7 @@ important difference.
 For mailings to search results, you are
 required to choose a Group from the Unsubscription Group dropdown menu.
 Here's why: Every mass mailing needs a way to track unsubscribe
-requests. A simple "unsubscribe" process is required by law in many countries
+requests. A simple unsubscribe process is required by law in many countries
 and may help prevent your mailings from being treated as spam.
 Mailings sent to Groups have this capacity built-in. The next
 time a mass email is sent to that Group, anyone who has unsubscribed
@@ -48,7 +48,7 @@ to choose that as your Unsubscription Group.
 
 If you do not already have a Group that would be appropriate for the
 Unsubscribe Group for a mailing you're planning, you may want to create
-one and call it something like Miscellaneous Mail Unsubscribes. You
+one and call it something like "Miscellaneous Mail Unsubscribes". You
 could then add that Group to other future mailings to ensure that the
 people who have unsubscribed are excluded from those future mailings.
 
@@ -111,18 +111,19 @@ include (shown in green) and exclude (shown in red and struck through),
 by selecting them from the "Recipients" dropdown.
 Only groups of the type "Mailing List" will be available in the dropdown.
  ![Civimail Recipients include and exclude](../img/civimail-recipients-example.png)
+
 You can also refine your recipient list by including and excluding
 recipients of previous mailings. For instance, you may want to resend an
 email only to contacts that have been added to a Group since the last
-time you sent them email, to avoid sending the same email twice to some
+time you sent them an email, to avoid sending the same email twice to some
 people. Choose the original mailing in the "Exclude Past Recipients From".
 This will then send the message only to those members of the group who
 did not receive the original mailing.
 
-The estimated final number of recipients to displayed to the right of the
-"Recipients" field and highlighted in yellow.
+The estimated final number of recipients is displayed to the right of the
+Recipients field and highlighted in yellow.
 
-**The "wrench"**: The is located to the right of the Recipients
+**The "wrench"**: This is located to the right of the Recipients
 field and to the left of the estimate of recipient numbers.  Click on it
 to access **Edit Options**.
 
@@ -143,10 +144,7 @@ to access **Edit Options**.
   -   **Location Type:** By default emails created through CiviMail are sent to
   the address location(s) set as being for "Bulk Mailings" or, if no location type
   has that setting, to the address location set as "Is Primary". You can change
-  the Location Type and the Selection Method on the Edit Options screen.  
-  You can filter on the Location Type and only send the mailing to email
-  addresses with the specified location type or exclude the email
-  addresses with the specified location type.
+  the Location Type and the Selection Method on the Edit Options screen. You can filter on the Location Type and only send the mailing to email addresses with the specified location type or exclude the email addresses with the specified location type.
 
 **Unsubscribe Group** (for search-based mailings only): This should be
 chosen carefully. It may help to read through the example of a search-based
@@ -164,7 +162,7 @@ want to send a plain text email ignore the HTML section. Click on
 **Plain Text** to open that accordion and enter your message in the box.
 
 **Preview**: This panel is a footer to the **Define Mailing** screen. It
-is displayed whichever tab is selected. Within this panel are the options to:
+is displayed in whichever tab is selected. Within this panel are the options to:
   -  Preview the HTML or Plain Text version of the email. The HTML preview will show you all the formatting and converted tokens with your data. It will not include any attachments. There is no guarantee that all email clients will
       display the email exactly as it is shown in this preview, but it is
       useful to ensure things like font consistency, basic layout and
@@ -227,7 +225,7 @@ two options described next.
     address to also receive the replies sent by recipients.
     -   **Auto-respond to Replies:** This option allows you to send a
     specific automatic reply to anybody who replies to your mailing. You
-    need to set up an autoresponder ahead of time in **Mailings >>
+    need to set up an autoresponder ahead of time in **Mailings >
     Headers, Footers, and Automated Messages**.
 
 - **Opt-Out Message:** This message will be sent to a recipient who has
@@ -237,7 +235,7 @@ two options described next.
 - **Unsubscribe Message:** This message will be sent to a recipient who
   has unsubscribed from one of the mailing lists.
 
-  You can edit these three messages at **Mailings >> Headers, Footers, and Automated Messages**.
+  You can edit these three messages at **Mailings > Headers, Footers, and Automated Messages**.
 
 ### Tracking tab
 -  **Track Click-Throughs**: This option will keep track of how many
@@ -273,7 +271,7 @@ two options described next.
 
 !!! note "Changes introduced in CiviCRM version 5.27"
     Prior to CiviCRM version 5.27 Tracking options were turned on by default when creating a new mailing.
-    From CiviCRM 5.27 onwards there is now a new setting at **Administer -> CiviMail -> CiviMail Component Settings**
+    From CiviCRM 5.27 onwards there is now a new setting at **Administer > CiviMail > CiviMail Component Settings**
     which will allow you to choose whether the Click Through or the Open Tracking or both are turned on by default or not.
 
 Once you have defined all aspects of your mailing click on **Next >**
@@ -285,7 +283,7 @@ Once you have defined all aspects of your mailing click on **Next >**
 
 ### Review Panel
 
-Thie is a summary of all the details of your email. The blue words are
+This is a summary of all the details of your email. The blue words are
 actually buttons. Clicking on **~XX recipients** will show
 the contact names and email addresses the email will be sent to. Clicking
 on **HTML** or **Plain Text** will show the email to be sent including
@@ -316,8 +314,8 @@ To review key statistics about mailings sent in the past, go to
 mailing in the list, or searched for it using the filters above,
 click **Report** in the "action" column. This will display basic
 information on all of the tracked actions, including the number of
-opens, link click-throughs or the percentage of bounces (see "Managing
-bounces" below).
+opens, link click-throughs or the percentage of bounces (see *Managing
+bounces* below).
 
 ![](../img/CiviCRM_mailing_basicstatistics_1.png)
 
@@ -330,12 +328,12 @@ record of the mailing in the Activities tab of their profile.
 Now you might want to filter this information further. For example, of
 all the recipients who opened the mass email, you might only be
 interested in those who are between the ages of 21 and 30, or registered
-for a given event. Click "Advanced Search" next to a statistic to start
+for a given event. Click **Advanced Search** next to a statistic to start
 an advanced search with the email attributes pre-filled; e.g. if the
-link next to "Tracked Opens" is clicked, the search fields will be set
+link next to Tracked Opens is clicked, the search fields will be set
 to look for all contacts who opened the email, ready for you to add
 extra criteria. For more information on advanced searches, see
-"Searching".
+*Searching*.
 
 ![](../img/CiviCRM_mailing_advancedsearch.png)
 
@@ -345,14 +343,10 @@ Mass mailings can be found in one of three areas accessible via the
 **Mailings** menu:
 
 **Draft and Unscheduled Mailings**: As soon as you name your message
- in Step 1 and click Next, it is placed in this area. If you click
+ in Step 1 and click **Next**, it is placed in this area. If you click
  **Save & Continue Later** or simply abandon a message after some
  steps, you can continue working on it by clicking on the
  **Continue** link next to the message listed here.
-
-!!! note
-    Mailings started based on search results will not have the continue link 
-    listed
 
  You can also **Delete** draft messages here.
 
@@ -364,8 +358,7 @@ Mass mailings can be found in one of three areas accessible via the
  link next to the message.
 
  You can also start another mailing based on a previous mailing by
- clicking on the **Re-Use** link. (Note, the Re-Use link is not
- available for mailings based on search results.)
+ clicking on the **Copy** link.
 
  The **Archive** and **Delete** links are available under the
  **more** link. For mailings that are scheduled but not yet sent, a
@@ -380,5 +373,5 @@ Mass mailings can be found in one of three areas accessible via the
  here are not available to be included or excluded from the recipient
  list.
 
- It provides exactly the same functionality as Scheduled and Sent
- Mailings, including the possibility to view Reports and Re-Use.
+It provides exactly the same functionality as Scheduled and Sent
+ Mailings, including the possibility to view Reports and Copy.

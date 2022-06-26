@@ -5,7 +5,7 @@ doesn't work the way you expect it to.
 
 A good first step is to search the question & answer site, [Stack Exchange](https://civicrm.stackexchange.com/), for similar
 problems and follow advice given there. If your problem hasn't been
-addressed, posting a question about it probably the right thing to do.
+addressed, posting a question about it is probably the right thing to do.
 
 When posting your question, make sure you are
 detailed and specific about what software you are using (i.e. the
@@ -42,7 +42,7 @@ first.
     modules, besides the one you think the problem is in.
 -   Your server set up - servers can be configured in many different
     ways, and these settings can change the way CiviCRM operates.
-    Depending on your issue your server configuration may be causing you
+    Depending on your issue, your server configuration may be causing you
     issues.
 -   Using older or unsupported versions of CiviCRM, PHP, and MySQL -
     older and unsupported versions of software related to CiviCRM will
@@ -91,7 +91,7 @@ valuable, but be careful to not including sensitive information such as
 your database log-in.
 
 If the forum suggests you discovered a bug in CiviCRM, you can report it
-to the [CiviCRM issue tracker](http://issues.civicrm.org/jira/browse/CRM).
+to the [CiviCRM issue tracker](https://lab.civicrm.org/groups/dev/-/issues).
 
 ## Writing good bug reports
 

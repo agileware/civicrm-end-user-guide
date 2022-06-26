@@ -1,4 +1,3 @@
-
 # Exporting Your Contacts
 
 Exporting lets you share data with external applications by providing a
@@ -50,7 +49,7 @@ Here's how you can export contact information:
 
     -  You can choose to exclude contacts with "do not mail" privacy, no street address, or who are deceased.
 
-    -  You can add contacts from a(n additional) group to the export.
+    -  You can add contacts from an additional group to the export.
 
 5.  When you click **Continue**, if you elected to export the primary fields the export happens immediately, so skip to step 7. If you want to select your own fields or are using an saved field mapping click **Continue** and then go to step 6.
 

@@ -5,7 +5,7 @@ information on the many ways you can change the interface to suit your
 needs and make it easier for your users.
 
 How to customize your data itself &mdash; what you collect and track &mdash; is covered
-in *Organising Your Data* and in the *What you need to know*and *Set-up*
+in *Organising Your Data* and in the *What you need to know* and *Set-up*
 chapters in the sections on the different CiviCRM components (e.g.,
 learn about customizing event types in the *Events* section).
 
@@ -206,7 +206,7 @@ only the fields they need. This can speed up data entry considerably.
 3.  Check the Standalone Form or Directory box in the **Used For**
     field.
 4.  Use the **Pre-form Help** and **Post-form Help** fields to add any
-    text you'd like to display to hose doing data entry.
+    text you'd like to display to those doing data entry.
 5.  Click **Save**; this takes you to the Add Fields screen so you can
     choose which fields to put in your Profile.
 6.  From the **Field Name** dropdown menu, select the contact record

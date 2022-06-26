@@ -44,8 +44,7 @@ need to add the proper link tags using the Source icon in the editor.
 
 ### Required opt-out tokens for mass emails {:#opt-out}
 
-You are required to include a token for either opt-out OR
-unsubscribe, as well as the organizational (domain) address token in
+You are required to include a token for either [opt-out token, {action.optOutUrl}](common-workflows/tokens-and-mail-merge/#actionoptouturl) or [unsubscribe token, {action.unsubscribeUrl}](common-workflows/tokens-and-mail-merge/#actionunsubscribeurl), as well as the [organizational address token, {domain.address}](common-workflows/tokens-and-mail-merge/#domainaddress) in
 every CiviMail mailing. These can be placed directly in the body of your
 mailing body, or you can put them in the mailing header or footer. If
 your organization has developed a standard mailing footer, just include
@@ -59,6 +58,8 @@ You can also provide both options.
 Additionally, some tokens are only available for mass mailings, such as the
 token to provide a link to a message stored online.
 
+For more details, see [opt-out token](common-workflows/tokens-and-mail-merge/#actionoptouturl), [unsubscribe token](common-workflows/tokens-and-mail-merge/#actionunsubscribeurl) and [organizational (domain) address token](common-workflows/tokens-and-mail-merge/#domainaddress).
+
 ### Checksum tokens {:#checksum}
 
 A particularly useful token is the checksum. The checksum allows you to
@@ -71,58 +72,104 @@ data current by asking people to review and update their contact
 information.
 
 !!! caution
-    For security purposes, checksum links only last for seven days, starting from the time the email is sent. To change this duration, go to **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, Captcha, etc.)**.
+    For security purposes, checksum links only last for seven days, starting from the time the email is sent. To change this duration, go to **Administer > System Settings > Misc (Undelete, PDFs, Limits, Logging, etc.)**.
 
 !!! note
     Checksum URLs will not be tracked within CiviMail URL tracking as they are personalised to the recipient.
 
 Create a link in the CiviMail message that includes the checksum token `{contact.checksum}`. When people click on the special link, CiviCRM looks them up in the database and prefills any information on the contribution form or profile with any data that exists in their record.
 
-**Checksum for Contribution Pages**: To send people to a contribution page use this path where `IDNUMBER` is the ID of your contribution page:
+#### Checksum for Contribution Pages {:#checksum-contribution-pages}
+
+To send people to a contribution page use this path where `IDNUMBER` is the ID of your contribution page:
 
 * Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for Contribution Pages for Membership Renewals**: To send people to a contribution page for membership renewals use this path where `IDNUMBER` is the ID of your contribution page. This is typically used in Scheduled Reminders for membership renewals, where  the `membership.id` will be evaluated to the membership to be renewed:
+#### Checksum for Contribution Pages for Membership Renewals {:#checksum-membership-renewal}
+
+To send people to a contribution page for membership renewals use this path where `IDNUMBER` is the ID of your contribution page. This is typically used in Scheduled Reminders for membership renewals, where  the `membership.id` will be evaluated to the membership to be renewed:
 
 * Backdrop/Drupal: `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/contribute/transact?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/contribute/transact&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}&mid={membership.id}`  
 
-**Checksum for standard Profiles** (edit mode): To send people to a profile use this path where `IDNUMBER` is the ID of the Profile you want to send them to:
+#### Checksum for standard Profiles {:#checksum-profiles}
+
+To send people to a profile use this path where `IDNUMBER` is the ID of the Profile you want to send them to:
 
 * Drupal: `http://example.org/civicrm/profile/edit?reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/profile/edit&reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/profile/edit&reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/profile/edit?reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 * WordPress (without Clean URLs): `http://example.org/?civiwp=CiviCRM&q=civicrm/profile/edit&reset=1&gid=IDNUMBER&{contact.checksum}&id={contact.contact_id}`
 
-**Checksum for Event Registration Pages**: To send people to an event registration page use this path where `IDNUMBER` is the ID of your event:
+#### Checksum for Event Registration Pages {:#checksum-event-registration}
+
+To send people to an event registration page use this path where `IDNUMBER` is the ID of your event:
 
 * Drupal: `http://example.org/civicrm/event/register?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/event/register&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/event/register&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/event/register?reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLS): `http://example.org/?civiwp=CiviCRM&q=civicrm/event/register&reset=1&id=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for Petition Signature Pages**: To send people to sign a Petition, use this path where `IDNUMBER` is the ID of your petition:
+#### Checksum for Petition Signature Pages {:#checksum-petition-pages}
+
+To send people to sign a Petition, use this path where `IDNUMBER` is the ID of your petition:
 
 * Drupal: `http://example.org/civicrm/petition/sign?reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/petition/sign&reset=1&sid=IDNUMBER&{contact.checksum}&cid={contact.contact_id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/petition/sign&sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/petition/sign?sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLS): `http://example.org/?civiwp=CiviCRM&q=civicrm/petition/sign&sid=IDNUMBER&reset=1&{contact.checksum}&cid={contact.contact_id}`
 
-**Checksum for mail 'view in browser' links**: In CiviMail you can use a special link to allow contacts to view the email content in their browser, including the content personalised with tokens.
+#### Checksum for mail 'view in browser' links {:#checksum-mailing}
+
+In CiviMail you can use a special link to allow contacts to view the email content in their browser, including the content personalised with tokens.
 
 * Drupal: `http://example.org/civicrm/mailing/view?reset=1&id={mailing.key}&cid={contact.contact_id}&{contact.checksum}`
 * Joomla!: `http://example.org/index.php?option=com_civicrm&task=civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
-* WordPress (with Clean URLs): `http://example.org/civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
+* WordPress (with Clean URLs): `http://example.org/civicrm/mailing/view?id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
 * WordPress (without Clean URLS): `http://example.org/?civiwp=CiviCRM&q=civicrm/mailing/view&id={mailing.key}&{contact.checksum}&cid={contact.contact_id}`
 
 ## Custom tokens {:#custom}
 
 Developers can create custom tokens which can, for example, display the total amount of contributions from a contact. See the Developer Guide for more info about [custom tokens](https://docs.civicrm.org/dev/en/latest/framework/civimail/#tokens). 
+
+## Date tokens {:#date}
+
+Dates and times are presented in many ways -- using full words (e.g. "September" or "Sunday"), abbreviations ("Sept", "Mon"), numbers, different regional formats (e.g. `MM/DD/YYYY` vs `DD/MM/YYYY`), and so on.
+
+During system setup, the administrator may [configure date preferences](../initial-set-up/dates.md).  Tokens such as `{event.start_date}`, `{domain.now}`, and
+`{contact.created_date}` will be formatted automatically based on these preferences.
+
+Alternatively, you may customize the format of each token individually.  This requires the `|crmDate` filter (CiviCRM v5.43+).  Common ways to format a date include:
+
+* __Configured Formats__: CiviCRM includes ~7 configurable formats. On new deployments, the initial configuration is tuned to English (US) conventions, but
+  they are often adjusted depending on the organization's language and locale. Here are some examples of how the `{domain.now}` token could be formatted:
+
+    |Format Name|Example Token|Example Value (US English)|
+    |----|-----|-----|
+    | "Complete Date and Time" (*default*) | `{domain.now|crmDate:"Datetime"}` | September 18th, 2022 11:58 PM |
+    | "Complete Date" (*default*)          | `{domain.now|crmDate:"Full"}`     | September 19th, 2022 |
+    | "Short Date"             | `{domain.now|crmDate:"shortdate"}`| 09/18/2022 |
+    | "Month and Year"         | `{domain.now|crmDate:"Partial"}`  | September 19th, 2022 |
+    | "Time Only"              | `{domain.now|crmDate:"Time"}`     | 1:34 PM |
+    | "Year Only"              | `{domain.now|crmDate:"Year"}`     | 2022 |
+    | "Financial Batch"        | `{domain.now|crmDate:"FinancialBatch"}`| 09/19/2022 |
+
+* __Adhoc Formats__: The adhoc formatting codes allow full access to a range of details, including the
+  conventional month, day, and year (numbers) as well as day-of-week, day-of-year, week-of-year, timezone,
+  and so on. Here are some examples of how the `{domain.now}` token could be formatted:
+
+    |Example Token|Example Value|
+    |-----|-----|
+    |`{domain.now|crmDate:"%B %Y"}`| September 2022 |
+    |`{domain.now|crmDate:"%m/%Y"}`| 09/2022 |
+    |`{domain.now|crmDate:"%l:%M %P"}`| 1:34 PM |
+
+    For a full list of formatting codes, please see [PHP Manual: strftime()](https://www.php.net/manual/en/function.strftime.php).
 
 ## Smarty in mail templates {:#smarty}
 
@@ -205,168 +252,168 @@ This section documents the available action tokens, their purpose and the place(
 
 ### `{action.forward}`
 * Purpose: Provides a link for each recipient to forward the mailing to others.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > To forward this mailing to friends or colleagues, click `<a href="{action.forward}" >here</a>`.
 
 ### `{action.optOutUrl}`
 * Purpose: Provides an opt-out link for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You can also `<a href="{action.optOutUrl}" >opt-out of all future mailings from us</a>`.
 
 ### `{action.optOut}`
 * Purpose: Provides an opt-out email address for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To opt-out of all mailings from us, send mail to {action.optOut}
 
 ### `{action.reply}`
 * Purpose: Provides a reply-to email address for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To reply to this mailing, send mail to {action.reply}
 
 ### `{action.resubscribeUrl}`
 * Purpose: Provides a re-subscribe link for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You may `<a href="{action.resubscribeUrl}" >resubscribe to this mailing</a>` at any time.
 
 ### `{action.resubscribe}`
 * Purpose: Provides a re-subscribe email address for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To resubscribe to this mailing, send mail to {action.resubscribe}
 
 ### `{action.subscribe.gid}`
 * Purpose: Provides an email address to subscribe to a specific group.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > To subscribe to our Monthly Newsletter, send mail to {action.subscribe}.
 
 ### `{action.subscribeUrl.gid}`
 * Purpose: Provides a link to subscribe to a specific group (gid = CiviCRM ID of that group).
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > You can `<a href="{action.subscribeUrl.2}" >subscribe to our Monthly Newsletter</a>`.
 
 ### `{action.subscribeUrl}`
 * Purpose: Provides a link to view and subscribe to any public mailing lists.
-* Used in: Mailing Body, Header, Footer
+* Used in: Mailing Body, Header, Footer.
 * Example:
 
     > If you're interested, `<a href="{action.subscribeUrl}" >view all our mailing lists and sign up!</a>`.
 
 ### `{action.unsubscribeUrl}`
 * Purpose: Provides an unsubscribe link for each recipient.
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > You can `<a href="{action.unsubscribeUrl}" >unsubscribe from this mailing</a>` at any time.
 
 ### `{action.unsubscribe}`
 * Purpose: Provides an unsubscribe email address for each recipient
-* Used in: Mailing Body, Header, Footer,unsubscribe,resubscribe
+* Used in: Mailing Body, Header, Footer, Unsubscribe, Resubscribe.
 * Example:
 
     > To unsubscribe from this mailing, send mail to {action.unsubscribe}
 
 ### `{contact.custom_nn}`
 * Purpose: Displays content of custom contact field nn
-* Used in: Mailing Body, Subject, not sure about elsewhere
+* Used in: Mailing Body, Subject, not sure about elsewhere.
 * Example:
 
     > Thanks for indicating your interest in {contact.`custom_1`}. We will keep you updated on that topic.
 
 ### `{contribution.custom_nn}`
 * Purpose: Displays content of custom field nn for the contribution
-* Used in: Mailing Body, Subject, not sure about elsewhere
+* Used in: Mailing Body, Subject, not sure about elsewhere.
 * Example:
 
     > Thanks for indicating that if your first choice for where we should use your contribution is {contribution.`custom_42`}.|
 
 ### `{domain.address}`
 * Purpose: Displays postal address for your domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > Mailing Address:  {domain.address}
 
 ### `{domain.email}`
 * Purpose: Displays email address of domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
      > Or send a mail to {domain.email}.
 
 ### `{domain.name}`
 * Purpose: Displays your domain name.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > This mailing is from {domain.name}.
 
 ### `{domain.phone}`
 * Purpose: Displays phone number of domain.
-* Used in: Mailing Body or any message templates
+* Used in: Mailing Body or any message templates.
 * Example:
 
     > To contact us call {domain.phone}.
 
 ### `{mailing.group}`
 * Purpose: Displays a listing of the names of the groups to which a mailing has been sent.
-* Used in: Mailing Body, Header, Footer,resubscribe,unsubscribe or optout
+* Used in: Mailing Body, Header, Footer, Resubscribe, Unsubscribe or Optout.
 * Example:
 
     > This mailing has been sent to the members of {mailing.group}.
 
 ### `{mailing.name}`
 * Purpose: Displays name of mailing.
-* Used in: Mailing Body, Header, Footer,resubscribe,unsubscribe or optout
+* Used in: Mailing Body, Header, Footer, Resubscribe, Unsubscribe or Optout.
 * Example:
 
     > Name of this mailing is {mailing.name}.
 
 ### `{mailing.viewUrl}`
 * Purpose: Will create a 'View in Browser' url
-* Used in: Mailing Body 
+* Used in: Mailing Body. 
 * Example:
 
     > Can't see this email? `<a href="{mailing.viewUrl}"><strong>View in Browser</strong></a>`
 
 ### `{resubscribe.group}`
 * Purpose: Displays group name in re-subscribe messages.
-* Used in: Resubscribe Message
+* Used in: Resubscribe Message.
 * Example:
 
     > As requested, you have been resubscribed to {resubscribe.group}.
 
 ### `{subscribe.group}`
 * Purpose: Displays group name in subscription confirmation requests.
-* Used in: Subscription confirmation request
+* Used in: Subscription confirmation request.
 * Example:
 
     > You requested to be subscribed to the {subscribe.group}.
 
 ### `{unsubscribe.group}`
 * Purpose: Displays group name in unsubscribe confirmation messages.
-* Used in: Unsubscribe Message
+* Used in: Unsubscribe Message.
 * Example:
 
     > You have been unsubscribed from {unsubscribe.group}.
 
 ### `{welcome.group}`
 * Purpose: Displays the newly joined group name in a welcome messages.
-* Used in: Welcome message
+* Used in: Welcome Message.
 * Example:
 
     > Welcome to {welcome.group}.

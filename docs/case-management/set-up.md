@@ -9,9 +9,8 @@ configure your CiviCase installation.
 The CiviCase component is included in CiviCRM downloads, but it is NOT
 enabled by default. To enable the component:
 
-1.  Go to **Administer > System Settings > Enable Components**.
-2.  Select **CiviCase** in the left-hand box and click Enable (this
-    should move it to the right side).
+1.  Go to **Administer > System Settings > Components**.
+2.  Select **CiviCase**.
 3.  Click **Save**.
 
 You will now see **Cases** in the navigation menu.

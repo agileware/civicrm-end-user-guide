@@ -80,7 +80,7 @@ and remove their On Hold status. You can then re-use the mailing and
 simply add it to the EXCLUDE Recipients of These Mailing(s) list on the
 Select Recipients screen of the re-used mailing setup.
 
-In the Mailings area of **Search>Advanced search** you can search by
+In the Mailings area of **Search > Advanced search** you can search by
 bounce type.
 
 ![List of bounce types: AOL, Away, DNS, Host...](../img/advanced_search_mailing_bounce_type.png) 

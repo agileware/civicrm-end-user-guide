@@ -12,7 +12,7 @@ The two guides have some overlapping scope when it comes to setup and configurat
 
 ## Editing this guide
 
-* This guide is made with MkDocs and stored in a [GitHub repository](https://github.com/civicrm/civicrm-user-guide).
+* This guide is made with MkDocs and stored in a [GitLab repository](https://lab.civicrm.org/documentation/docs/user-en).
 * For simple editing instructions, see [contributing to this guide](the-civicrm-community/contributing-to-this-manual.md).
 * For a more in-depth editing tutorial, see our page in the Developer Guide on [writing documentation](https://docs.civicrm.org/dev/en/latest/documentation).
 

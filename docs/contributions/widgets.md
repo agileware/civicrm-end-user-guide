@@ -10,7 +10,7 @@ When you create a widget you are given the code to embed the widget on your webs
 
 1. Go to the configuration for your Contribution Page.
 
-    **Contribution > Manage Contribution Pages** to display a list of contribution pages, click on the **Configure** link for your Contribution Page to open it.
+    **Contributions > Manage Contribution Pages** to display a list of Contribution Pages, click on the **Configure** link for your Contribution Page to open it.
 
 1. From the tabs at the top of the page select **Widgets**.
 1. Click **Enable Widget** to get started.  
@@ -42,4 +42,4 @@ When you create a widget you are given the code to embed the widget on your webs
 
 ## Using widgets with WordPress
 
-WordPress has a plugin, [CiviCRM Contribution Page Widget](https://wordpress.org/plugins/civicrm-contribution-page-widget/), that lets you embed a widget from CiviCRM anywhere that a WorderPress "widget" can go.
+WordPress has a plugin, [CiviCRM Contribution Page Widget](https://wordpress.org/plugins/civicrm-contribution-page-widget/), that lets you embed a widget from CiviCRM anywhere that a WorderPress widget can go.

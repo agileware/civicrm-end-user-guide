@@ -165,7 +165,7 @@ For more information read [Profiles](../organising-your-data/profiles.md).
 
 ## Registration confirmation
 
-Once you registration page is configured you need to enter the text to
+Once your registration page is configured you need to enter the text to
 be displayed on the Confirmation page, Thank-you page, and emailed
 confirmations/receipts (if enabled).
 
@@ -220,7 +220,7 @@ waitlist.
 The waiting list works in the following way:
 
 -   As space becomes available on your event, for example, if one or
-    more people cancels, then On waitlist participants will be moved to
+    more people cancel, then On waitlist participants will be moved to
     'Pending from waitlist' status and will be sent an email with a link
     to complete their registration (including paying event fees - if
     any).
@@ -346,7 +346,7 @@ but not all of them are required.
 
 If you've enabled online registration for events on your site you need
 to review the Drupal user permissions to ensure that visitors are able
-to view event information and complete the registration forms. Navigate
+to view event information and complete the registration forms, navigate
 to **Administer > Users > Permissions**.
 
 Most organizations allow anonymous users (users who have not logged in)
@@ -399,5 +399,5 @@ event registration process. This can be done as follows:
     Event Permissions information later in this chapter for details.
 
 Once you are satisfied with the event information and registration form,
-it's time to display it on your website. Below are details of how to do
+it's time to display it on your website. The next section gives details of how to do
 this.

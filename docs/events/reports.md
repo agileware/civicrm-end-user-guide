@@ -47,7 +47,7 @@ as Smart Groups but this leads to a proliferation of groups.
 
 The solution is to set up reports for each event or a collection of
 events. The reports can be automatically assigned to a designated
-submenu (e.g. under Events > Reports) or made available as dashlets for
+submenu (e.g. under **Events > Reports**) or made available as dashlets for
 the main dashboard (this is described in a subsection below).
 
 Out of the box, CiviCRM comes with four reports designed to help you
@@ -56,14 +56,14 @@ useful. It will display both participant and individual data and all
 custom data. All of these can also be used as filters.
 
 **Attendee List** provides a list of event attendees and can be filtered
-to provide provide a list for just one event. You add one blank column
+to provide a list for just one event. You add one blank column
 on the left of the list and tone, two or three at the right of the list
 and so create an event sign up sheet.
 
 The **Event Income Detail** and **Event Income Summary** work
 together to show details of revenue from events. The summary report is
-suitable for showing total income for a series of events, all your
-conference in 2011, for example. Clicking on one of those events will
+suitable for showing total income for a series of events, such as all of your
+conferences in 2011, for example. Clicking on one of those events will
 give you more details about the event breakdown of the income per role
 and per status. It can also be displayed in graphical form as Pie Chart
 or Bar Chart.

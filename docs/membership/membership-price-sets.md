@@ -5,7 +5,7 @@ your contacts can:
 
 -   Sign up for multiple membership terms at the same time.
 -   Sign up for more than one membership in a single transaction (e.g.
-    National and local memberships).
+    national and local memberships).
 -   Select non-membership options such as information booklets when they
     sign up for a membership.
 

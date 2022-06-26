@@ -18,7 +18,7 @@ type of event is this?
 
 -   What different roles will participants have at the event?
 
--   What kinds of information you want to collect about participants, e.g.,
+-   What kinds of information do you want to collect about participants, e.g.,
 food and lodging preferences?
 
 -   Will you allow online registrations to the event?

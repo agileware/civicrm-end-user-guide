@@ -7,7 +7,7 @@ grants with CiviGrant.
 
 Go to **Other > Grants > Dashboard** to access the CiviGrant
 Dashboard. Here you will see a summary of the grants registered in your
-CiviCRM database, and a table of recent grant recipients.
+CiviCRM database and a table of recent grant recipients.
 
 ## Viewing grants
 
@@ -29,9 +29,9 @@ To add or edit grant recipients:
 
 1.  Go to **Other > Grants > New Grant**.
 2.  Either select an already existing contact or create a new contact to
-    add the grant to.
+    whom the grant will be given.
 3.  Complete the details of the grant. Fill in as many details as
-    possible, including any custom data that has been set up; but you
+    possible, including any custom data that has been set up, but you
     can also edit and update the grant details at a later stage.
 4.  Click **Save**.
 

@@ -21,7 +21,7 @@ region specific needs. The development team is constantly developing new
 tools in this area too. The Localization screen (shown in the following
 screenshot) lets an administrator select the right locale for the
 language and country of the organization using CiviCRM. Go to:
-Administer > Configure > Global Settings > Localization.
+**Administer > Configure > Global Settings > Localization**.
 
 ![2](../img/CiviCRM_update-CiviCore-2-en.png "2")
 
@@ -33,8 +33,7 @@ the community to translate the text displayed.
 A number of languages have already been provided to a greater or lesser
 extent. Some have more than 90% of the text translated, others only 5%,
 and a number of languages have not been translated at all. Please check
-the online translation tool [Transifex
-https://www.transifex.com/civicrm/civicrm/dashboard/) to find out about your language of interest. Download and install it on
+the online translation tool [Transifex](https://www.transifex.com/civicrm/civicrm/dashboard/) to find out about your language of interest. Download and install it on
 your CiviCRM installation to find out how well it will suit your needs.
 
 You may find that although the translation is correct, you would want to
@@ -45,7 +44,7 @@ take part in the translation of your language.
 
 In some cases, you might want to properly map the language you have added
 to CiviCRM to a more localized version. A common example is that of
-Canadian French being much different then that of French from France.
+Canadian French being much different than that of French from France.
 
 To use fr_CA instead of fr_FR (for France French), which is the default
 you can modify your civicrm.settings.php file with the following code.

@@ -17,8 +17,8 @@ limits they may have on how many emails you can send per day. A
 misconfigured mail server is a liability and if you don't know what you
 are doing you could easily end up on a spam black list. Getting off a
 spam black list is much harder that getting on it. For more information
-about configuring your mail server, see the "Email system configuration"
-chapter in the Initial Setup section.
+about configuring your mail server, see the *Email system configuration*
+chapter in the *Initial set up* section.
 
 ## Scenario: managing email lists
 

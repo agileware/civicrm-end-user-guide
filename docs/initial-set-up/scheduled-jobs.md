@@ -17,7 +17,7 @@ An important characteristic of scheduled jobs is that they run *automatically*. 
         
 * Cron can be configured in different ways.
         
-    * You system administrator will typically configure cron to run on a regular interval with a frequency between 5 and 60 minutes. Each time cron "runs", cron tells CiviCRM to execute whatever scheduled jobs CiviCRM deems necessary at that time. This means that the granularity available to configure specific scheduled jobs is limited by the cron job frequency. For example, if cron only runs once every day, then it will not be possible for a scheduled job to run every hour. So it's best to have your system administrator configure cron to run frequently enough to meet your needs.
+    * Your system administrator will typically configure cron to run on a regular interval with a frequency between 5 and 60 minutes. Each time cron "runs", cron tells CiviCRM to execute whatever scheduled jobs CiviCRM deems necessary at that time. This means that the granularity available to configure specific scheduled jobs is limited by the cron job frequency. For example, if cron only runs once every day, then it will not be possible for a scheduled job to run every hour. So it's best to have your system administrator configure cron to run frequently enough to meet your needs.
     
     * Alternatively, system administrators can configure _separate_ cron jobs to run specific CiviCRM scheduled jobs, although this type of setup is less common.
 
@@ -206,10 +206,10 @@ This job purges aged [smart group](../organising-your-data/smart-groups.md) cach
 
 ### Job.group_rebuild {:#job_group_rebuild}
 
-Rebuilds the [smart group](../organising-your-data/smart-groups.md) cache. This builds the cache for any smart groups for whom it is empty. If you do not run this it will build groups on demand. Building on demand is more efficient except for 2 operations; viewing the count on manage groups page for all groups and being able to expand the smart groups tab on an individual contact record. If these are important to you then enable this job but expect it to have performance impacts unless you have only a few small smart groups. Note that  you can disable the ability to expand the smart group tab on the contact record and this is recommended for medium sized site (e.g 50k contacts) and larger.
+Rebuilds the [smart group](../organising-your-data/smart-groups.md) cache. This builds the cache for any smart groups for whom it is empty. If you do not run this it will build groups on demand. Building on demand is more efficient except for 2 operations; viewing the count on manage groups page for all groups and being able to expand the smart groups tab on an individual contact record. If these are important to you then enable this job but expect it to have performance impacts unless you have only a few small smart groups.
 
 !!! note 
-    You can [disable the ability to expand the smart group tab on the contact record](customizing-the-user-interface/#changing-display-preferences) and this is recommended for medium sized site (e.g 50k contacts) and larger.
+    You can [disable the ability to expand the smart group tab on the contact record](../customizing-the-user-interface/#changing-display-preferences) and this is recommended for medium sized site (e.g 50k contacts) and larger.
 
 * Name of scheduled job created by default: Rebuild Smart Group Cache
 * Recommended frequency: never
@@ -241,7 +241,7 @@ Generates and sends a copy of the specified report instance to the email address
     * `gid` group id
     * `mode` (optional) helps decide how to behave when there are conflicts.
         * `safe` (default) skips the merge if there are any un-resolved conflicts
-        * `aggresive` does a force merge 
+        * `aggressive` does a force merge 
     * `auto_flip` (optional)
         `1` let the api decide which contact to retain and which to delete?
 

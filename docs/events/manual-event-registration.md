@@ -92,7 +92,7 @@ If you are registering a participant manually, you can enter a payment
 amount less than the event fees, then make one or more additional
 payments later on until the fee is paid in full.
 
-During the manual registration you enter the the amount actually being
+During the manual registration you enter the amount actually being
 paid at this time in the **Amount** field in the Payment Information
 section and set the **Participant Status** field to Partially paid.
 
@@ -129,7 +129,7 @@ full.
 
 Note that on the event registration and the linked contribution the
 displayed amount will always be the full event fee. You can see how much
-is owing by choosing to **View** the event registration. Selecting **›› view payments** (under the **Total Paid** amount) will display a
+is owed by choosing to **View** the event registration. Selecting **›› view payments** (under the **Total Paid** amount) will display a
 summary of each payment.
 
 ![screenshot](../img/EventPaymentView.png)
@@ -142,7 +142,7 @@ Alternatively, the payments can be seen by clicking the arrow next to the Contri
 
 CiviEvent offers the time-saving feature of registering multiple
 contacts for an event at one time. Returning to the
-youth leadership workshop scenario, Arts in Action anticipate a high
+youth leadership workshop scenario, Arts in Action anticipates a high
 rate of attendance from participants at the previous workshop. The staff
 perform a search to find previous participants and mass register them,
 setting each individual's participant status to **Pending**. The list of

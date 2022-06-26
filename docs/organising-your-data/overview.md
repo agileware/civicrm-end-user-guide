@@ -85,8 +85,8 @@ take with you. Just as you wouldn't pack up dusty picture frames and
 dirty dishes because that would make your nice new clean place as dirty
 as your old place, you'll want to clean up your data before moving it
 into CiviCRM so that you're starting off with as clean and useful a
-database as possible. You can read more about this in chapter "Mapping
-your data into CiviCRM".
+database as possible. You can read more about this in the *Mapping
+your data* section of this chapter.
 
 Also, in planning for a move to CiviCRM, prepare to spend a good amount
 of time looking at your old data; standardising how different elements

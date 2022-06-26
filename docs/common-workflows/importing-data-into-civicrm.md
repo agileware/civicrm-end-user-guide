@@ -51,9 +51,7 @@ There are two ways to import data:
 If you do not have a clear understanding of your existing data and how
 it will map to CiviCRM fields, you will experience frustrations and
 problems when you try to import the data. Please read about each type of
-data in other sections of this CiviCRM Manual and visit the CiviCRM
-online documentation for more information:
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Importing+Data](http://wiki.civicrm.org/confluence/display/CRMDOC/Importing+Data)
+data in other sections of this CiviCRM Manual.
 
 The following rules and recommendations will help you to import data
 with minimal problems:
@@ -132,8 +130,7 @@ with minimal problems:
     select the same date format on the Choose Data Source screen of the
     import wizard.
 -   Make sure any name prefixes and suffixes you use have been set up in
-    the administration interface (go to: Administer > Option
-    Lists****in the navigation menu).
+    the administration interface (go to: **Administer > Option Lists** in the navigation menu).
 -   If you plan to do additional imports of related data that's
     associated with your contact data, e.g. contribution data, event
     participation data, membership data, you can make things easier by
@@ -312,7 +309,7 @@ a separate CSV file.
 
 CiviCRM has specific tools for importing related contact data and a set
 of specific import tools for contributions, memberships, event
-participation etc. (and you should see specific chapters for details of
+participation etc (and you should see specific chapters for details of
 how to use these tools). To import relationships, you should run
 multiple contact imports.
 
@@ -406,7 +403,7 @@ include at least the following fields:
 -   Financial Type
 -   Total Amount
 
-You can use also use **update existing contributions** to import new or
+You can also use **update existing contributions** to import new or
 change existing data in other core or custom contribution fields. When
 doing this you will still need to include an ID to match to an existing
 contribution and the Financial Type and Total Amount fields in you CSV
@@ -448,7 +445,7 @@ are no different from the values already in your database.
 In each import session you can either insert new registrations or update
 existing participant records.
 
-If you **insert new registrations**you need to decide whether to
+If you **insert new registrations** you need to decide whether to
 restrict registrations for each event to just one per person (set **On
 duplicate entries** to **Skip)** or to allow duplicate registrations for
 the same event from a given contact (set **On duplicate entries** to

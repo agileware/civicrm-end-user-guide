@@ -85,8 +85,8 @@ CiviMail.
 
 You also should use CiviMail whenever you want to capture statistics
 about the success of your mailing, including bounce statistics and
-click-throughs. For more information on this, see **Reporting and
-Analysis**. 
+click-throughs. For more information on this, see the *Reports and
+analysis* chapter. 
 
 CiviMail also enables people to sign up for your mailing lists on your
 website, and automatically keeps track of their unsubscription or
@@ -146,7 +146,7 @@ where people can sign up for your mailing list on your website. It
 requires that you allow recipients to unsubscribe from any mailing list
 *and* opt out of ever getting email from you, and CiviCRM will
 automatically keep track of these requests. For more information, see
-the **Set-Up** chapter. 
+the *Set-Up* chapter. 
 
 ### Autofiling external emails in CiviCRM
 
@@ -156,8 +156,8 @@ special email address that you include in the BCC field of an email you
 are sending. This will be read by the database and converted into an
 activity. This activity gets filed in the record of the contact that
 matches the email address. If that email address does not exist in your
-database a new contact record will be created. See the **Email System
-Configuration** chapter of the **Intial Setup** section for details.
+database a new contact record will be created. See the *Email System
+Configuration* chapter of the *Intial set up* section for details.
 
 ## Other Considerations
 
@@ -225,3 +225,4 @@ The success of your email will depend in part on your design and layout, as much
 * Use inline CSS. This is admittedly one of the more frustrating aspects of email design. Many of the more commonly used email clients still do not support externally referenced CSS styles or those defined in style blocks. To ensure your styles are recognized, insert them inline with the element tags.
 * Do some research. Because of discrepancies between email applications, you may find certain tags or CSS styles render in different ways from one environment to the next. You may need to do some research to understand why a certain style is ignored in various contexts.
 * Understand and appreciate the interdependency between design and content. Too often organizations either spend all their effort on design, and neglect the content, or focus entirely on the content to the neglect of presentation. The two are closely interrelated, and failure to invest time into either aspect may compromise your message.
+

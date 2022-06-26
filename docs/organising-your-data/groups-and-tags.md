@@ -79,7 +79,7 @@ It is possible to create additional group types to reflect your specific
 needs. This is particularly useful if your organisation has hundreds of
 groups as group type can be used as a filter on the Manage Groups
 screen. To create additional group types go to **Administer>System
-Settings>Option Groups**and select Group Type.
+Settings>Option Groups** and select Group Type.
 
 ### Visibility
 
@@ -323,7 +323,7 @@ regular tags, but they differ from regular tags in a few key ways:
     section of the Advanced Search
 
 Tag sets are created by going to: **Contacts > Manage Tags
-(Categories)**in the navigation menu and clicking the Add Tag Set
+(Categories)** in the navigation menu and clicking the Add Tag Set
 button. Give the tag set a name, a description, and indicate whether the
 tag set will apply to contacts, activities, or cases.
 
@@ -354,7 +354,7 @@ field in a box. Clicking on the X will untag the record that you are
 editing (contact, case or activity).
 
 Tags created within a tag set will automatically appear in the normal
-**Contacts > Manage Tags (Categories)**list and can be viewed and
+**Contacts > Manage Tags (Categories)** list and can be viewed and
 edited from there. However, tags created within a tag set will only be
 available within that particular tag set.
 

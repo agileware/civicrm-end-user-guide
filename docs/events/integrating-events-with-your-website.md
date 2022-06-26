@@ -6,7 +6,7 @@ Below are a few suggestions of how you can integrate your events into
 your website.
 
 To get the link of the registration page of your event navigate
-to **Events > Manage Events** and then click **Event Links. **You will
+to **Events > Manage Events** and then click **Event Links**. You will
 see a few different links in that menu. The two most useful are the link
 to the event info page and the event registration page (the registration
 page is also linked from the info page). Copy the URL for the event

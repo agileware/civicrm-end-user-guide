@@ -1,29 +1,42 @@
-# Searching
+# Introduction
 
 This chapter covers different ways to find information you've stored in
-CiviCRM. Two of the techniques in this chapter - finding contacts and
-the "search-action" workflow, described in the second bullet below - are
-core functions in CiviCRM, so most, if not all, users will find this
-chapter helpful.
+CiviCRM. 
 
 We will start off with some simple searches and then move on to more
 advanced techniques. CiviCRM beginners should be familiar with
-Quicksearch, Advanced Search and the component searches. More advanced
-users should also look at reports, custom searches and Search Builder.
+Quick search, Advanced Search and the component searches. More advanced
+users should also look at [Search Kit](../searching/searchkit/what-is-searchkit.md) reports, custom searches and Search Builder.
+
+## Overview
+In this introduction we will discuss at various level of detail:
+
+* **Quick search** - how to quickly search for contacts.
+* **Advanced search** - how to really dig deep for contacts with lots of search possibilities.
+* **Search Builder** - how to build your own searches (though if you are using CiviCRM version 5.20 or later you should really look into [Search Kit](../searching/searchkit/what-is-searchkit.md) too).
+* **Full-text search** - how to search for something in all the available text fields in the database.
+* **Component search** - on searching within specific component entities like events, memberships, cases, contributions etc.
+* **Custom searches** - using the available custom made searches that can be from CiviCRM core or from one or more of your specific extensions.
+* **Search actions** - what you can do with the results of your search (or sometimes report).
+* **The contact summary pop** - what you can see and change in the popup when hovering over a contact icon in your search results.
+* **The wildcard** - using "%" in your searches as a wildcard.
+* **Case sensitivity** - what you can do with upper or lower case in your search.
+* **Default number of rows** - how many results are returned in your searches and how you can change that number.
+* **Search Kit** - a brief link to the [Search Kit](../searching/searchkit/what-is-searchkit.md) functionality.
+
+## Searching and reporting
 
 There are three main reasons to search:
 
 -   To find a specific contact: the Quick search box can find contacts
-    by name, email address or a variety of other characteristics.
+    by name, email address or a variety of other characteristics
 -   To perform an action on a contact or contacts that meet certain
-    criteria: a common workflow in CiviCRM, called a search-action, is
-    to find contacts that meet certain criteria and then perform an
-    action on them. For example, you might want to find all contacts in
+    criteria. For example, you might want to find all contacts in
     the advisory group in order to invite them to a meeting, find all
     those whose memberships have recently expired to send a renewal
     reminder, or find all contacts aged under 25 in a specific location
-    to send them an email about an upcoming event nearby.
--   For ad-hoc reporting.
+    to send them an email about an upcoming event nearby
+-   For ad-hoc reporting
 
 As a form of ad-hoc reporting, searching is often useful but does have
 limitations. For example, you can't group results by particular
@@ -32,11 +45,11 @@ advanced reporting, see the [CiviReport](../reporting/what-is-civireport.md) sec
 
 ## Quick search
 
-![Quicksearch](../img/the-user-interface/searching/quicksearch.png)
+![Quicksearch](../img/the-user-interface/searching/Quick search.png)
 
-The easiest way to find a specific contact is to use the Quick search box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. The criteria can be modified by going to **Administer > Customize Data and Screens > Search Preferences**. On the *Search Preferences* page, options are available to customize CiviCRM's QuickSearch to hide contact's basic fields that are not normally used in a quicksearch and to add custom field options.
+The easiest way to find a specific contact is to use the Quick search box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. The criteria can be modified by going to **Administer > Customize Data and Screens > Search Preferences**. On the *Search Preferences* page, options are available to customize CiviCRM's Quick search to hide contacts' basic fields that are not normally used in a Quick search and to add custom field options.
 
-Once you click in the Quicksearch box, you can start typing immediately to use the default Name/Email search or you can click again to expose several other criteria in a dropdown selection list. Contacts that match the phrase you enter will appear in a dropdown list below the box. For example, if you are searching with Name/Email and you have left
+Once you click in the Quick search box, you can start typing immediately to use the default Name/Email search or you can click again to expose several other criteria in a dropdown selection list. Contacts that match the phrase you enter will appear in a dropdown list below the box. For example, if you are searching with Name/Email and you have left
 automatic wildcard enabled via *Search Preferences*, entering "peter" will find:
 
 -   people who's first or last name is **Peter**
@@ -47,7 +60,7 @@ automatic wildcard enabled via *Search Preferences*, entering "peter" will find:
 -   organisations with Peter in their name, e.g. Al**peter**
     Community Centre.
 
-You often don't need to type the full name of the person - just the first few letters.  However, if you don't see the contact you are looking for, either refine the search by typing more characters, or hit the 'Return' key to convert your search into an Advanced search.
+You often don't need to type the full name of the person - just the first few letters.  However, if you don't see the contact you are looking for, either refine the search by typing more characters, or hit the Return key to convert your search into an Advanced Search.
 
 Quick search displays up to 10 results (by default). You can change the number of results returned from the *Search Preferences* screen described above by changing the *Autocomplete Results* setting.
 
@@ -84,7 +97,7 @@ can search on, such as address data, notes and information from
 components such as Contributions or Events. Each group of criteria is
 shown as a blue bar (known as an "accordion" because it expands when you
 click on it). For example, if you want to search for all people in your
-database from 16 to 18 years old, click on the Demographics accordion.
+database from 16 to 18 years old, click on the **Demographics** accordion.
 When it opens, you can specify the birth date range you are interested
 in.
 
@@ -131,9 +144,9 @@ provides a powerful method of viewing and updating a specific set of
 fields across a batch of contact records.
 
 ### Search settings
-The Search Operator determines whether your criteria are combined with AND statements, or combined with OR statements. For example, you may want to find all individuals who are in the Volunteers group AND who have a Volunteer Training activity recorded for them. In this case use the AND operator. If you need to find everyone who is in the Volunteers group OR has a Volunteer Training activity recorded, use the OR operator.
+The **Search Operator** determines whether your criteria are combined with AND statements, or combined with OR statements. For example, you may want to find all individuals who are in the Volunteers group AND who have a Volunteer Training activity recorded for them. In this case use the AND operator. If you need to find everyone who is in the Volunteers group OR has a Volunteer Training activity recorded, use the OR operator.
 
-The Search in Trash allows you to search contacts that have been deleted but not deleted permanently. When a contact is deleted, the contact and all related data are moved to trash. Only users with the relevant permission will be able to search in trash and will be able to restore the contact from trash.
+The **Search in Trash** allows you to search contacts that have been deleted but not deleted permanently. When a contact is deleted, the contact and all related data are moved to trash. Only users with the relevant permission will be able to search in trash and will be able to restore the contact from trash.
 
 ![Screen shot of Search in Trash](../img/the-user-interface/searching/user-interface-search-in-trash.png)
 
@@ -160,7 +173,7 @@ For example you may want to use a relative date range search to find:
 
 -   Contacts who have contributed in the last 7 days (Relative date
     range - "From 1 Week ago")
--   This (financial) years registered Event Participants (Relative date
+-   This (financial) year's registered Event Participants (Relative date
     range - "This Year")
 -   Contacts who are a certain age
 
@@ -186,10 +199,16 @@ can search for contacts whose Preferred Communication Method is both
 Email *AND* SMS.
 
 With fields that allow you to select more than one value from a dropdown list,
-the values are always combined with "OR". For example, you could find contacts
+the values are always combined with OR. For example, you could find contacts
 that live in Alaska or in Arizona.
 
-![Screen shot of combining search criteria](../img/the-user-interface/searching/user-interface-searching-states.png)
+![advanced search address selected](../img/the-user-interface/searching/user-interface-advanced-search-address-selected.png)
+
+If you expand one of the dropdown sections, and make selections, as shown above,  a cross appears at the right end of the header, indicating that this panel is being used in the search. If you no longer wish to use Address Fields as a part of the search, it is not enough just to close the panel. You must click the cross on the header.
+
+#### Limitations of Advanced Search
+
+The Advanced Search is an effective way to search for many things in CiviCRM. However, there is an issue with searches where Contacts are the client in more than one Case, and they are engaged in the same Activity Type in each of these Cases. The Advanced Search is currently not able to filter these Activities correctly by Case Type. This issue is expected to be resolved in the near future. 
 
 ## Search Builder
 
@@ -254,7 +273,7 @@ words that you remember from the description.
 
 Most CiviCRM components offer a search on the data they maintain, such
 as **Find contributions**, **Find members**, etc. These forms work in a similar
-way to **Advanced search** but return rows of the main objects associated
+way to **Advanced Search** but return rows of the main objects associated
 with the components, instead of contacts. **Find Members** returns
 memberships, **Find Participants** shows event registrations, **Find
 Contributions** returns contributions and so on.
@@ -354,10 +373,6 @@ given date range. You may also limit results to show credit card
 payments only or payees only. See also event reports for more useful
 event search options.
 
-### Activity Search
-
-Find activities using any or all of the activity-related criteria. This
-is also possible in Advanced Search by using Display results as.
 
 ### Price Set Details for Event Participants
 
@@ -466,3 +481,13 @@ case-sensitive. For example, if you search for 'brooklyn', the search
 will return strings with capitalised letters if the string exists, e.g.
 'Brooklyn' or 'BROOKLYN'. Entering "mi%el" in lowercase will also find
 contacts with an upper case 'M' in their name.
+
+## Default number of rows to be returned.
+
+In CiviCRM Advanced Searches and in CiviCRM reports the number of rows displayed on the screen has by default been 50 previously.
+As of CiviCRM version 5.39 System Administrators can under **Administer** > **Customize Data and Screens** > **Search Preferences** 
+change the number of rows to be outputted on the screen. You should not set too high a number as the higher the number, the slower the screen will be 
+to load.
+
+## Search Kit
+As of CiviCRM version 5.29 [Search Kit](../searching/searchkit/what-is-searchkit.md) is new functionality with lots of exciting possibilities for searching, reporting and potentially much more. The development continues, the functionality will evolve over time and so will the documentation. The section [Search Kit](../searching/searchkit/what-is-searchkit.md) covers that current state.

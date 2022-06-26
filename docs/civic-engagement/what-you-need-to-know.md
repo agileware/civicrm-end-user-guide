@@ -10,7 +10,7 @@ questions that will help you to model your universe of constituents
 using CiviEngage. 
 
 CiviEngage enhances the use of CiviCampaign, and they are designed to be
-used together. Read more about CiviCampaign in the Campaign section. 
+used together. Read more about CiviCampaign in the *Campaign* chapter. 
 
 ## Key Concepts
 
@@ -34,7 +34,7 @@ community organising activities. For example, you can:
     member or be easily mobilised for direct actions.
 
 To learn more about CiviCampaign, refer to the [Campaign section](../campaign/what-is-civicampaign.md). There
-are also separate sections for Survey and Petition which should be read
+are also separate *Survey* and *Petition* chapters which should be read
 in conjunction with this section.
 
 ### Custom Fields and Profiles
@@ -42,17 +42,16 @@ in conjunction with this section.
 CiviEngage packages custom fields sets that help you to organise
 information about your constituents for civic engagement and community
 organising work. In this way, CiviEngage helps you to take advantage of
-features such as walk lists and phone bank lists for civic engagement
-work, and surveys to collect responses form your constituents. See the
-chapter Creating Custom Fields in the section Your Data and CiviCRM for
+features such as walk lists, phone bank lists, and surveys to collect responses form your constituents. See the
+*Creating Custom Fields* section in the *Organizing your data* chapter for
 more details about how to use custom fields sets and custom profiles.
 
 ### Cleaning your Address Data
 
 Cleaning your address data means standardising addresses to conform to
-the conventions defined by your postal address standards. Standardising
+your postal address conventions. Standardising
 how addresses are entered into CiviCRM will allow for more accurate
-search results when searching by address and is essential to generating
+results when searching by address and is essential to generating
 accurate walk list reports. CiviCRM will parse addresses based on
 address standards.
 
@@ -95,7 +94,7 @@ regular Groups for targeting during your campaign:
     or phone bank list.
 
 Learn more about working with Smart Groups and regular Groups in the
-Tags and Groups chapter of this book.
+*Tags and Groups* section of the *Organizing your data* chapter of this book.
 
 ### Working with Voter History
 

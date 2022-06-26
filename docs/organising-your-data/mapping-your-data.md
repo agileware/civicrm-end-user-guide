@@ -9,8 +9,8 @@ example, you may not be able to control or report on data the way you
 expect.
 
 Everyone thinks about data differently, based on experience with another
-CRM or no CRM at all. For example, "Donation", "Opportunity", and
-"Contribution" all refer to money given to your organization. CiviCRM
+CRM or no CRM at all. For example, Donation, Opportunity, and
+Contribution all refer to money given to your organization. CiviCRM
 was designed to be flexible and adaptable, so you should have no problem
 finding the proper place for every piece of information relevant to your
 organization.
@@ -67,7 +67,7 @@ about constituent allergies (for individuals) or service area
 When mapping data into CiviCRM, decide if the information pertains to an
 individual, organization, or household. Additional information like
 "service area" only makes sense for Organizations. To find out how you
-can create custom fields, see the [Creating Custom Fields](creating-custom-fields.md).
+can create custom fields, see the [Creating Custom Fields](creating-custom-fields.md) section.
 
 ## Relationships between constituents
 
@@ -76,8 +76,8 @@ records connect to each other.
 
 You or your colleagues probably know more about your constituents than
 what has been written down. You may not have previously collected that
-information because there was no space in your "flat" spreadsheet or you
-may have collected it as a "mental note" about a given person or
+information because there was no space in your flat spreadsheet or you
+may have collected it as a mental note about a given person or
 organization. The name of their family members, place of employment,
 and relationship to other constituents in your database can all be
 captured with a Relationship. 
@@ -99,7 +99,7 @@ organizations know who the letter should address. For example, you want
 to address the parent and not the child.
 
 To read more about configuring and using relationships, please see the
-the *Relationships* chapter in *Organising Your Data*. 
+the *Relationships* section in *Organising Your Data*. 
 
 ## Activities
 
@@ -120,7 +120,7 @@ whether your organization needs different activity types in addition to
 those provide, such as training, review, exam, support etc.
 
 To read more about configuring and using activities, please see the
-*Activites* chapter in *Organising Your Data*.
+*Activites* section in *Organising Your Data*.
 
 ## Webinars, events, performances, and meetings (CiviEvents)
 
@@ -139,7 +139,7 @@ how many people have participated in a similar series of events or
 whether someone prefers one kind of event over another.
 
 To read more about configuring and using events , please see the
-*Events* section later in this book.
+*Events* chapter later in this book.
 
 ## Memberships
 
@@ -182,7 +182,7 @@ years a given constituent has been a member based on the
 "Membership since" date.
 
 To read more about configuring and managing memberships, please see the
-*Memberships* section later in this book.  
+*Memberships* chapter later in this book.  
 
 ## Contributions
 
@@ -205,7 +205,7 @@ contributions. Large contributions should be preserved, but the fact
 that someone donated 5 dollars 10 years ago may no longer be relevant. 
 
 To read more about configuring and using relationships, please see the
-*Contributions* section later in this book. 
+*Contributions* chapter later in this book. 
 
 ## Campaigns
 
@@ -274,7 +274,7 @@ seeing information history.
 
 CiviCRM allows you to pull together sets of fields for different
 purposes, and help you reduce the amount of time staff spends on
-administrative tasks. These sets of fields are known as [profiles](profiles.md).
+administrative tasks. These sets of fields are known as [Profiles](profiles.md).
 
 Profiles are about how your data is edited or displayed to your staff or
 other groups of users, not how your data is stored.

@@ -269,8 +269,8 @@ automated web-crawling spiders (robots) from completing the form. It is
 highly recommended that you include it.
 
 You must set up a free reCAPTCHA account and enter some configuration
-information in CiviCRM to use this feature. Go to **Administer > System
-Settings > Undelete, Logging and ReCAPTCHA** to configure your account;
+information in CiviCRM to use this feature. Go to **Administer > Customize
+Data and Screens > reCAPTCHA Settings** to configure your account;
 instructions for signing up are included on that page.
 
 #### Drupal user account registration option
@@ -399,8 +399,8 @@ settings, not all of them are necessary to consider for each use.
 7.  **Field Pre Help** and **Field Post Help**: These fields allow you
     to write text that appears in the user interface to guide people in
     filling out forms. Field pre help appears inline. Field post help
-    will create a small speech bubble which when clicked appear in a
-    yello
+    will create a small speech bubble which when clicked appear in 
+    yellow
 8.  **Order**: You can use this field to control the order in which
     fields display in the Profile. Lower numbers are displayed ahead of
     higher numbers.
@@ -623,6 +623,7 @@ To include a profile form during the user registration process:
 1.  Create a profile that is used for User Registration:
 
     ![addprofile_usedfor_reg](../img/CiviCRM-CapturingExposing-buildprofile-addprofile_usedfor_reg-en.png "addprofile_usedfor_reg")
+    
 2.  Add the fields you want people to fill out as they register, using
     the same process described above. Make sure the field visibility is
     set to Public User Pages.

@@ -23,7 +23,7 @@ CiviEngage provides:
     history of interaction.
 
 CiviEngage enhances CiviCampaign, which you can read more about in the
-Campaign section.
+*Campaign* chapter.
 
 ## Scenario: Direct action
 
@@ -52,7 +52,7 @@ attend, they reached a wrong number, or had to leave a message.
 An organiser contacted each participant several times to ensure that
 they would attend the direct action, and recorded the responses each
 time. Most organisers reached out to possible participants up to three
-times to ensure their commitment to attending.
+times to ensure their commitment to attend.
 
 After the Direct Action event, TOFT staff were able to analyse how many
 people said they would attend, how many actually attended, and how

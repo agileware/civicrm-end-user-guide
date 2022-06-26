@@ -33,7 +33,7 @@ or activity types.
 
 In event messages, tokens such as event location will be replaced with
 the specific location of the event. In membership messages, you have
-access to each individuals expiry date, and so on. Membership and event
+access to each individual's expiry date, and so on. Membership and event
 ID tokens are also available and can be used to create links to specific
 pages (such as the membership renewal page).
 
@@ -182,7 +182,7 @@ for memberships.
 To send a renewal reminder email to members 5 days before their
 membership expires:
 
-1.  Select Entity Type = Membership
+1.  Set Entity Type to Membership
 2.  Select one or more Membership Types
 3.  If the selected membership types allow auto-renewal, you may want to
     only send this reminder to memberships that do NOT renew
@@ -205,20 +205,20 @@ pending because payment has not been received:
 
 1.  Create a smart group for contacts with a membership status of
     pending.
-2.  In scheduled reminders set Entity Type = Activity, Membership
+2.  In scheduled reminders set Entity Type to Activity, Membership
     Signup, Completed. Note that we are using the Activity entity, not
-    the membership entity.
+    the Membership entity.
 3.  Restrict Recipients to the membership pending smart group. This is
-    important as if we don't set this, all members (even those that have
+    important because if we don't set this, all members (even those that have
     already paid) will receive the message.
 
 ## Using scheduled reminders for events
 
 Event reminders can be set up via the Scheduled Reminders administration
 screen (as detailed above) or from the Schedule Reminders screen in the
-event configuration workflow. (To get there, either click the Schedule
-Reminders tab when setting up an Event, or Configure > Schedule
-Reminders next to your event on the Manage Events screen.) The steps to
+event configuration workflow. (To get there, either click the **Schedule
+Reminders** tab when setting up an Event, or **Configure > Schedule
+Reminders** next to your event on the Manage Events screen.) The steps to
 configure the reminder are the same as from the administration screen
 (see above).
 
@@ -237,8 +237,8 @@ The configuration options specifically for Event reminders consist of:
     participants with specified participant statuses (e.g. registered
     and attended, or cancelled and no-show)
 -   Sending to all participant roles with the appropriate statuses or
-    only to specified participant roles (e.g., volunteer and host, or
-    attendee or speaker)
+    only to specified participant roles, eg. participants assigned either
+    the volunteer or host role.
 
 Since you have so many configuration options, you could set up an event
 reminder for almost any purpose you can think of. Here are a few
@@ -266,7 +266,7 @@ only to **Activity Assignees** or **Activity Source** or **Activity
 Targets** or to send it to a predefined group **(Select a group)** or to
 a list of contacts that you manually specify **(Choose recipient(s))**.
 It is important to remember that groups or manual recipients selected
-will only receive the scheduled reminder if they meet the all other
+will only receive the scheduled reminder if they meet all other
 criteria for that reminder.
 
 ![Form with the fields: from name, from email, and receipients.](../img/scheduled_reminders_activities.png)
@@ -312,8 +312,8 @@ option **Do not email** or if the email address is **On hold**.
 If you want to exclude contacts who have opted out of bulk emails from a
 scheduled reminder you should:
 
-1.  Find all contacts who have not selected the privacy options Do not
-    email or NO BULK EMAIL. (You can do this using the Search Builder
+1.  Find all contacts who have not selected the privacy options "Do not
+    email" or NO BULK EMAIL. (You can do this using the Search Builder
     found at **Search > Search Builder** and updating the settings as
     indicated in the example below)
 2.  Create a smart group from the search results.

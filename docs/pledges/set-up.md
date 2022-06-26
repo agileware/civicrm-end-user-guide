@@ -7,21 +7,21 @@ donate, e.g. twice a year, twice a month for five months, etc. Some
 payment processors will not allow this kind of automation and the
 payments themselves may arrive in a non-electronic form like cheques.
 However, you can record future income against a current source such as
-an event or email campaign, and change the status from 'pledged' to
-'complete/paid' manually when the payment arrives (should the payment
+an event or email campaign, and change the status from 'Pending' to
+'Complete' manually when the payment arrives (should the payment
 method not support this). Pledges also provide an automated mechanism to
 remind donors of their commitment.
 
 For further information on pledges, and creating pledges internally on
 behalf of constituents (i.e. not through an online form), see the
-chapter 'Pledges'.
+chapter *Pledges*.
 
 ## Enabling pledges
 
 Setting up pledges for online forms is a simple check-box affair. Once a
 contribution page has been created (see the chapter [Creating Contribution Pages](../contributions/online-contributions.md)), while
-editing the page's settings go to the 'Amounts' tab and tick the option
-'**Pledges**'. Several options will appear, as below.
+editing the page's settings go to the **Amounts** tab and tick the option
+**Pledges**. Several options will appear, as below.
 
 ![image](../img/pledge-setup.png)
 
@@ -41,6 +41,8 @@ editing the page's settings go to the 'Amounts' tab and tick the option
 -   **Allow other amounts**: check this box if you wish to give
     individuals the option to pledge an amount of their choosing. You
     can also specify the minimum and maximum payment they can make.
+-   **Fixed Contribution Options**: use the table below to enter up to ten fixed contribution amounts. These will be presented as a list of radio button options. Both the label and dollar amount will be displayed. Once completed you can choose **Save**, **Save and Done**, **Save and Next** or **Cancel** buttons.
+
 
 Once enabled, the option to make a pledge will appear on the online
 form. To check and monitor the current pledges, several reports and a

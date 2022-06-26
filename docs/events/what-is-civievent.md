@@ -2,7 +2,7 @@
 
 CiviEvent provides a set of tools for running events. These tools make
 you more effective as an event organiser and reduce the amount of
-administration require.
+administration required.
 
 CiviCRM helps you manage both simple and complicated registration
 processes. Some key features include:
@@ -67,7 +67,7 @@ next event.
 
 The chapters in this section take you through everything you need to
 know in order to get the most from CiviEvent. Below are a few concepts
-you might find helpful for you before you begin to set up your event.
+you might find helpful before you begin to set up your event.
 You will put these concepts into practical use when following the
 step-by-step tasks in the next chapters of this section.
 
@@ -77,37 +77,37 @@ First lets explain some basic concepts. CiviCRM allows you to create one
 or more **events** that your **contacts** can participate in. When a
 contact participates in an event, they are called a **participant**.
 
-### Event types
+### Event Types
 
 CiviCRM allows you to define different types of events, such as
-conferences, meetings and fundraisers. Which event types to create is
+Conferences, Meetings and Fundraisers. Which event types to create is
 entirely up to you, according to the needs of your organization.
 
-Event types come in handy if you have different requirements for types
+Event Types come in handy if you have different requirements for types
 of events. For example, you can create custom fields to store and
-display additional data about an event by its event type. See the
-chapter *Custom data on events* in this section for more information
+display additional data about an event by its Event Type. See the
+chapter [*Custom data on events*](https://docs.civicrm.org/user/en/latest/events/custom-data-for-events/) in this section for more information
 about this. They are also useful for categorizing and segmenting events
 and attendees, for example, you could easily find all contacts that have
-come to one of your trainings or attended one of your fundraising events.
+come to one of your Workshops or attended one of your Fundraising events.
 
 
-### Participant roles
+### Participant Default Roles
 
-Every contact that participates in an event is assigned a participant
-role. The most common is probably attendee. Others include volunteer or
-speaker.  Participant roles are fully customizable to match the types of
+Every contact that participates in an event is assigned a Participant Default
+Role. The most common is probably Attendee. Others include Volunteer, Host or
+Speaker.  Participant roles are fully customizable to match the types of
 events your organization conducts. This allows you to segment
 participants into meaningful categories based on their involvement in
-the event, for example for sending an email to volunteers only or
+the event, for example for sending an email to Volunteers only or
 generating a list of past table captains for fundraisers. You can also
 create custom fields that apply only to specific roles, for example, to
-collect information about availability from volunteers only.
+collect information about availability from Volunteers only.
 
 ### Participant statuses
 
-Participant statuses (for example, registered, wait-listed, attended or
-cancelled) are used to track what stage the contact is at in their
+Participant statuses (for example, Registered, No-show, Attended or
+Cancelled) are used to track what stage the contact is at in their
 'event journey'. Participant statuses are fully customizable to match
 the way your organization does event registration. This allows you to
 segment participants into meaningful categories based on their behavior
@@ -124,4 +124,4 @@ CiviMail (see the *Email* section, particularly the [Set-up](../email/set-up.md)
 [Scheduled Reminders](../email/scheduled-reminders.md) chapters, for more information). CiviEvent works
 with CiviContribute to allow you to accept event payments online. To do
 this, you must enable CiviContribute and set up a payment processor; see
-the *Contributions* section for more information.
+the [*Contributions*](https://docs.civicrm.org/user/en/latest/contributions/what-is-civicontribute/) section for more information.

@@ -2,10 +2,10 @@
 
 In the setup chapter we discussed setting up and configuring Email
 lists. In this chapter we are going to delve a bit further into list
-management and discuss compliance. It is important that you keep you
+management and discuss compliance. It is important that you keep your
 email lists healthy with low rates of bounced emails and unsubscribes.
 
-There is always fear of the dreaded 'blacklist' if you have very high
+There is always fear of the dreaded 'blacklist' if you have a very high
 bounce rate, or the fear of being scolded by your SMTP provider for the
 same. However, the reality is high bounce rates and unsubscribes
 typically represent a deeper organization issue... and that's really
@@ -36,8 +36,7 @@ contact email on **Hold.** When an email is on **Hold**, no future
 emails will be sent to it unless someone fixes it and removes the hold.
 
 A detailed table of each type of bounce and the number of bounces
-allowed before an address is put on hold is available on the wiki
-at: [http://wiki.civicrm.org/confluence/display/CRMDOC/Bounce+Handling](http://wiki.civicrm.org/confluence/display/CRMDOC/Bounce+Handling%20)
+allowed before an address is put on hold is available in the [System Administrator Guide's Inbound email chapter](https://docs.civicrm.org/sysadmin/en/latest/setup/civimail/inbound/#why-is-a-contacts-e-mail-address-put-on-hold).
 
 ### What do I do if an address is put on hold?
 
