@@ -298,14 +298,16 @@ an event, you can also send it to Bob Adams, your office manager, so
 that he will remember to check that the event room is set up in the
 appropriate configuration with any equipment required.
 
-## Scheduled reminders and privacy options
+## Scheduled reminders and privacy options, on hold
 
-Scheduled reminders are still sent to contacts who have opted out of
-bulk emails and those who have selected the privacy option "Do not
-email". In some cases this is appropriate as these contacts will still
-want to be reminded when an event they have registered for is
+Scheduled reminders are still sent to contacts who have **opted out of
+bulk emails**. In some cases this is appropriate as these contacts will
+still want to be reminded when an event they have registered for is
 approaching or when their membership is due to be renewed. In other
 situations it is not appropriate.
+
+Scheduled reminders are not sent to contacts who have the privacy
+option **Do not email** or if the email address is **On hold**.
 
 If you want to exclude contacts who have opted out of bulk emails from a
 scheduled reminder you should:
