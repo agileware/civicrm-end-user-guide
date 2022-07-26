@@ -45,7 +45,7 @@ advanced reporting, see the [CiviReport](../reporting/what-is-civireport.md) sec
 
 ## Quick search
 
-![Quicksearch](../img/the-user-interface/searching/Quick search.png)
+![Quicksearch](../img/the-user-interface/searching/quicksearch.png)
 
 The easiest way to find a specific contact is to use the Quick search box that appears in the navigation menu at the top left of the screen. You may choose to search by one of several criteria. The criteria can be modified by going to **Administer > Customize Data and Screens > Search Preferences**. On the *Search Preferences* page, options are available to customize CiviCRM's Quick search to hide contacts' basic fields that are not normally used in a Quick search and to add custom field options.
 
