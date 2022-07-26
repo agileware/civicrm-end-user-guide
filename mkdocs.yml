@@ -65,6 +65,7 @@ nav:
     - 'External reporting': 'reporting/external_reporting.md'
     - 'Search Kit':
           - 'Introduction to Search Kit': 'searching/searchkit/what-is-searchkit.md'
+          - 'Relative Date Formats': 'searching/relative-date-formats.md'
           - 'Example: Create a Soft Credit Search and Display': 'searching/searchkit/soft-credit-example.md'
           - 'Example: Create an Upcoming Events Form': 'searching/searchkit/example-upcoming-events.md'
           - 'Example: Create a filterable public Membership List with Logo Grid': 'searching/searchkit/example-membership-listing.md'
