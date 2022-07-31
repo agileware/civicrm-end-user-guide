@@ -135,21 +135,14 @@ The workflow message templates can use both tokens and smarty variables. You can
 
 `{contribution.tax_amount}` is a token wheras `{$taxAmount}` and `{$contribution.tax_amount}` are both smarty variables. In general tokens are consistent across multiple screens whereas the available smarty variables depend on what has been coded and is highly variable. We are switching to using tokens in workflow message templates where possible but in some cases the variable is very specific to the specific message template or is more complex. We are working to standardise and document the available smarty variables
 
-As of 5.53 all contribution workflow message templates should support the following smarty variables:
+As of 5.53 all contribution workflow message templates should support all contact and contribution tokens and the following smarty variables:
 
-`$isShowLineItems` is the contribution using a price set (if so we normally display a line item breakdown)
-`$isShowTax` is Sales tax enabled for the site.
-`taxRateBreakDown` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of the amount charged at each tax rate.
 
-```
-  {foreach from=$taxRateBreakdown item=taxDetail key=taxRate}
-    <tr>
-    <td>&nbsp;{if $taxRate == 0}{ts}No{/ts} {$taxTerm}{else}{$taxTerm} {$taxDetail.percentage}%{/if}</td>
-    <td>&nbsp;{$taxDetail.amount|crmMoney:'{contribution.currency}'}</td>
-  </tr>
-{/foreach}
-
- ```     
+|Variable|Meaning  |Detail|eg.|
+|--|--|--|--|
+| `$isShowLineItems` |is the contribution using a price set|TRUE or FALSE|`{if $isShowLineItems}...{/if}`|
+|`$isShowTax`|is sales tax enabled for the site|TRUE or FALSE|`{if $isShowTax}...{/if}`|
+|`$taxRateBreakDown`|[array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of the amount charged at each tax rate.|`[]` for no tax or ![image.png](./image.png)|  `{foreach from=$taxRateBreakdown item=taxDetail key=taxRate}{$taxDetail.percentage}%{/if}{/foreach}`    
 
 `$lineItem` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of line items. Example usage is
 
