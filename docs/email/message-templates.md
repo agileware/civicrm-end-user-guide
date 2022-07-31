@@ -129,6 +129,81 @@ After you have customized system workflow message templates, you can always reve
 
 ![Screenshot of the System Workflow Message Template list showing that some templates have been customized because they have "Revert to Default" links next to them](../img/TemplatesToUpdate.png)
 
+### Variables and tokens in Workflow message templates
+
+The workflow message templates can use both tokens and smarty variables. You can tell the difference by the presence of a dollar sign eg.
+
+`{contribution.tax_amount}` is a token wheras `{$taxAmount}` and `{$contribution.tax_amount}` are both smarty variables. In general tokens are consistent across multiple screens whereas the available smarty variables depend on what has been coded and is highly variable. We are switching to using tokens in workflow message templates where possible but in some cases the variable is very specific to the specific message template or is more complex. We are working to standardise and document the available smarty variables
+
+As of 5.53 all contribution workflow message templates should support the following smarty variables:
+
+`$isShowLineItems` is the contribution using a price set (if so we normally display a line item breakdown)
+`$isShowTax` is Sales tax enabled for the site.
+`taxRateBreakDown` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of the amount charged at each tax rate.
+```
+       {foreach from=$taxRateBreakdown item=taxDetail key=taxRate}
+         <tr>
+          <td>&nbsp;{if $taxRate == 0}{ts}No{/ts} {$taxTerm}{else}{$taxTerm} {$taxDetail.percentage}%{/if}</td>
+          <td>&nbsp;{$taxDetail.amount|crmMoney:'{contribution.currency}'}</td>
+        </tr>
+      {/foreach}
+ ```     
+`$lineItem` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of line items. Example usage is
+```
+     {if $isShowLineItems}
+       <tr>
+        <td colspan="2" {$valueStyle}>
+         <table>
+          <tr>
+           <th>{ts}Item{/ts}</th>
+           <th>{ts}Qty{/ts}</th>
+           <th>{ts}Each{/ts}</th>
+           {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
+             <th>{ts}Subtotal{/ts}</th>
+             <th>{ts}Tax Rate{/ts}</th>
+             <th>{ts}Tax Amount{/ts}</th>
+           {/if}
+           <th>{ts}Total{/ts}</th>
+          </tr>
+          {foreach from=$lineItems item=line}
+           <tr>
+            <td>
+              {$line.title}
+            </td>
+            <td>
+             {$line.qty}
+            </td>
+            <td>
+             {$line.unit_price|crmMoney:'{contribution.currency}'}
+            </td>
+            {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
+              <td>
+                {$line.unit_price*$line.qty|crmMoney:'{contribution.currency}'}
+              </td>
+              {if $line.tax_rate || $line.tax_amount != ""}
+                <td>
+                  {$line.tax_rate|string_format:"%.2f"}%
+                </td>
+                <td>
+                  {$line.tax_amount|crmMoney:'{contribution.currency}'}
+                </td>
+              {else}
+                <td></td>
+                <td></td>
+              {/if}
+            {/if}
+            <td>
+             {$line.line_total+$line.tax_amount|crmMoney:'{contribution.currency}'}
+            </td>
+           </tr>
+          {/foreach}
+         </table>
+        </td>
+       </tr>
+
+     {/if}
+     ```
+
 ## Configure Message Templates
 
 To configure message templates, begin at the **Administer CiviCRM** page.
