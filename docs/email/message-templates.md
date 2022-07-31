@@ -142,12 +142,13 @@ As of 5.53 all contribution workflow message templates should support the follow
 `taxRateBreakDown` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of the amount charged at each tax rate.
 
 ```
-       {foreach from=$taxRateBreakdown item=taxDetail key=taxRate}
-         <tr>
-          <td>&nbsp;{if $taxRate == 0}{ts}No{/ts} {$taxTerm}{else}{$taxTerm} {$taxDetail.percentage}%{/if}</td>
-          <td>&nbsp;{$taxDetail.amount|crmMoney:'{contribution.currency}'}</td>
-        </tr>
-      {/foreach}
+  {foreach from=$taxRateBreakdown item=taxDetail key=taxRate}
+    <tr>
+    <td>&nbsp;{if $taxRate == 0}{ts}No{/ts} {$taxTerm}{else}{$taxTerm} {$taxDetail.percentage}%{/if}</td>
+    <td>&nbsp;{$taxDetail.amount|crmMoney:'{contribution.currency}'}</td>
+  </tr>
+{/foreach}
+
  ```     
 
 `$lineItem` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of line items. Example usage is
