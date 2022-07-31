@@ -140,6 +140,7 @@ As of 5.53 all contribution workflow message templates should support the follow
 `$isShowLineItems` is the contribution using a price set (if so we normally display a line item breakdown)
 `$isShowTax` is Sales tax enabled for the site.
 `taxRateBreakDown` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of the amount charged at each tax rate.
+
 ```
        {foreach from=$taxRateBreakdown item=taxDetail key=taxRate}
          <tr>
@@ -148,61 +149,63 @@ As of 5.53 all contribution workflow message templates should support the follow
         </tr>
       {/foreach}
  ```     
-`$lineItem` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of line items. Example usage is
-```
-     {if $isShowLineItems}
-       <tr>
-        <td colspan="2" {$valueStyle}>
-         <table>
-          <tr>
-           <th>{ts}Item{/ts}</th>
-           <th>{ts}Qty{/ts}</th>
-           <th>{ts}Each{/ts}</th>
-           {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
-             <th>{ts}Subtotal{/ts}</th>
-             <th>{ts}Tax Rate{/ts}</th>
-             <th>{ts}Tax Amount{/ts}</th>
-           {/if}
-           <th>{ts}Total{/ts}</th>
-          </tr>
-          {foreach from=$lineItems item=line}
-           <tr>
-            <td>
-              {$line.title}
-            </td>
-            <td>
-             {$line.qty}
-            </td>
-            <td>
-             {$line.unit_price|crmMoney:'{contribution.currency}'}
-            </td>
-            {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
-              <td>
-                {$line.unit_price*$line.qty|crmMoney:'{contribution.currency}'}
-              </td>
-              {if $line.tax_rate || $line.tax_amount != ""}
-                <td>
-                  {$line.tax_rate|string_format:"%.2f"}%
-                </td>
-                <td>
-                  {$line.tax_amount|crmMoney:'{contribution.currency}'}
-                </td>
-              {else}
-                <td></td>
-                <td></td>
-              {/if}
-            {/if}
-            <td>
-             {$line.line_total+$line.tax_amount|crmMoney:'{contribution.currency}'}
-            </td>
-           </tr>
-          {/foreach}
-         </table>
-        </td>
-       </tr>
 
-     {/if}
-     ```
+`$lineItem` this is an [array](https://study.com/academy/lesson/arrays-lesson-for-kids.html) of line items. Example usage is
+
+```
+  {if $isShowLineItems}
+    <tr>
+    <td colspan="2" {$valueStyle}>
+      <table>
+      <tr>
+        <th>{ts}Item{/ts}</th>
+        <th>{ts}Qty{/ts}</th>
+        <th>{ts}Each{/ts}</th>
+        {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
+          <th>{ts}Subtotal{/ts}</th>
+          <th>{ts}Tax Rate{/ts}</th>
+          <th>{ts}Tax Amount{/ts}</th>
+        {/if}
+        <th>{ts}Total{/ts}</th>
+      </tr>
+      {foreach from=$lineItems item=line}
+        <tr>
+        <td>
+          {$line.title}
+        </td>
+        <td>
+          {$line.qty}
+        </td>
+        <td>
+          {$line.unit_price|crmMoney:'{contribution.currency}'}
+        </td>
+        {if $isShowTax && '{contribution.tax_amount|raw}' !== '0.00'}
+          <td>
+            {$line.unit_price*$line.qty|crmMoney:'{contribution.currency}'}
+          </td>
+          {if $line.tax_rate || $line.tax_amount != ""}
+            <td>
+              {$line.tax_rate|string_format:"%.2f"}%
+            </td>
+            <td>
+              {$line.tax_amount|crmMoney:'{contribution.currency}'}
+            </td>
+          {else}
+            <td></td>
+            <td></td>
+          {/if}
+        {/if}
+        <td>
+          {$line.line_total+$line.tax_amount|crmMoney:'{contribution.currency}'}
+        </td>
+        </tr>
+      {/foreach}
+      </table>
+    </td>
+    </tr>
+
+  {/if}
+```
 
 ## Configure Message Templates
 
