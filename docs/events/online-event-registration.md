@@ -52,14 +52,13 @@ to a conference, or an individual may bring their partner and wish to
 register and pay for both in a single process. By default, this option
 requires a different name and email address for each person registered.
 
-Checking **same email address** provides the same capabilities, but
+Checking **Allow same email and multiple registrations?** provides the same capabilities, but
 without requiring distinct email addresses for each registrant. In
 either case, CiviCRM uses a separate contact record (an existing one if
 the contact is already in the system, otherwise a new one is created)
 for each individual registered.
 
-This setting also allows administrators to register the same contact
-multiple times to the same event. For example, if the person purchased
+This setting also a contact to register multiple times for the same event. For example, if the person purchased
 a ticket to a concert, then wanted to purchase another ticket later on.
 
 Information on the **Duplicate matching rule** is provided in the
