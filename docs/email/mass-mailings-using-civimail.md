@@ -52,6 +52,14 @@ one and call it something like "Miscellaneous Mail Unsubscribes". You
 could then add that Group to other future mailings to ensure that the
 people who have unsubscribed are excluded from those future mailings.
 
+## Choosing recipients: When mailing recipients are set
+
+When you submit a mailing, the list of recipients is set based on which contacts are members of the mailing's groups at that moment. Even if the mailing is scheduled for a month in the future, the list of recipients won't change after it has been scheduled.
+
+So if you send a mailing to a smart group, the list of recipients will be set based on the smart group criteria when the mailing is scheduled and won't be updated when the mailing is actually sent.
+
+If you select `All NNN records` in search results and then send these contacts a mailing from the Actions dropdown menu, you are creating a hidden smart group. Members of the hidden smart group will be updated based on the search criteria at the time the mailing is submitted. If you don't want to create a hidden smart group, you can instead select all the records with the checkbox on the top of each page and then use `NNN Selected records only`, which will create a non-smart group with those contacts. That group will never update based on the search criteria.
+
 ## The Mailing set-up screens
 
 If you are sending mail to an existing Group, go to **Mailings > New
