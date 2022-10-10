@@ -4,11 +4,11 @@ When you click the **Event** tab from the toolbar and then select **Manage Event
 
 ![Default Magange Events screen](../../img/search-kit/default-manage-events.png)
 
-Search Kit gives the option to create an alternative to the Manage Event overview screen that could be customized in many ways:
+Searchkit provides the option to create an alternative to the Manage Event overview screen that could be customized in many ways:
 
 ![upcoming event](../../img/search-kit/upcoming-events-final.png)
 
-This Search Kit built event overview includes features such as:
+This Searchkit built event overview includes features such as:
 
  * a clickable event title that leads to the event's Info and Settings page
  * a list of speakers and hosts for each event
@@ -20,7 +20,7 @@ This section will walk through how to create the above functionality step by ste
 
 ## Step 1: Create a New Search
 
-Go to **Administer > Search > Search Kit** and click **New Search**.
+Go to **Administer > Search > Searchkit** and click **New Search**.
 
 ![New Search empty screen](../../img/search-kit/new-search.png)
 
