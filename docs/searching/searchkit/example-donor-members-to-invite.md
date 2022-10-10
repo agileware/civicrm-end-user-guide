@@ -2,11 +2,11 @@
 
 Imagine a scenario in which an organization wants to invite members who are major donors that have not previously attended an event to an upcoming one.
 
-With Search Kit, an invitation list that meets the above critera is easily doable! The following demo will walk through the setup for this scenario, step by step.
+With Searchkit, an invitation list that meets the above critera is easily doable! The following demo will walk through the setup for this scenario, step by step.
 
 ## Step 1: Select Current Members
 
-After clicking on **New Search** from the Search Kit page, the base entity to **Search for** must be decided. This cannot be changed once the search has been saved.
+After clicking on **New Search** from the Searchkit page, the base entity to **Search for** must be decided. This cannot be changed once the search has been saved.
 
 ![First entity](../../img/search-kit/members-to-invite-empty.png)
 
@@ -24,7 +24,7 @@ Feel free to click the **Search** button to preview the results.
 
 ## Step 2: Members Who Never Attended an Event
 
-To retreive a list of members who have never attended an event, the search needs to look for contacts without a participant record. To tell Search Kit to look for these individuals, change a second **With (optional)** field to **Without** and select Contact Participants.
+To retreive a list of members who have never attended an event, the search needs to look for contacts without a participant record. To tell Searchkit to look for these individuals, change a second **With (optional)** field to **Without** and select Contact Participants.
 
 ![Participants](../../img/search-kit/members-to-invite-participants.png)
 
