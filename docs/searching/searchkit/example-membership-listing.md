@@ -1,6 +1,6 @@
 # Case: Creating a Public Membership List
 
-There are many use cases for showing structured data from CiviCRM on a public page of a website. As an organization with several levels of membership, for example, it would be useful to have filterable and searchable lists on your website that are populated by live data from CiviCRM. With the help of Search Kit and Form Builder, this is an easy feature to add!
+There are many use cases for showing structured data from CiviCRM on a public page of a website. As an organization with several levels of membership, for example, it would be useful to have filterable and searchable lists on your website that are populated by live data from CiviCRM. With the help of Searchkit and Form Builder, this is an easy feature to add!
  
 The following demo will show, step-by-step, how to create a Logo Grid with tooltips and links to external(e.g. members') websites that can be filtered by (membership) type.
 
@@ -8,7 +8,7 @@ The following demo will show, step-by-step, how to create a Logo Grid with toolt
 
 ## Step 1: Create a New Search and Define the Data
 
-Go to **Administer > Search > Search Kit** and click **New Search**.
+Go to **Administer > Search > Searchkit** and click **New Search**.
 
 Then:
 
@@ -19,7 +19,7 @@ Then:
 
 ![Search Screen](../../img/search-kit/membership-listing-creating-search.png)
 
-Tap **Search** to check the results of the current configuration. The above criteria returned six memberships as a result. Note that when adding Membership Contact and Contact Websites, Search Kit automatically added some columns with data from these sources:
+Tap **Search** to check the results of the current configuration. The above criteria returned six memberships as a result. Note that when adding Membership Contact and Contact Websites, Searchkit automatically added some columns with data from these sources:
 
 ![Search results](../../img/search-kit/membership-listing-search-results.png)
 
@@ -47,7 +47,7 @@ To format the search results, a display must ne added, which can be done by clic
 
 ![Adding Grid as Display](../../img/search-kit/membership-listing-add-grid.png)
 
-Give this display configuration a title (e.g. "Our Members"). By default, Search Kit will now add all the fields (columns) of the search to the new display. These fields can be further customized, including dragging and dropping them into a new order.
+Give this display configuration a title (e.g. "Our Members"). By default, Searchkit will now add all the fields (columns) of the search to the new display. These fields can be further customized, including dragging and dropping them into a new order.
 
 ![Adding Grid as Display](../../img/search-kit/membership-listing-grid-items.png)
 
@@ -73,9 +73,9 @@ Click **Refresh** to see the logos displayed as intended:
 
 ## Step 4: Adding and Configuring a Form
 
-In order to show the results on a public website, a Form needs to be created. Return to the Search Kit dashboard and click **Forms > + Create Form for Our Members Grid**:
+In order to show the results on a public website, a Form needs to be created. Return to the Searchkit dashboard and click **Forms > + Create Form for Our Members Grid**:
 
-![adding Form from Search Kit dashboard](../../img/search-kit/membership-listing-add-form.png)
+![adding Form from Searchkit dashboard](../../img/search-kit/membership-listing-add-form.png)
 
 Then:
 
