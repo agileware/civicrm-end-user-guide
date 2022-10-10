@@ -11,7 +11,7 @@ In this search, data will be combined from the contact that has the Soft Credit 
 
 ## Starting from the Saved Searches
 
-The first step is to navigate to Search Kit from the **Search** menu. You will then see a page with saved searches like this:
+The first step is to navigate to Searchkit from the **Search** menu. You will then see a page with saved searches like this:
 
 ![Saved Searches page](../../img/search-kit/soft-credit-saved-searches.png)
 
@@ -43,7 +43,7 @@ For this example, the Contribution Soft Credits entity is initially selected. Th
 
 If you also want to include information about the actual contribution and the contact that made it, you will need to specify those entites.
 
-To do so, add the additional desired entities by clicking on the **+Entity** select menu next to the **With (optional)** box. Search Kit will work it out by itself how to link those entities, so it will know it needs to use the contribution ID to link to the Contribution and the contact ID in the contribution to link to Contact.
+To do so, add the additional desired entities by clicking on the **+Entity** select menu next to the **With (optional)** box. Searchkit will work out by itself how to link those entities, it will know it needs to use the contribution ID to link to the Contribution and the contact ID in the contribution to link to Contact.
 
 Additional conditions may be added. In this example, the contributions will be limited to those that have a financial type of Donation to filter out payments for Memberships or Events.
 
