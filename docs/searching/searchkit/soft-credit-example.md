@@ -43,7 +43,7 @@ For this example, the Contribution Soft Credits entity is initially selected. Th
 
 If you also want to include information about the actual contribution and the contact that made it, you will need to specify those entites.
 
-To do so, add the additional desired entities by clicking on the **+Entity** select menu next to the **With (optional)** box. Searchkit will work it out by itself how to link those entities, so it will know it needs to use the contribution ID to link to the Contribution and the contact ID in the contribution to link to Contact.
+To do so, add the additional desired entities by clicking on the **+Entity** select menu next to the **With (optional)** box. Searchkit will work out by itself how to link those entities, it will know it needs to use the contribution ID to link to the Contribution and the contact ID in the contribution to link to Contact.
 
 Additional conditions may be added. In this example, the contributions will be limited to those that have a financial type of Donation to filter out payments for Memberships or Events.
 
