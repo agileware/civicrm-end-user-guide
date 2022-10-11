@@ -327,7 +327,7 @@ ways of assigning this ability:
     a team in Amsterdam may only have access to custom volunteer fields,
     while the head office in Scotland has access access to both custom
     volunteer fields and custom donor fields. Note that these ACLs will
-    not function if the **CiviCRM: access all custom data** permission is
+    not function if the **access all custom data** permission is
     assigned.
 
 #### Accessing uploaded files
