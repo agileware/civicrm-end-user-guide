@@ -327,9 +327,8 @@ ways of assigning this ability:
     a team in Amsterdam may only have access to custom volunteer fields,
     while the head office in Scotland has access access to both custom
     volunteer fields and custom donor fields. Note that these ACLs will
-    not function if the **access all custom data** permission is used in
-    the CMS; that permission in Drupal or Joomla! will override these
-    settings in CiviCRM.
+    not function if the **CiviCRM: access all custom data** permission is
+    assigned.
 
 #### Accessing uploaded files
 
@@ -367,7 +366,7 @@ at [http://wiki.civicrm.org/confluence/display/CRMDOC/Default+Permissions+and+Ro
 
 ## Native CiviCRM ACLs
 
-As discussed earlier, CiviCRM ACLs are a more advanced and granular way
+CiviCRM ACLs are a more advanced and granular way
 of managing user access to records through contact groups, assigned to
 ACL roles. While an access control in the CMS can 'turn
 off' visibility of entire sections of CiviCRM, and determine whether a
