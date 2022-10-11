@@ -146,7 +146,7 @@ In the upper right corner of the search, we find a button to do that:
 
 ![add form](../../img/search-kit/upcoming-events-add-form.png)
 
-This will bring us to the form builder. Give the form a name and a page link:
+This will bring us to the FormBuilder. Give the form a name and a page link:
 
 ![add form name](../../img/search-kit/upcoming-events-form-name.png)
 
