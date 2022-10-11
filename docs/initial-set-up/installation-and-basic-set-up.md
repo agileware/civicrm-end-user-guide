@@ -44,8 +44,6 @@ CiviCRM has been translated into a number of different languages and translation
 
 It is also possible to configure your site to support multiple languages. In this mode, your users will be able to choose from a list of available languages after logging in. You can also create and store multi-language versions of text. Examples include custom field labels, an online contribution page, campaign information, and event descriptions.
 
-For more info, have a look here:
-[http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149](http://wiki.civicrm.org/confluence/pages/viewpage.action?pageId=88408149).
 
 - **Default Language** - If the additional language files have been installed, this dropdown enables a language other than US English to be selected as the default language.  This affects all users of CiviCRM.
 - **Inherit CMS Language** - By default, the language CiviCRM uses is independnent of the CMS.  If 'yes' then CiviCRM will use the language in use in the CMS.
@@ -54,6 +52,16 @@ For more info, have a look here:
 - **Default Language for contacts** - This setting controls the default 'preferred language' when creating a new contact.  Preferred Language is used in multi-lingual sites for some communications.
 
 **Multiple Languages Support** - If the multi-lingual mode is enabled, the database tables are modified to store multiple translations of certain fields.  For example, if multi-lingual mode is enabled and the system configured with English and French then there will be two fields created for fields such as event title - one in English, one in French. This mode can be very useful for organisations operating in multiple languages.
+
+You may also wish to configure how currency is displayed. CiviCRM allows you to configure the character that separates your numbers - eg. in the US you would see 1,000.00 but in Demark it might look like
+1.000,00. These are configured as the 'thousands separator' and 'decimal delimiter' on the localization page. However, note that from 5.43 these will be ignored if you add the line below to your civicrm.settings.php (in favour of the system deciding based on the locale). Allowing the system to decide is 
+likely to give better results if you communicate with people in more than one language.
+
+```
+define('IGNORE_SEPARATOR_CONFIG', TRUE);
+```
+
+
 
 ### Organization Address and Contact Info
 
@@ -84,6 +92,11 @@ This screen allows you to modify the screen and form elements for the following 
 -   **Enable Popup Forms** - this is on by default. Uncheck to revert to opening the form by refreshing the page.
 -   **Individual Display Name** - Display name format for individual contact display names.
 -   **Individual Sort Name** - Sort Name format for individual contact sort names.
+-   **Menubar position** - Select if the CMS menu should appear above, below or in place of the CMS menu, or hide the CiviCRM menu altogether.
+-   **Menubar color** - Choose a background colour for the menubar. For accessibility it is best practice to choose a colour that contrasts with the menubar font colour. Use a free online contrast ratio checker if you are unsure.
+-   **Backend Theme** - If you have installed a theme via the [Extension Manager](https://docs.civicrm.org/user/en/latest/introduction/extensions/#installing-extensions), you can specify for it to display here or turn off css theming with 'None (Unstyled)'. If left to Automatic it will use CiviCRM's default theme (Grenewich).
+-   **Frontend Theme - You can also select a theme or remove theming for front-end pages.
+
 
 ### Address Settings
 
@@ -132,7 +145,7 @@ After reviewing the default fields and layouts, review the Address Settings scre
 
 CiviCRM includes support for both the Google and OpenStreetMap mapping services. These services allow your users to display contact addresses and event locations on a map. To enable this feature, select your mapping provider and obtain a key for your site from that provider.
 
-You can also select a Geocoding Provider. This can be that same or different form you mapping provider. Once this service is enabled, your contact and event records will be automatically geocoded (the latitude and longitude for that address is inserted) as you add or edit address data.
+You can also select a Geocoding Provider. This can be the same or different from your mapping provider. Once this service is enabled, your contact and event records will be automatically geocoded (the latitude and longitude for addresses is calculated/retrieved and inserted) as you add or edit address data.
 
 Other mapping and geocoding services can be added by installing extensions.
 
@@ -160,7 +173,7 @@ For example, typing 'Volunteer%' as your Activity Subject will match any record 
 -   **Autocomplete Results** - This specifies the maximum number of contacts to show at a time when typing in an autocomplete field. The default is 10.
 -   **InnoDB Full Text Search** - If you are using MySQL 5.6+ you can enable InnoDB full-text search optimizations.
 
-### Miscellaneous (Undelete, PDFs, Limits, Logging, reCAPTCHA, etc.)
+### Miscellaneous (Undelete, PDFs, Limits, Logging, etc.)
 
 Use the Miscellaneous Settings screen to configure and control the following behaviors:
 
@@ -176,9 +189,6 @@ Use the Miscellaneous Settings screen to configure and control the following beh
 -   **Maximum Attachments** - You can increase or decrease the maximum number of files (documents, images, etc.) that can be attached to emails, activities, and grant records. The default value is 3.
 -   **Maximum File Size (in MB)** - Maximum size of a file (documents, images, etc.) which can attached to emails or activities. Note that your PHP configuration files, *php.ini*, should support at least as big a file size as the value specified here.
 -   **Allow second-degree relationship permissions** - If enabled, contacts with the permission to edit a related contact will inherit that contact's permission to edit other related contacts. This can be used, for example, to let the teacher of a class edited the records for students in that class when they are both linked to the class (set up as an organisation sub-type) via relationships.
--   **reCAPTCHA** - reCAPTCHA is a free service that helps prevent automated abuse of your site by requiring users to read a random pair of words and type them into the form. To use reCAPTCHA on public-facing CiviCRM forms, sign up at [recaptcha.net](http://recaptcha.net/), enter the provided public and private reCAPTCHA keys here, then enable reCAPTCHA under the Advanced Settings section in a Profile where you want it used. In the **Recaptcha Options** you can specify the theme and language and other options on the display of reCAPTCHA.
-
-    If you want to use reCAPTCHA protection for online contribution, membership sign-up or event registration forms, you'll need to configure a Profile with reCAPTCHA enabled, and then include it in those forms.
 
 ### Contact Types
 
