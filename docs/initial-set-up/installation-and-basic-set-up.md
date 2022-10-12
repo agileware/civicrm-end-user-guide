@@ -92,6 +92,11 @@ This screen allows you to modify the screen and form elements for the following 
 -   **Enable Popup Forms** - this is on by default. Uncheck to revert to opening the form by refreshing the page.
 -   **Individual Display Name** - Display name format for individual contact display names.
 -   **Individual Sort Name** - Sort Name format for individual contact sort names.
+-   **Menubar position** - Select if the CiviCRM menu should appear above, below or in place of the CMS menu, or hide the CiviCRM menu altogether.
+-   **Menubar color** - Choose a background colour for the menubar. For accessibility it is best practice to choose a colour that contrasts with the menubar font colour. Use a free online contrast ratio checker if you are unsure.
+-   **Backend Theme** - If you have installed a theme via the [Extension Manager](https://docs.civicrm.org/user/en/latest/introduction/extensions/#installing-extensions), you can specify for it to display here or turn off CSS theming with 'None (Unstyled)'. If left to automatic it will use CiviCRM's default theme (Greenwich).
+-   **Frontend Theme - You can also select a theme or remove theming for front-end pages.
+
 
 ### Address Settings
 
