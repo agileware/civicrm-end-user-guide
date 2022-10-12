@@ -1,6 +1,6 @@
 # What is SearchKit?
 
-SearchKit is new functionality which started as a new search interface to provide a more intuitive and powerful search than older CiviCRM search tools and in later versions of CiviCRM opens up new roads to manage your data in CiviCRM.
+SearchKit is a way for power users who are tech-savvy to build up complex searches and forms to allow end users to filter the results.
 
 Searches can be saved, have any number of unique displays on their own or connected to the dashboard or contact screen. Searches can have exposed filters for easy filtering and even be connected to a Smart Group. And you can use SearchKit for your own entities and with an additional extension even create your own entities. So although SearchKit is part of the Searching and Reporting section of this Guide it might some day end up with a Guide of its own as the possibilities evolve.
 
