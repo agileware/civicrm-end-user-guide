@@ -1,45 +1,45 @@
 # What is SearchKit?
 
-SearchKit is a way for power users who are tech-savvy to build up complex searches and forms to allow end users to filter the results.
+## About
 
-Searches can be saved, have any number of unique displays on their own or connected to the dashboard or contact screen. Searches can have exposed filters for easy filtering and even be connected to a Smart Group. And you can use SearchKit for your own entities and with an additional extension even create your own entities. So although SearchKit is part of the Searching and Reporting section of this Guide it might some day end up with a Guide of its own as the possibilities evolve.
+SearchKit is a powerful search query builder with extensive options for display results. It is appropriate for site builders, power users and developers but not so much for non-technical staff working at non-profits. 
 
-It ships as an extension which you can enable on the Extensions screen from 5.29 onwards. Once enabled it can be found under the menu **Search > SearchKit**.
+SearchKit searches can:
 
-!!! note
-    SearchKit ships as an extension as part of our strategy of
-    putting significant functionality leaps into extensions rather than
-    overhauling existing code. This allows us to demarcate rapidly evolving
-    code and to keep long-standing code more stable. People can opt into
-    the extension or not. However, it is maintained as part of core against
-    the specific release it ships with (as it is closely tied to API v4
-    functionality).
+* be saved and exported,
+* have any number of unique displays on their own,
+* be connected to the dashboard, contact screen or individual URLs,
+* have exposed filters for easy filtering,
+* be connected to a Smart Group,
+* be used for your own entities custom created for your website,
+* be shipped with an additional extension.
 
-## SearchKit components
 
-There are always 2 and potentially 3 components to SearchKit: search screen, displays and forms. Depending on what you are doing you may not use all 3.
+## Getting started
 
-1. The Search screen (or Compose Search): is where the search criteria (what you are searching for so for example Events and Participants) and available fields are configured.
-2. Displays:  is where you decide and define how you are going to present your search results. One search defined in the Compose Search section can have more displays presenting the results in a different way. Search displays
-   currently available are table views, list views, grid views, or Smart Groups.
-3. Forms: (only in the screen if you have enabled the [FormBuilder](../../the-user-interface/creating-new-forms.md) is an extension that is shipped with CiviCRM core) allow you to create a form to present your search results on. 
+SearchKit is not turned on when CiviCRM is installed. It appears as an extension which you can enable on the Extensions screen. Navigate to **Administer > System Settings > Extensions**. Beside SearchKit, select the **Install** link then select the **Install** button.
 
-## How to create searches and displays
+Once enabled you can access it under the menu **Search > SearchKit**.
 
-The best way to find out how to create searches and displays and what options are available is by reading the examples provided in this chapter.
 
-## Filtering on search results by the url
+## SearchKit and other CiviCRM search functionality
 
-You can add filters to the url by which you access a search and it will filter the results.  The syntax looks like field=value - e.g to filter to cash payments `civicrm/search#/my-search-url?payment_instrument_id:label=Cash` (To get the syntax for a field in the search display click on 'rewrite' to see the field name. ) 
+SearchKit fully replaces the old, more limited, Search Builder. 
 
-A few notes about URL filters:
+It is more powerful than Advanced Search, and covers some extra parts of CiviCRM. Some users will find it more intuitive particularly if they understand SQL queries. Others will find its query building approach less understandable than the fields available in Advanced Search.
 
-1) The field needs to be exposed in the search (but not necessarily the search display) to be available for filtering.
-2) If the field is already filtered (e.g receive date before this week) then the URL filter will further narrow down the results rather than replace the existing filter.
-3) When the field has a `:` in it that indicates that the field is a 'pseudoconstant'. The underlying database value is generally a number which maps to a name and label. In this case the database field `payment_instrument_id` is a number. In some cases we know the number instead, in which case we could use `payment_instrument_id=1` in our URL or `payment_instrument_id:name=Cash`. This variant is more useful for implementers who work with multiple sites.
-4) For dates we can use the following formats
-   - `receive_date=2021-09-23`
-   - `receive_date=20210923`
-   - `receive_date=20210923234040` (i.e. time is 23:40:40)
-   - `receive_date=this.month` (See [the list](../relative-date-formats.md))
+The upper left Quick Search continues to be more convenient for quickly retrieving records based on part of an email or name or other single term. 
 
+Non-technical users daunted by SearchKit’s interface, and staff wanting quicker results for simple needs will likely prefer searches like **Search > Find Contacts** and **Events > Find Participants**.
+
+Searches built and saved in SearchKit can be targeted for use by different roles of staff users as well as unauthenticated end users.
+
+## SearchKit and FormBuilder
+
+SearchKit and **[FormBuilder](/docs/the-user-interface/creating-new-forms.md)** work together to let users search for CiviCRM data and create new user interfaces without writing code. 
+
+SearchKit’s Graphical User Interface lets you click, drag, drop and write. SearchKit builds and defines the underlying search and provides many ways to display it. FormBuilder shows end users filters and database actions, and provides more options for layout.
+
+For developers, it is useful to know that they expose all the functionalities that are given by **APIv4**. They can be used in many ways, including adding new pages to CiviCRM, tabs to the Contact Summary page, or searchlets to the CiviCRM Dashboard.
+
+![Diagram of Searchkit & Formbuilder](../../img/search-kit/searchkit-formbuilder-schema.png)
