@@ -274,3 +274,12 @@ To use Word Replacement:
 
 When using this function, be sure to anticipate alternate forms of words
 and different ways your chosen word or phrase may appear in CiviCRM.
+
+!!! note
+    If you're using CiviCRM in another language, word replacements 
+    unfortunately only work if you use the English words as the original 
+    to replace, not the words in the language you are using. 
+     
+     
+    
+    
