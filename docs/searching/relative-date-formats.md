@@ -41,6 +41,7 @@ It is possible to add some additional ones within fairly tight constraints
 | next.week | Next week |start and end|
 | previous\_2.month | Previous 2 calendar months |start and end|
 | previous\_2.year | Previous 2 calendar years |start and end|
+| previous\_2.fiscal_year | Previous 2 fiscal years |start and end|
 | previous\_2.day | Previous 2 days |start and end|
 | previous\_2.quarter | Previous 2 quarters |start and end|
 | previous\_2.week | Previous 2 weeks |start and end|
@@ -68,6 +69,7 @@ It is possible to add some additional ones within fairly tight constraints
 | starting.day | Tomorrow |start and end|
 | previous\_before.week | Week prior to previous week |start and end|
 | previous\_before.year | Year prior to previous calendar year |start and end|
+| previous\_before.fiscal_year | Fiscal year prior to previous fiscal year |start and end|
 | previous.day | Yesterday |start and end|
 
 ## Adding new filters
