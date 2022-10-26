@@ -2,7 +2,7 @@
 
 ## About
 
-SearchKit is a powerful search query builder with extensive options for display results. It is appropriate for site builders, power users and developers but not so much for non-technical staff working at non-profits. 
+SearchKit is a powerful search query builder with extensive options for displaying results. It is appropriate for site builders, power users and developers but less so for non-technical staff working at non-profits. 
 
 SearchKit searches can:
 
@@ -38,7 +38,7 @@ Searches built and saved in SearchKit can be targeted for use by different roles
 
 SearchKit and **[FormBuilder](/docs/the-user-interface/creating-new-forms.md)** work together to let users search for CiviCRM data and create new user interfaces without writing code. 
 
-SearchKit’s Graphical User Interface lets you click, drag, drop and write. SearchKit builds and defines the underlying search and provides many ways to display it. FormBuilder shows end users filters and database actions, and provides more options for layout.
+SearchKit’s Graphical User Interface lets you click, drag, drop and write. SearchKit builds and defines the underlying search and provides many ways to display it. FormBuilder shows filters and database actions, and provides more options for layout.
 
 For developers, it is useful to know that they expose all the functionalities that are given by **APIv4**. They can be used in many ways, including adding new pages to CiviCRM, tabs to the Contact Summary page, or searchlets to the CiviCRM Dashboard.
 
