@@ -36,7 +36,7 @@ Searches built and saved in SearchKit can be targeted for use by different roles
 
 ## SearchKit and FormBuilder
 
-SearchKit and **[FormBuilder](/docs/the-user-interface/creating-new-forms.md)** work together to let users search for CiviCRM data and create new user interfaces without writing code. 
+SearchKit and **[FormBuilder](../../the-user-interface/creating-new-forms.md)** work together to let users search for CiviCRM data and create new user interfaces without writing code. 
 
 SearchKit’s Graphical User Interface lets you click, drag, drop and write. SearchKit builds and defines the underlying search and provides many ways to display it. FormBuilder shows filters and database actions, and provides more options for layout.
 
