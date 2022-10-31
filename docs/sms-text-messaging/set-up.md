@@ -150,7 +150,7 @@ You now have a rented mobile phone number that can send and receive SMS messages
 
 ### Setting up your new mobile phone number in Twilio
 
-1. Click the **All Products & Services** icon, in the far left navigation bar.
+1. Click the **All Products & Services** icon, in the far left navigation bar (or click on Develop > Super Network > Phone Numbers).
 
 2. Choose **Phone Numbers**.
 
