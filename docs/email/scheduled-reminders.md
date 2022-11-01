@@ -253,6 +253,29 @@ examples:
 -   Email people who registered but didn't show up for your event to
     gather information about why.
 
+### When scheduled reminders for events are or aren't sent
+
+If you set a scheduled reminder for an event to be sent on a specific 
+date, it will be sent only on that date. Contacts who registered before
+that date will receive the scheduled reminder the first time your Send
+Scheduled Reminders cron job runs on that date (so likely shortly after
+midnight). Contacts who register on that date will receive the reminder
+shortly after they register. Contacts who register after that date will
+not receive the reminder.
+
+In contrast, if you set a scheduled reminder relative to the event start
+or end (e.g. 24 hours before the event start), reminders will generally
+also be sent to contacts who register after that time. Specifically, if you
+set a reminder to be sent at any time before the event start or end, it
+will be sent to all registrants who register before the event ends. If 
+you set a reminder for any time after the event start or end, it will be
+sent to any registrant, no matter when they register.
+
+Similarly, if you set a reminder before the registration start or end,
+it will be sent to any contacts who register up to the registration end.
+Reminders set for after the registration start or end won't be sent at all.
+
+
 ## Limiting or adding to your recipient list.
 
 As already outlined, you select the recipients of your scheduled
