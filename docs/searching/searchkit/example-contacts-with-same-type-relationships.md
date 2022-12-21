@@ -9,14 +9,14 @@ There are some scenarios in which a user may want a list of contacts who have mo
 1. Select **With (required)** and **Contact Related Contacts** on a new entity
 1. Click the *+Group By** button and group by both **Contact ID** and **Relationship Type**
 
-![Search criteria](docs/img/search-kit/multirelationships-search-settings.png)
+![Search criteria](../../img/search-kit/multirelationships-search-settings.png)
 
 ## Step 2: Add the Relationship column to the search
 
 1. Below where the criteria is configured, click on the **+Add** button and select **Contact Related Contacts: Relationship**
 1. Though not necessary, it might be helpful to add the **Contact Related Contacts: Relationship from contact** column to indicate the relationship type for clarity, especially if your search will include more than one type of relationship.
 
-![Relationship column](docs/img/search-kit/multirelationships-columns.png)
+![Relationship column](../../img/search-kit/multirelationships-columns.png)
 
 
 ## Step 3: Transform the Relationship column
@@ -24,7 +24,7 @@ There are some scenarios in which a user may want a list of contacts who have mo
 1. Click on the **Field Transformations** section just below the **Having** drop down list
 1. Select **Count** as the transformation for **Relationship**
 
-![Field Transformations](docs/img/search-kit/multirelationships-fieldtransformations.png)
+![Field Transformations](../../img/search-kit/multirelationships-fieldtransformations.png)
 
 
 ## Step 4: Add a Having clause
@@ -33,4 +33,4 @@ There are some scenarios in which a user may want a list of contacts who have mo
 1. In this scenario, select the greater than symbol (>) and enter 1 in the field to the right of the symbol.
 1.  Click **Search** to view your results. Don’t forget to name and save your search as well!
 
-![Having clause](docs/img/search-kit/multirelationships-having.png)
+![Having clause](../../img/search-kit/multirelationships-having.png)
