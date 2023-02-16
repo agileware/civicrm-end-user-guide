@@ -81,3 +81,13 @@ And on the topic of reusable values, the **Values** section at the top of the le
 
 ![Preset values](../img/the-user-interface/form-builder/pre-set-values.png)
 
+
+## Using URL filters in search forms
+ 
+For search forms with pages you can make them get filter values from a special part of the URL. This means you can **link to filtered views** of the search form, e.g. from another search form (by using tokens in the Link URL field.)
+
+When looking at the left-side panel with a search display tab selected while editing a form, there's an option called Filters. Select a field, e.g. *Hair color*, then select URL and then type a codename, e.g. `haircolor`. 
+
+To use this feature, the URL can be constructed like this:
+`https://your.example.org/civicrm/path/to/your/searchformpage/#?haircolor=brown` i.e. appending `#?haircolor=brown`. If you had multiple such filters, you would add subsequent ones like `#?haircolor=brown&hairlength=short`.
+
