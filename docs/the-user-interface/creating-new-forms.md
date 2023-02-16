@@ -12,7 +12,7 @@ Once enabled, a Form Builder link will appear in the menu under
 
 Form Builder is excellent for when only a few fields are needed, such as in the image below that depict embedded form on a main dashboard that quickly creates and assigns activities of a particular type (i.e. schedule a phone call). The user only needs to enter the contacts involved, but has the option to add a subject and details.
 
-![activitiy_dashlet.png](../img/the-user-interface/form-builder/activity-dashlet.png)
+![activity_dashlet.png](../img/the-user-interface/form-builder/activity-dashlet.png)
 
 ## Build a Form
 
