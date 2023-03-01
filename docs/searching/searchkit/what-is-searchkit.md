@@ -14,30 +14,29 @@ You can access SearchKit under the menu **Search > SearchKit**.
 ## Concepts and terminology
 
 Getting familiar with SearchKit requires some understanding of it's components and concepts. 
-There are a number of examples in this documentation for you to work through to get a better feel
+There are a number of recipes in this documentation for you to work through to get a better feel
 for these but some introduction is needed.
 
 ### You find 'Entities'
 
 An entity is a developer word for a 'thing'. 
 In most cases the 'thing' (Entity) you want to search for will be something like a Contact, a Contribution etc. 
-You start your search by ensuring it is set to the entity you want to search for, and potentially include
-or exclude other entities. You will see us use Entity in the UI in places - for example you can filter by 
-the 'entity' your search is looking for on the main page.
+You start your search by ensuring it is set to the entity you want to search for. You will see us use Entity in the UI in places
+- for example you can filter by the 'entity' your search is looking for on the main page.
 
 ![Filtering by entity](../../img/search_kit_intro_entity.png)
 
-You will be able to select fields to display that reflect your selected entity
+Within your search you will be able to select fields to display that reflect your selected entity
 
 ![Choose fields](../../img/search_kit_intro_select.png)
 
 ### Filters / Criteria / Where
 
-The Where section is where you define any criteria that don't relate to a join
+The Where section is where you define the criteria that relate to your entity.
 
 ![Where clause](../../img/search_kit_intro_where.png)
 
-The Having section is where you define any criteria to be applied after a 'Group By'.
+The Having section is where you define any criteria to be applied after a 'Group By' (see further down).
 
 ### With/Without (Joins)
 
