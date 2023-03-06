@@ -99,5 +99,5 @@ The following formats are acceptable for dates:
    - `receive_date=2021-09-23`
    - `receive_date=20210923`
    - `receive_date=20210923234040` (i.e. time is 23:40:40)
-   - `receive_date=this.month` (See [the list](../relative-date-formats.md))
+   - `receive_date=this.month` (See [the list](../searching/relative-date-formats.md))
 
