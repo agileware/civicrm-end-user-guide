@@ -81,3 +81,23 @@ And on the topic of reusable values, the **Values** section at the top of the le
 
 ![Preset values](../img/the-user-interface/form-builder/pre-set-values.png)
 
+
+## Using URL filters in search forms
+ 
+For search forms with pages you can make them get filter values from a special part of the URL. This means you can **link to filtered views** of the search form, e.g. from another search form (by using tokens in the Link URL field.)
+
+When looking at the left-side panel with a search display tab selected while editing a form, there's an option called Filters. Select a field, e.g. *Hair color*, then select URL and then type a codename, e.g. `haircolor`. If the field you want is missing, it's because that field has not been added to the Search, so jump back and do that first.
+
+To use this feature, the URL can be constructed like this:
+`https://your.example.org/civicrm/path/to/your/searchformpage/#?haircolor=brown` i.e. appending `#?haircolor=brown`. If you had multiple such filters, you would add subsequent ones like `#?haircolor=brown&hairlength=short`.
+
+When the field has a `:` in it that indicates that the field is a 'pseudoconstant'. The underlying database value is generally a number which maps to a name and label. In this case the database field `payment_instrument_id` is a number. In some cases we know the number instead, in which case we could use `payment_instrument_id=1` in our URL or `payment_instrument_id:name=Cash`. As well as being more readable and discoverable, this variant is more useful for implementers who work with multiple sites, since the actual ID numbers will likely change between sites, but the `name` is fixed.
+
+If the field is already filtered (e.g receive date before this week) then the URL filter will further narrow down the results rather than replace the existing filter.
+
+The following formats are acceptable for dates:
+   - `receive_date=2021-09-23`
+   - `receive_date=20210923`
+   - `receive_date=20210923234040` (i.e. time is 23:40:40)
+   - `receive_date=this.month` (See [the list](../searching/relative-date-formats.md))
+
