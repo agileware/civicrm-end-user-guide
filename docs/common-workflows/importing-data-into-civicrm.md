@@ -384,16 +384,25 @@ them.
 
 ## Import Contributions
 
-You can insert new contributions or update existing ones.
+You can insert new contributions or update existing ones. If you are on a recent version of CiviCRM
+and enable the Civi-Import extension you can also create or update the contact and any
+soft credit contacts in the same import
 
 If you **insert new contributions,** your CSV file must include at least
 the following fields:
 
--   Contact Id or External Identifier or all the fields used in your
-    Unsupervised Duplicate Matching rule (to match to an existing
-    contact)
+-   Fields to match (or create) the cotnact.
 -   Financial Type
 -   Total Amount
+
+The fields required for the contact depend on whether Civi-Import is enabled.
+If not then you need:
+- Contact ID or External Identifier or all the fields used in your
+    Unsupervised Duplicate Matching rule (to match to an existing
+    contact)
+
+If CiviImport is enabled then the above still holds for matching contacts
+but you can specify which Dedupe rule to use. 
 
 If you want to **update existing contributions,** your CSV file must
 include at least the following fields:
