@@ -77,7 +77,7 @@ to customize the look and overlal layout of the form:
 Containers can also be saved as blocks, which can then be used on other
 forms as well. For example, a grouping of customized fields that are reused could be saved as a block and applied to multiple activity forms. Then, if that grouping of fields needs to be changed, the block would only have to be changed once instead of on each individual form.
 
-And on the topic of reusable values, the **Values** section at the top of the left pane includes the option to pre-set data on the form. Continuing with the example from this section, the image below shows the renamed tab,'Schedule call', and three pre-set values. Having pre-set values can be useful if information, such as the Added by or Activity Status feilds, should be consistent across the form's submissions.
+And on the topic of reusable values, the **Values** section at the top of the left pane includes the option to pre-set data on the form. Continuing with the example from this section, the image below shows the renamed tab,'Schedule call', and three pre-set values. Having pre-set values can be useful if information, such as the Added by or Activity Status fields, should be consistent across the form's submissions.
 
 ![Preset values](../img/the-user-interface/form-builder/pre-set-values.png)
 
@@ -101,3 +101,8 @@ The following formats are acceptable for dates:
    - `receive_date=20210923234040` (i.e. time is 23:40:40)
    - `receive_date=this.month` (See [the list](../searching/relative-date-formats.md))
 
+## Using URL parameters to set defaults in submission forms
+
+The method described for setting values for filters in a search form can also be used to set values for other fields in form that will be submitted. So if a form for a hair styling salon had fields for email, first name, last name, hair color and hair length, adding `#?haircolor=brown&hairlength=short` to the URL of the form will cause the haircolor field to be defaulted to brown and the hairlength field to be defaulted to short when the form is rendered. The user could modify these values before submission. 
+
+This method also works if the default is being specified in the URL for a hidden field not shown to the user. One use case for this is to allow a single input form to be reused in different contexts. For example, a signup form could be used at different events, with the URL key-value pair indicating which in person event the signup is from. Different QR codes incorporating different key-value pairs like `#?event=May1Rally` could be used at each event.
