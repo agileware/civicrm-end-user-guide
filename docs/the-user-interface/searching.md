@@ -19,7 +19,7 @@ In this introduction we will discuss at various level of detail:
 * **Custom searches** - using the available custom made searches that can be from CiviCRM core or from one or more of your specific extensions.
 * **Search actions** - what you can do with the results of your search (or sometimes report).
 * **The contact summary pop** - what you can see and change in the popup when hovering over a contact icon in your search results.
-* **The wildcard** - using "%" in your searches as a wildcard.
+* **The wildcard** - using "%" or "%_%" in your searches as a wildcard.
 * **Case sensitivity** - what you can do with upper or lower case in your search.
 * **Default number of rows** - how many results are returned in your searches and how you can change that number.
 * **Search Kit** - a brief link to the [Search Kit](../searching/searchkit/what-is-searchkit.md) functionality.
@@ -473,6 +473,8 @@ these variations, including a contact who is supposed to be named
 used before, after, or even within words. For example, searching on
 'Mich%el' will exclude "Michał" and "Micheal" but still find "Michelle"
 and "Michael".  
+
+However, using % by itself can produce unexpected results for data where the value in the database is 'empty' (as opposed to NULL. Using a single % will return results for empty values. To avoid these results, eg if you are searching "any record which has any data in this field" using %_%. This will return results only where there is at least a single character, and will ignore all empty (as well as NULL) results.
 
 ## Case sensitivity
 
