@@ -1,8 +1,8 @@
 # Set-up
 
 Set up of CiviGrant is reasonably straightforward. The first thing to do
-is to enable the CiviGrant module in **Administer > System Settings >
-Enable Components**.
+is to enable the CiviGrant extension in **Administer > System Settings >
+Extensions**.
 
 ## Grant types
 
