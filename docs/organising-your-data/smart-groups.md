@@ -65,10 +65,12 @@ contributions in your CiviCRM installation).
 6.  From the **Actions** drop-down menu select **Group - create smart group**.
 7.  Give the smart group a name and description and optionally designate it as a mailing list and give if a parent group. Click **Save Smart Group**.
 
+You can also create a smart group from SearchKit. From any search that returns contacts, just click **+Add** on the left hand side and then select **Smart Group**.
+
 Your smart group will now appear in all the usual places where you see
 groups.
 
-Try editing the a contact in the smart group so that they no longer
+Try editing a contact in the smart group so that they no longer
 match the criteria. You'll see that they are removed from the smart
 group.
 
