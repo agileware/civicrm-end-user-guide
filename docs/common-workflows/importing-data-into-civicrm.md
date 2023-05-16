@@ -360,14 +360,14 @@ according to these standards.
 When preparing your data import it is helpful to know what fields are
 required for Import. You'll want to be sure that these fields are
 included in your CSV import file. Below is a list of the required
-fields. The Contact ID field is used to cross reference and attach the
+fields. The Target Contact ID field is used to cross reference and attach the
 activity to the contact so it must match the contact ID of the contact
 in the system exactly.
 
 -   Activity Date
 -   Activity Type IDs
 -   Activity Type Label
--   Contact ID (Match to Contact)
+-   Target Contact ID (Match to Contact)
 -  Subject
 
 The import tool for Activities is similar to that of contacts, but there
