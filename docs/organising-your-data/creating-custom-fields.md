@@ -52,7 +52,7 @@ You can use this option to ensure that the fields appear only where they are rel
 -   **Pledges:**fields specific to pledges.
 -   **Relationships:** fields that may be assigned to all relationship records or to a specific relationship type, such as "Spouse of" or "Employee of".
 
-???+ warning "Not editable if data exist"
+!!! warning "Not editable if data exist"
      You may *only* make customizations to this field if *no data* has been recorded with it. Until you record data, you may make changes to **Used For** by using **More > Settings** option for set on the **Administer > Customize Data and Screens > Custom Fields**
 
 ### Order
