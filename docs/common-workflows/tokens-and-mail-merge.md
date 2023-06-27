@@ -188,7 +188,6 @@ Tips
 
     ```smarty
     {capture assign=first_name}{contact.first_name}{/capture}
-    Dear {$first_name|default:Friend},
     {if $first_name}
       Hello, {$first_name}, how are you?
     {/if}
