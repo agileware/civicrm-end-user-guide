@@ -24,7 +24,7 @@ Form Builder is excellent for when only a few fields are needed, such as in the 
 !!! Note
   Currently, only activity and contact related forms are offered, however, it is anticipated that other entities will be added soon (they can be added programatically).
 
-1. ### Configure the form settings
+2. ### Configure the form settings
   The form configuration screen can be broadly grouped into two parts:
     1. a configuration pane (left) that contains:
       * the title (required and visible on the form)
@@ -44,7 +44,7 @@ Form Builder is excellent for when only a few fields are needed, such as in the 
 
   ![Configure the form](../img/the-user-interface/form-builder/configure-form.png)
 
-2. ### Build the form
+3. ### Build the form
 On the left configuration pane, there are two tabs. The second tab displays the content, determined by which contact type or activtiy was chosen, that can be added to the form. Drag and drop the desired fields into the layout pane on the right, where they can be ordered and customized.
 
 ![Build the layout](../img/the-user-interface/form-builder/build-layout.png)
@@ -54,15 +54,16 @@ Under the Elements section, there are some formatting options that allow blocks 
 ![Layout](../img/the-user-interface/form-builder/layout.png)
 
 To the right of each field on the layout pane is a settings widget. This widget has options to:
-  * change the widget for data entry (for example, if you choose RichTextEditor then a full WYSIWIG input widget will show up)
-  * specifiy if the field is required
-  * add a default value
-  * specify if the label is shown
-  * add any pre or post help text
+- change the widget for data entry (for example, if you choose RichTextEditor then a full WYSIWIG input widget will show up)
+- specifiy if the field is required
+- add a default value
+- specify if the label is shown
+- add any pre or post help text
 
-Click on the layout elements to
-  * rename the label
-  * add placeholder text that will show in text boxes.
+
+Click on the layout elements to:
+- rename the label
+- add placeholder text that will show in text boxes.
 
 ![Field settings](../img/the-user-interface/form-builder/field-settings.png)
 
