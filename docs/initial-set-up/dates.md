@@ -17,7 +17,7 @@ CiviCRM defines ~7 common ways to format a date or time -- and each one can be t
 | "Complete Date and Time" | `%B %E%f, %Y %l:%M %P` | September 18th, 2022 11:58 PM |
 | "Complete Date"          | `%B %E%f, %Y`     | September 19th, 2022 |
 | "Short Date"             | `%m/%d/%Y` | 09/18/2022 |
-| "Month and Year"         | `%B %Y`  | September 19th, 2022 |
+| "Month and Year"         | `%B %Y`  | September 2022 |
 | "Time Only"              | `%l:%M %P`     | 1:34 PM |
 | "Year Only"              | `%Y`     | 2022 |
 | "Financial Batch"        | `%m/%d/%Y`| 09/19/2022 |
