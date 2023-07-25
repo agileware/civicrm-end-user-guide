@@ -77,7 +77,7 @@ between the contacts.
 
 ### Other ways employees and employers can be connected
 
-Employees and employers can be connected are using the Current Employer
+Employees and employers can be connected using the Current Employer
 field on CiviCRM Profiles and CiviCRM Contribution Pages.
 
 When the Current Employer field is shown, the user can enter the name of
