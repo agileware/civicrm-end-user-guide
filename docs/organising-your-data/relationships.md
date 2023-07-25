@@ -75,6 +75,25 @@ between the contacts.
     on the Relationships tab to view your newly created relationship
     Employee of and see any existing relationships.
 
+### Other ways employees and employers can be connected
+
+Employees and employers can be connected using the Current Employer
+field on CiviCRM Profiles and CiviCRM Contribution Pages.
+
+When the Current Employer field is shown, the user can enter the name of
+their Employer, it is not presented as a select list to preserve privacy.
+
+When the form is processed, CiviCRM will check the Current Employer field
+and attempt to match an existing Organisation contact before creating a new
+one, thus reducing **potential duplicates**.
+
+The **first check** is performed using the **Deduplication Rule, Organisation Unsupervised**.
+If a matching Organisation contact is found, this contact is used and no new contact is created.
+
+The **second check** is to compare if the Individual contact has an existing Current Employer with the same name as provided on the form. If matching, this contact is used and no new contact is created.
+
+And lastly, if no match is found then a new Organisation contact is created and the **Employee Of Relationship** created to link the Individual and the new Organisation contact.
+
 ## Adding contacts to organisations
 
 1.  Select the desired contacts from your search results as described
