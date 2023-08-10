@@ -94,6 +94,8 @@ To use this feature, the URL can be constructed like this:
 
 When the field has a `:` in it that indicates that the field is a 'pseudoconstant'. The underlying database value is generally a number which maps to a name and label. In this case the database field `payment_instrument_id` is a number. In some cases we know the number instead, in which case we could use `payment_instrument_id=1` in our URL or `payment_instrument_id:name=Cash`. As well as being more readable and discoverable, this variant is more useful for implementers who work with multiple sites, since the actual ID numbers will likely change between sites, but the `name` is fixed.
 
+The easiest way to find the exact field name needed is to temporarily enable rewrite for the field you want in your SearchDisplay and then copy the default value given, without the square brackets. This is especially useful if your SearchDisplay has a second entity, for which you need the full reference rather than just the field name.
+
 If the field is already filtered (e.g receive date before this week) then the URL filter will further narrow down the results rather than replace the existing filter.
 
 The following formats are acceptable for dates:
