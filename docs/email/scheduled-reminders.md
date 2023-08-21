@@ -321,6 +321,26 @@ an event, you can also send it to Bob Adams, your office manager, so
 that he will remember to check that the event room is set up in the
 appropriate configuration with any equipment required.
 
+
+### What can cause scheduled reminders not to be sent?
+
+First confirm if the Scheduled Reminder is being sent correctly, use the **Find Activities** search and specify an Activity Type of **Reminder Sent** or **Membership Renewal Reminder** for membership renewals. 
+
+If you can see Activities matching the criteria for the contacts, then there can be other reasons that a contact may not receive a Scheduled Reminder, such as email delivery issues.
+
+If you cannot see any **Reminder Sent** or **Membership Renewal Reminder** Activities then consider the following conditions which may cause a Scheduled Reminder to not be sent.
+
+1. Contact is deleted.
+2. Contact is deceased.
+3. Contact has the privacy option **Do not email** enabled.
+4. Contact email address is **On hold**.
+5. For a **Membership Renewal Reminder**, the Membership, **Status Override?** option has been enabled. When Status Override is active, the selected status will remain in force. No Membership Renewal Reminder will be sent.
+6. The Scheduled Job, **Send Scheduled Reminders** is not enabled or not configured to run **Always**. This job must execute at the time the criteria is met for the Scheduled Reminder to be sent. If there are delays in executing this job, Scheduled Reminder criteria will be skipped.
+7. The Scheduled Reminder is disabled.
+8. The Scheduled Reminder has the Limit or Add Recipients, **Limit To** option set and this does not include the target contact.
+9. There are no Scheduled Reminders that match the criteria for the contact.
+10. The Scheduled Reminder has a **When (trigger date)** that has past or otherwise not been met.
+
 ## Scheduled reminders and privacy options, on hold
 
 Scheduled reminders are still sent to contacts who have **opted out of
