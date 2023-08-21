@@ -213,6 +213,8 @@ encounters a duplicate:
 -   **No Duplicate Checking**: this inserts all valid records without
     comparing them to existing contact records for possible duplicates.
 
+You can only match imported data directly to existing Contact IDs in Update, Fill or No Duplicate Checking modes.
+
 ![screenshot](../img/Import_Options.png)
 
 **Import mappings** tell CiviCRM how the fields of data in your import
