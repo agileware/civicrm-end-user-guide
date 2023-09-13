@@ -54,7 +54,7 @@ people who have unsubscribed are excluded from those future mailings.
 
 ## Choosing recipients: When mailing recipients are set
 
-When you submit a mailing, the list of recipients is set based on which contacts are members of the mailing's groups at that moment. Even if the mailing is scheduled for a month in the future, the list of recipients won't change after it has been scheduled.
+When you submit a mailing, the list of recipients is set based on which contacts are members of the mailing's groups at that moment. Even if the mailing is scheduled for a month in the future, the list of recipients won't change after it has been scheduled. However, any contacts who are opted out, marked do not email, deceased, deleted or whose email is on hold at the time of sending will not received the mailing.
 
 So if you send a mailing to a smart group, the list of recipients will be set based on the smart group criteria when the mailing is scheduled and won't be updated when the mailing is actually sent.
 
