@@ -45,7 +45,7 @@ other popular CMS's including Backdrop, Joomla! and WordPress.
 CiviCRM includes a large ecosystem of free software contributors
 around the project and high-profile non-profit organisations such as
 Amnesty International, Creative Commons, Electronic Frontier
-Foundation, Free Software Foundation, Mozilla, and Wikimedia Foundation
+Foundation, Free Software Foundation, and Wikimedia Foundation
 use CiviCRM.
 
 Currently, CiviCRM operates using a [group based structure](https://civicrm.org/core-team) 
