@@ -94,10 +94,12 @@ is fully empty then during sending a text version will be generated from the
 HTML version.
 
 2) enter your text version into the text box on the message template screen.
-ey warned that it will need to be kept up to date manually. This has a time cost 
+Be warned that it will need to be kept up to date manually. This has a time cost 
 and there is there is a risk that the text version is not maintained over time. 
 This could mean that people using plain text-only email clients will receive 
-an incorrect or incomplete message.
+an incorrect or incomplete message. This may include people who are visually
+impaired and using email reading software getting incorrect information if 
+their software prefers the text version.
 
 
 To create a plain text version of a message from HTML:
