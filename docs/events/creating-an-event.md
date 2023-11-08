@@ -79,12 +79,18 @@ Select **Allow sharing through social media** to include social media
 links for sharing this event on the Event Info page, Thank-you page,
 Tell-a-Friend page (if enabled), and in event confirmation emails.
 
-Lastly, you have the option of making this event active or inactive. If
+The event can be active or inactive. If
 you anticipate that it will take some time to complete the configuration
 of your event, consider making it inactive until it is complete to
 ensure it is not inadvertently listed on the event listing feeds. You
 can easily activate the event when you are ready to begin publicizing
 it.
+
+If you want CiviCRM to add links on the information page and registration
+mails for downloading a calendar meeting invitation, select **Show
+Calendar Links**. Note that these calendar invites do not work well
+if participants are in different timezones than the server.  Test
+thoroughly if you enable this.
 
 After reviewing the details on this page, click **Continue >>** to
 create your event and advance to the next step. You can interrupt
