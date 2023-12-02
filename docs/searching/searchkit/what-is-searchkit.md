@@ -44,13 +44,13 @@ In general, the operators are the same as the similarly-named SQL operators. Her
 
 The Having section is where you define any criteria to be applied after a 'Group By' (see further down).
 
-### With/Without (Joins)
+### With (optional)/With (required)/Without (Joins)
 
-A join is the technical term for including more than one entity. In the UI you will see it
-referred to as `with`/ `without`. Once you joinm in another entity you may have more rows - for
+You might want to find information that encompasses some columns of data that are not in the list available from the first entity selected. A join is the technical term for including more than one entity. In the UI you will see it
+referred to as `With (optional)` / `With (required)` / `Without`. Once you join another entity using `With (optional)` you may have more rows - for
 example in this case the search includes 'Contacts `with (optional)` Addresses'. The results
-will have one or more rows for each contact. If they have zero or one address they will have one
-row. But if they have more than 1 then they will have one row per address -e.g here are the results
+will have more rows for contacts with more than one address, and one row if they have no addresses or one address. By contrast, joining another entity using `With (required)` may reduce the number of rows returned. For example, 'Contacts `With (required)` Addresses' will not show contacts that have no addresses. If they have zero or one address they will have one
+row. But if they have more than one then they will have one row per address -e.g here are the results
 for Timmy & his parents where Timmy has one known address, Mum has 2 and Dad has none.
 
 |Display Name|Location Type|Street Address|Is Primary|
