@@ -4,7 +4,6 @@
 
 SearchKit is a powerful search query builder with extensive options for displaying results. It is appropriate for site builders, power users and developers but non-technical staff are likely to need training or to spend some time learning the interface. Alternatively a more experienced user or developer may create SearchKit searches and make them available to other users via the menu system or as a dashlet on the main CiviCRM screen.
 
-
 Searches built and saved in SearchKit can be targeted for use by different roles of staff users as well as unauthenticated end users.
 
 ## Getting started
@@ -19,16 +18,17 @@ for these but some introduction is needed.
 
 ### You find 'Entities'
 
-An entity is a developer word for a 'thing'. 
-In most cases the 'thing' (Entity) you want to search for will be something like a Contact, a Contribution etc. 
-You start your search by ensuring it is set to the entity you want to search for. You will see us use Entity in the UI in places
-- for example you can filter by the 'entity' your search is looking for on the main page.
+An entity is a technical word for a 'thing'. In most cases the 'thing' (Entity) you want to search for will be something like a Contact, a Contribution etc. You start your search by selecting the entity you want to search for, or one of the several you want to find:
 
 ![Filtering by entity](../../img/search_kit_intro_entity.png)
 
-Within your search you will be able to select fields to display that reflect your selected entity
+Within your search you can select fields to display. Some appear by default when you click Search. Then you can add others by clicking on the +Add on the right of the list of fields in your selected results, and selecting more fields. 
 
 ![Choose fields](../../img/search_kit_intro_select.png)
+
+You can delete fields from appearing in the search results by clicking on the x beside the field name in the header row containing field titles of the search results.
+
+![Delete fields](../../img/search_kit_intro_field_delete.png)
 
 ### Filters / Criteria / Where
 
