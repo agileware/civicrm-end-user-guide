@@ -82,21 +82,25 @@ template that will look good in all mail clients:
 ### Plain text and HTML formats
 
 All messages can be sent either in plain text or in HTML. Today the vast
-majority of people use email clients that can read messages received in
-HTML. However, the best practice is to offer the option to send a plain
-text email version to ensure all recipients can view the message. Plain
-text email readers may display HTML email as blank. HTML email may also
-present accessibility issues to people using screen readers.
+majority of people use email clients that read messages received in
+HTML. 
 
-However, there is a risk that if users modify an email based on a
-template that contains both plain text and HTML, they will forget to
-modify the plain text version of this message. This will mean that
-people using plain text-only email clients will receive an incorrect or
-incomplete message.
+It is good practice is to send a plain text email version as well as the html
+one to ensure all recipients can view the message and there are two ways to
+make this happen.
 
-One solution to this problem is to either use plain text emails only or
-to set templates without the plain text option and ask users to create a
-plain text version before sending their mailings.
+1) (recommended) - ensure the text version of the message is blank. If is
+is fully empty then during sending a text version will be generated from the
+HTML version.
+
+2) enter your text version into the text box on the message template screen.
+Be warned that it will need to be kept up to date manually. This has a time cost 
+and there is there is a risk that the text version is not maintained over time. 
+This could mean that people using plain text-only email clients will receive 
+an incorrect or incomplete message. This may include people who are visually
+impaired and using email reading software getting incorrect information if 
+their software prefers the text version.
+
 
 To create a plain text version of a message from HTML:
 
@@ -230,7 +234,9 @@ Here is a list of the tokens you can use
 
 Create the **Message Subject** for your email. Use tokens if desired.
 
-Create your **Text Message** and **HTML Message**. Include tokens to personalize your messages.
+Create your **HTML Message**. Include tokens to personalize your messages. 
+
+Leave **Text Message** blank unless you have a strong reason not to.
 
 Choose **Enabled?** to enable the message template for use.
 
