@@ -43,16 +43,20 @@ In general, the operators are the same as the similarly-named SQL operators. Her
 - `Contains` is useful for searching in serialized fields (fields that store multiple values together, such as Contact Subtype which could be `Parent,Volunteer,Staff`). It matches only a full value like `Parent`, not parts of a value.
 - Negated operators such as `Not Like`, `≠` or `Doesn't Contain` won't match NULL fields that have no value. They only match fields that have a value and the value doesn't match the criteria. If you want NULL fields as well, you can search for `≠ searchterm OR Is Empty`.
 
-The Having section is where you define any criteria to be applied after a 'Group By' (see further down).
+### With/Without (Joins)
 
-### With (optional)/With (required)/Without (Joins)
+In SearchKit, when you include more than one type of information (referred to as 'entities'), it's known as a join. In the user interface it is represented with the options "with" or "without". 
 
-You might want to find information that encompasses some columns of data that are not in the list available from the first entity selected. A join is the technical term for including more than one entity. In the UI you will see it
-referred to as `With (optional)` / `With (required)` / `Without`. Once you join another entity using `With (optional)` you may have more rows - for
-example in this case the search includes 'Contacts `with (optional)` Addresses'. The results
-will have more rows for contacts with more than one address, and one row if they have no addresses or one address. By contrast, joining another entity using `With (required)` may reduce the number of rows returned. For example, 'Contacts `With (required)` Addresses' will not show contacts that have no addresses. If they have zero or one address they will have one
-row. But if they have more than one then they will have one row per address -e.g here are the results
-for Timmy & his parents where Timmy has one known address, Mum has 2 and Dad has none.
+![Join options](../../img/search_kit_intro_join_options.png)
+
+Keep in mind that adding an additional entity can change the number of rows in your results. For instance, let's consider a search that includes 'Contacts with (optional) Addresses'. In this scenario, the results will display differently based on the number of addresses associated with each contact.
+
+![Sample join](../../img/search_kit_intro_joins.png)
+
+- If a contact has no address or just one, they will appear in the results as a single row.
+- If a contact has multiple addresses, there will be a separate row for each address.
+
+Here's an example with Timmy and his parents:
 
 |Display Name|Location Type|Street Address|Is Primary|
 |------------|-------------|--------------|----------|
@@ -61,36 +65,19 @@ for Timmy & his parents where Timmy has one known address, Mum has 2 and Dad has
 |Timmy's Mum|Work|Downing Street|No|
 |Timmy's Dad|||
 
-![Sample join](../../img/search_kit_intro_joins.png)
+In this table (if you attach the addresses using the option "With optional" to the contacts):
 
-There are 3 options for how to join
+- Timmy appears once as he has only one known address.
+- Timmy's Mum appears twice, once for each of her two addresses (Home and Work).
+- Timmy's Dad appears without any address details.
 
-![Join options](../../img/search_kit_intro_join_options.png)
+There are three options for joins in SearchKit: with (required), with (optional), and without. Each of these options significantly alters the search results. Here's how they differ:
 
-By changing between `with (required)`, `with (optional)` and `without` we change the search results completely.
-Look at the image.
+- With (required): This option ensures that only those contacts with the specified additional information (like an address) are shown in the results.
+- With (optional): Using this option, all contacts are shown in the results, but additional information is included where available.
+- Without: This option includes only those contacts that do not have the specified additional information.
 
-![Join options](../../img/search_kit_intro_join_fields.png)
-
-As selected it join will
-- find contacts WITH more than one non-primary address.
-  How is it finding only contacts with more than one address? The contact is `required` to be `with`
-  and address that is not their primary address. Our result will look like
-
-|Display Name|Location Type|Street Address|Is Primary|
-|------------|-------------|--------------|----------|
-|Timmy's Mum|Work|Downing Street|No|
-
-- If `without` had been selected then it would only include contacts `without` any non-primary street
-  addresses. This might mean they have only primary addresses, or that they have no addresses - it would find
-
-|Display Name|Location Type|Street Address|Is Primary|
-|------------|-------------|--------------|----------|
-|Timmy||||
-|Timmy's Dad|||
-
-Note that although Timmy has an address it does not show up here because we have not included it
-(used `with`), rather we used `without a non primary address`
+The choice of join option directly influences which contacts and what information is displayed in your search results."
 
 ### Group By
 If, as in the above join example, you have one row per address but you just want one per contact
