@@ -8,7 +8,7 @@ diverse offerings are crucial to the continued success of CiviCRM, but
 they can move the project forward only if they find their way back into
 the public stream of discussion and collaboration. This chapter is a
 guide to finding and engaging in the community of people who are working
-together to make CiviCRM what it is and what it will become..
+together to make CiviCRM what it is and what it will become.
 
 ## Finding the Community Online
 
