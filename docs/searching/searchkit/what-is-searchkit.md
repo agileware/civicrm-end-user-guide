@@ -2,7 +2,7 @@
 
 ## About
 
-SearchKit is a powerful search query builder with extensive options for displaying results. It is appropriate for site builders, power users and developers but non-technical staff are likely to need training or to spend some time learning the interface. Alternatively a more experienced user or developer may create SearchKit searches and make them available to other users via the menu system or as a dashlet on the main CiviCRM screen.
+SearchKit is a powerful search query builder with extensive options for displaying results. It is appropriate for site builders, power users and developers but non-technical staff are likely to need training or to spend significant time learning the interface. Alternatively a more experienced user or developer may create SearchKit searches and make them available to other users via the menu system or as a dashlet on the main CiviCRM screen.
 
 Searches built and saved in SearchKit can be targeted for use by different roles of staff users as well as unauthenticated end users.
 
@@ -12,13 +12,13 @@ You can access SearchKit under the menu **Search > SearchKit**.
 
 ## Concepts and terminology
 
-Getting familiar with SearchKit requires some understanding of it's components and concepts. 
+Getting familiar with SearchKit requires some understanding of its components and concepts. 
 There are a number of recipes in this documentation for you to work through to get a better feel
 for these but some introduction is needed.
 
 ### You find 'Entities'
 
-An entity is a technical word for a 'thing'. In most cases the 'thing' (Entity) you want to search for will be something like a Contact, a Contribution etc. You start your search by selecting the entity you want to search for, or one of the several you want to find:
+An entity is a technical word for a 'thing'. In most cases the 'thing' (Entity) you want to search for will be something like a Contact, a Contribution, etc. You start your search by selecting the entity you want to search for, or one of the several you want to find:
 
 ![Filtering by entity](../../img/search_kit_intro_entity.png)
 
@@ -113,9 +113,5 @@ It is more powerful than Advanced Search, and covers some extra parts of CiviCRM
 
 The upper left Quick Search continues to be more convenient for quickly retrieving records based on part of an email or name or other single term. 
 
-
-## Site Admin notes
-
-### If SearchKit is missing.
 
 On recent versions of CiviCRM SearchKit cannot be disabled. However, in the past SearchKit was not turned on when CiviCRM is installed. If it is not enabled on your site you can enable it on the Extensions screen. Navigate to **Administer > System Settings > Extensions**. Beside SearchKit, select the **Install** link then select the **Install** button.
