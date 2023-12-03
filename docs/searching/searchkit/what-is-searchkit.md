@@ -37,10 +37,10 @@ The Where section is where you define the criteria that relate to your entity.
 ![Where clause](../../img/search_kit_intro_where.png)
 
 In general, the operators are the same as the similarly-named SQL operators. Here are a few tips:
-- `Matches Pattern` will match a regular expressions pattern.
-- `Is Like` matches a complete field, so you usually want to use it with wildcards if you want to find parts of the field, like `%search term%`.
-- `Contains` is useful for searching in serialized fields (fields that store multiple values together, such as Contact Subtype which could be `Parent,Volunteer,Staff`). It matches only a full value like `Parent`, not parts of a value.
-- Negated operators such as `Not Like`, `≠` or `Doesn't Contain` won't match NULL fields that have no value. They only match fields that have a value and the value doesn't match the criteria. If you want NULL fields as well, you can search for `≠ searchterm OR Is Empty`.
+* `Matches Pattern` will match a regular expressions pattern.
+* `Is Like` matches a complete field, so you usually want to use it with wildcards if you want to find parts of the field, like `%search term%`.
+* `Contains` is useful for searching in serialized fields (fields that store multiple values together, such as Contact Subtype which could be `Parent,Volunteer,Staff`). It matches only a full value like `Parent`, not parts of a value.
+* Negated operators such as `Not Like`, `≠` or `Doesn't Contain` won't match NULL fields that have no value. They only match fields that have a value and the value doesn't match the criteria. If you want NULL fields as well, you can search for `≠ searchterm OR Is Empty`.
 
 The Having section is where you define any criteria to be applied after a 'Group By' (see further down).
 
