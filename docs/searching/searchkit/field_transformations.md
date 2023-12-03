@@ -1,13 +1,21 @@
 # Field Transformations 
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label.
-
-Provide a screenshot showing where on the SearchKit page this clause is.
+Field transformations are "formulas" you apply to fields in your result set. e.g. displaying another field if a value is missing, rounding a numeric value, counting occurences, summing values, etc.
 
 ## Description
 
-Explain the options and what they do to the search results, for example, list each option available in a dropdown and say what each will do, or if list is variable and too long, explain in more abstract terms.
+The list of transformations is organized in 4 categories:
+
+- Comparison
+- Text
+- Math
+- Aggregate (only available if you used Group By)
 
 ## Option Details
 
-If the section being described has a long list of options that have a one sentence description in the UI then probably start by just listing all of those options in an unordered list.
+See MySQL documentation for more information:
+
+- https://dev.mysql.com/doc/refman/8.0/en/built-in-function-reference.html
+- https://dev.mysql.com/doc/refman/8.0/en/aggregate-functions.html
+
+Please note that not all of the MySQL functionality has been implemented in the Search Kit.
