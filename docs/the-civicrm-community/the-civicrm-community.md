@@ -91,7 +91,7 @@ to the CiviCRM community.
 -   Contribute content to CiviCRM's website. You can share use cases and case studies that describe how your organization uses CiviCRM and the solutions and processes you've developed around
     the software. See existing case studies  [here](https://civicrm.org/case-studies). You can also share your successes, experiences at Civi-related
     events, interesting customizations, etc. on the
-    [CiviCRM blog](https://civicrm.org/blog). You can add content by [becoming a member](https://civicrm.org/become-a-member) or emailing [info@civicrm.org](mailto:info@civicrm.org) with a request to post.
+    [CiviCRM blog](https://civicrm.org/blog). You can add content by [registering with CiviCRM](https://civicrm.org/user/register) or emailing [info@civicrm.org](mailto:info@civicrm.org) with a request to post.
 -   Share your training resources and materials with the rest of the
     community through posts on the CiviCRM
     blog or on your own sites.
