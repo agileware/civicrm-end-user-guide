@@ -74,6 +74,7 @@ nav:
           - 'Query Info': 'searching/searchkit/query_info.md'
           - 'Search Button': 'searching/searchkit/search_button.md'
           - 'Actions': 'searching/searchkit/actions.md'
+          - 'Save': 'searching/searchkit/save.md'
           - 'Relative Date Formats': 'searching/relative-date-formats.md'
           - 'Example: Create a Soft Credit Search and Display': 'searching/searchkit/soft-credit-example.md'
           - 'Example: Create an Upcoming Events Form': 'searching/searchkit/example-upcoming-events.md'
