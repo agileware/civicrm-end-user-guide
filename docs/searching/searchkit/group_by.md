@@ -1,14 +1,14 @@
 # Group By 
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label. To do.
+Use 'Group By' in Search Kit to categorize your data by a common field, like Contact ID, which organizes and summarizes information based on your selected criteria. This feature is ideal for analyzing patterns and relationships within your data, offering insights through various aggregation functions.
 
-Provide a screenshot showing where on the SearchKit page this clause is.
+![Screenshot of group by option in Search Kit](../../img/search_kit_group_by.png)
 
 ## Description
 
 'Group By' is a feature that lets you organize data around a common element (entity/ thing). For example, if you're looking at contacts and their addresses, you could for example group them by Contact ID.
 
-![Example of a group by on Contact ID](../../img/search_kit_intro_group_by.png)
+![Example of a group by on Contact ID](../../img/search_kit_group_by_group_on_contact_id.png)
 
 If you then also add the field Address Id to the result you will automatically count all addresses on a contact. This approach shows you clearly how many addresses each contact has.
 
