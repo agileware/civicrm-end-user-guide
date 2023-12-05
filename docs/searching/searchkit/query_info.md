@@ -1,8 +1,8 @@
 # Query Info
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label.
+Query Info presents you with the underlying code behind your search in API and SQL format. It can be copied and used outside of SearchKit if needed. It is optional and recommended for use by users that are comfortable directly using the API and SQL commands.
 
-Provide a screenshot showing where on the SearchKit page this clause is.
+![Image of query info screen in SearchKit](../../img/searchkit-query-info-summary.png)
 
 ## Description
 
