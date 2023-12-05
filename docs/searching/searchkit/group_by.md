@@ -1,6 +1,6 @@
 # Group By 
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label.
+Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label. To do.
 
 Provide a screenshot showing where on the SearchKit page this clause is.
 
