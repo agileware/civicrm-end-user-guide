@@ -2,7 +2,7 @@
 
 Use 'Group By' in Search Kit to categorize your data by a common field, like Contact ID, which organizes and summarizes information based on your selected criteria. This feature is ideal for analyzing patterns and relationships within your data, offering insights through various aggregation functions.
 
-![Screenshot of group by option in Search Kit](../../img/search_kit_group_by_add_field.png)
+![Screenshot of group by option in Search Kit](../../img/search_kit_group_by.png)
 
 ## Description
 
