@@ -1,13 +1,25 @@
 # Where
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label.
+**Where** is how you build additional filters for the data type selected above. 
 
 Provide a screenshot showing where on the SearchKit page this clause is.
+![Screenshot of where in the page](../../img/search-kit/where-position-elements.png)
 
 ## Description
+There are four main components: 
+1) the element you want to compare, 
+2) the “operator” (things like equals, contains, is like) and 
+3) value to compare against. 
+4) Additionally you can choose whether to compare with a value you provide or the value of another field. Changing this will give you either an empty box for the value you want or a list of fields to compare against.
+The “operators” contain math symbols  like equals and greater than, simple options like empty or not and various comparisons. 
 
-Explain the options and what they do to the search results, for example, list each option available in a dropdown and say what each will do, or if list is variable and too long, explain in more abstract terms.
+You’re saying things like “**where** the email contains ‘.gov’ ” 
+![Screenshot of example with email](../../img/where-email-example.png)
+
+or “**where** the primary address is not the same as the billing address”
+![Screenshot of example with address](../../img/where-address-example.png)
+
 
 ## Option Details
 
-If the section being described has a long list of options that have a one sentence description in the UI then probably start by just listing all of those options in an unordered list.
+
