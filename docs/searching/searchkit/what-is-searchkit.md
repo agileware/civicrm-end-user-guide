@@ -82,7 +82,7 @@ The choice of join option directly influences which contacts and what informatio
 ### Group By
 If, as in the above join example, you have one row per address but you just want one per contact
 you can use Group By to group the rows, such that you only have one per contact.
-![group by.png](../../img/search_kit_intro_group_by_group_on_contact_id.png)
+![group by.png](../../img/search_kit_group_by_group_on_contact_id.png)
 
 ### Addresses, emails & phones are a bit magic - that's mostly good
 Normally a contact has a primary address, a primary email and a primary phone. We know there is only one
