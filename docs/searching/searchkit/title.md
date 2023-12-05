@@ -2,7 +2,7 @@
 
 A short title required when saving your search.
 
-![Search Title](../../img/searchkit_search_title.png)
+![Search Title](../../img/Searchkit_Search_Title.png)
 
 ## Description
 
