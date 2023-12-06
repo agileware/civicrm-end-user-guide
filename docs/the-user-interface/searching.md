@@ -6,14 +6,13 @@ CiviCRM.
 We will start off with some simple searches and then move on to more
 advanced techniques. CiviCRM beginners should be familiar with
 Quick search, Advanced Search and the component searches. More advanced
-users should also look at [SearchKit](../searching/searchkit/what-is-searchkit.md) reports, custom searches and Search Builder.
+users should also look at [SearchKit](../searching/searchkit/what-is-searchkit.md) reports, and custom searches.
 
 ## Overview
 In this introduction we will discuss at various level of detail:
 
 * **Quick search** - how to quickly search for contacts.
 * **Advanced search** - how to really dig deep for contacts with lots of search possibilities.
-* **Search Builder** - how to build your own searches (though if you are using CiviCRM version 5.20 or later you should really look into [SearchKit](../searching/searchkit/what-is-searchkit.md) too).
 * **Full-text search** - how to search for something in all the available text fields in the database.
 * **Component search** - on searching within specific component entities like events, memberships, cases, contributions etc.
 * **Custom searches** - using the available custom made searches that can be from CiviCRM core or from one or more of your specific extensions.
@@ -210,55 +209,6 @@ If you expand one of the dropdown sections, and make selections, as shown above,
 
 The Advanced Search is an effective way to search for many things in CiviCRM. However, there is an issue with searches where Contacts are the client in more than one Case, and they are engaged in the same Activity Type in each of these Cases. The Advanced Search is currently not able to filter these Activities correctly by Case Type. This issue is expected to be resolved in the near future. 
 
-## Search Builder
-
-Advanced search lets you choose from a wide range of criteria in a
-user-friendly panel, but this has limitations. Search builder allows you
-to define your own search and arrange the criteria according to your
-specific needs.
-
-Search Builder allows you to choose from a range of operators:
-
-
-
-| Operator  | Purpose | Example |
-| -- | -- | -- |
-| = | Equals. Matches on the exact value you specify | **"First Name" = "Bob"** will find contacts who's first name is exactly "Bob" |
-|  ≠  | Not equals. Matches on everything that is not the specified value. | **"Gender" ≠ "Female"** will find contacts who are not female |
-|  > , ≥  | Greater-than, greater-than-or-equal-to | **"Birth Date" ≥ "Jan 1 2000"** will find contacts born on or after Jan 1 2000  |
-| < , ≤ | Less-than, less-than-or-equal-to | **"Last Name" < "J"** will find contacts whose name starts with a letter that comes before J in the alphabet  |
-| In | Value is one of those you specify | "Group" In "Board Members, Staff" will find contacts who are in either of the specified groups |
-| Like| Same as the = operator, but supports the % wildcard character | **"Last Name" Like "Gree%"** will find contacts whose last name begins with "Gree" (Green, Greenberg, etc)  |
-| Regex | Same as the = operator, but supports all regular expression operators. See http://en.wikipedia.org/wiki/Regular_expressions | **"Middle Name" Regex "[a-c]"** will find contacts whose middle initial is A, B or C  |
-| Is Empty, Not Empty| Empty means the field exists and is equal to the number zero or contains nothing.  | **"City" Is Empty** will find all contacts who do have an address but the city was left blank  |
-| Is Null, Not Null | Null means the field does not exist or contains nothing.  | **"City" Is Null** will find all contacts who do not have an address at all  |
-
-
-
-Search Builder also allows you to combine criteria with multiple AND and
-OR groups. To AND criteria (which means to find results matching all
-criteria specified), click **Another search field** and enter criteria
-under **Include contacts where**. To OR criteria (which means to find
-results matching either one OR the other criterion), enter one
-criterion in **Include contacts where** and the other under **Also
-include contacts where.** The following example will search for females
-born after Jan 1 2000 OR members of the Administrators or Advisory Board
-groups:
-
-![Search Builder](../img/the-user-interface/searching/Search_Builder.png)
-
-Your search results will contain each contact's name, plus a column for
-each search criterion you've defined. If you export search results, the
-export file will contain those same columns.
-
-Just like other searches, you can choose from a list of actions to apply
-to the results of your search. If you export results, you can select
-fields for export. Note that the fields you searched on will get
-exported by default in addition to those you select.
-
-You can also save your Search Builder search as a Smart Group. For more
-information on Smart Groups, see the [Groups and Tags](../organising-your-data/groups-and-tags.md) section.
-
 ## Full-text Search
 
 You can use this to search for text values all fields of the database.
@@ -285,146 +235,6 @@ Note that you can also use the Advanced Search in conjunction with
 **Display Results As** to search for component objects based on criteria
 available in Advanced earch. For example, you could find all event
 attendances from contacts that are also members.
-
-## Custom searches
-
-Custom searches are designed to answer specific questions that can't be
-easily answered using **Advanced Search** or **Search Builder.**
-
-Go to **Search** > **Custom Search** in the navigation menu and look at
-the list of available custom searches.These customized searches have
-been written by members of the CiviCRM community to meet their own
-needs, and then contributed back to the community to share with others
-who need the same or similar custom searches. It's worth spending some
-time exploring these searches as some may be useful to you, and they
-will give you an idea of the sorts of things that are possible. Though
-some of these searches can be done in the Advanced Search (especially in
-later versions), custom searches are also set up to display results
-according to your search and may provide more useful columns in the
-results for your needs. Here's a short description of the custom
-searches available.
-
-### Finding contacts in one group but not in another
-
-This is probably the most popular custom search.
-
-When using Advanced Search, if you select several groups in the Group
-list near the top, it will treat the search as an OR search, and return
-results for contacts who are in any of the groups you select. If you
-want to find contacts who belong to all of the selected groups, you will
-need to use Search Builder.
-
-There is also a very useful built-in custom search, "Include/Exclude
-Contacts in a Group/Tag", that enables you to find contacts who are in
-one group but not in another, which you can find by going to **Search >
-Custom Searches** in the navigation menu.
-
-![Include/Exclude Search](../img/the-user-interface/searching/IncludeExclude.png)
-
-By combining Include and Exclude options, you can find contacts who are
-in one group but remove just the group members who fit another
-criterion. For example, you may want to find all the contacts who are
-Newsletter Subscribers or volunteers, but exclude members of Advisory
-Board, perhaps to create a new mailing list to receive a message
-targeted at the most external circles of your constituents.
-
-### Household Name and State
-
-Search households in a state or province.
-
-!!! note 
-    Which states or provinces are available in the search depends on
-    your localization settings. Add additional countries by going to
-    **Administer** > **Configure** > **Global Settings** >
-    **Localization**. Add to the column of "Available States and Provinces",
-    but note this change will also affect profile forms which include
-    country or state/province fields.
-
-### Contribution Aggregate
-
-Find aggregate totals of contributions from contacts within a range of
-dates.
-
-### Postal Mailing
-
-Search for contacts in a given group and display results with mailing
-information. Use this search to batch update contact information, send
-an email, export contacts, or other actions.
-
-### Proximity Search
-
-Search for contacts located within x miles/kilometres of a specific
-geographical area.
-
-1.  Go to **Search > Custom Searches > Proximity Search**
-2.  Enter the distance in miles or kilometres.
-3.  Enter the country within which you want to search.
-4.  Enter any other parameters you wish to give your search.
-5.  Click **Search**.
-
-!!! tip
-    You can also incorporate Proximity Searching in a profile which you've 
-    configured for use as a search form.
-
-### Event Aggregate
-
-Search on event-related payments for a given event or event type in a
-given date range. You may also limit results to show credit card
-payments only or payees only. See also event reports for more useful
-event search options.
-
-
-### Price Set Details for Event Participants
-
-Get detailed information about which participants opted for which
-different paid options related to an event. For example, see who paid
-just the event fee, who paid for the additional workshop and who paid
-for dinner.
-
-### Find Contribution Amounts by Tag
-
-Search on any tag for contributions within a range of dates.
-
-### Zip Code Range
-
-Find contacts in a specified zip code or postal code range. This is
-useful for targeted mailings or conducting surveys in a particular
-geographical area.
-
-1.  Go to **Search > Custom Searches > Zip Code Range**.
-
-2.  Enter the start and end range of the zip or postal codes.
-
-3.  Click **Search**.
-
-### Date Added to CiviCRM
-
-Search for contacts that have been added within a particular time
-period. Including a group displays just those added within the specified
-time frame who are also in that group. Excluding a group removes those
-group members from the results.
-
-### Custom Group Multiple Values Listing
-
-A search for multi-value custom data.
-
-### Contributions made in Year X and not Year Y
-
-Search for contributions that have been made in one year but not
-another. This is useful for following up semi-regular donors and
-encouraging them to donate more regularly. See also the LYBUNT and
-SYBUNT reports.
-
-None of the fields are required; you can choose whether to search a
-specified amount range as well as a time period, and whether you want to
-exclude minimum or maximum amounts.
-
-It is possible to write your own custom searches, but you'll need to be
-comfortable with MySQL and PHP. See the Developer wiki at
-[http://wiki.civicrm.org/confluence/display/CRMDOC/Develop](http://wiki.civicrm.org/confluence/display/CRMDOC/Develop)
-for more information about how to do this. If you create a custom search
-that you think could be useful for others, consider contributing it back
-to the community.
 
 ## The 'search-action' workflow
 
@@ -474,7 +284,7 @@ used before, after, or even within words. For example, searching on
 'Mich%el' will exclude "Michał" and "Micheal" but still find "Michelle"
 and "Michael".  
 
-However, using % by itself can produce unexpected results for data where the value in the database is 'empty' (as opposed to NULL. Using a single % will return results for empty values. To avoid these results, eg if you are searching "any record which has any data in this field" using %_%. This will return results only where there is at least a single character, and will ignore all empty (as well as NULL) results.
+However, using % by itself can produce unexpected results for data where the value in the database is 'empty' (as opposed to NULL). Using a single % will return results for empty values. To avoid these results, eg if you are searching "any record which has any data in this field" usw %_% instead. This will return results only where there is at least a single character, and will ignore all empty (as well as NULL) results.
 
 ## Case sensitivity
 
@@ -492,4 +302,4 @@ change the number of rows to be outputted on the screen. You should not set too 
 to load.
 
 ## SearchKit
-As of CiviCRM version 5.29 [SearchKit](../searching/searchkit/what-is-searchkit.md) is new functionality with lots of exciting possibilities for searching, reporting and potentially much more. The development continues, the functionality will evolve over time and so will the documentation. The section [SearchKit](../searching/searchkit/what-is-searchkit.md) covers that current state.
+**SearchKit** is more powerful than Advanced Search but requires more technical knowledge. It is suitable for site builders and power users, and is covered in the [SearchKit](../searching/searchkit/what-is-searchkit.md) section.
