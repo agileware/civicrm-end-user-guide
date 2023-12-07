@@ -1,44 +1,23 @@
 # With (Optional) / With (Required) / Without 
 
-Put a short 1 - 2 sentence summary of function that will appear in-app on a popup (?) right after the Search For label.
-
 Provide a screenshot showing where on the SearchKit page this clause is.
 
 ## Description
 
-When you include more than one type of information (referred to as 'entities'), it's known as a join. In the user interface it is represented with the options "with (optional)", "with (required)" or "without". 
+When creating a new search, the first choice is the starting entity. The next step is to include zero or more additional entities if you need fields from them as additional columns, or perhaps to adjust the rows returned. For example, you might start with contacts and then add addresses. 
 
-![Join options](../../img/search_kit_join_options.png)
+The additional entity's rows are joined to the existing rows from the starting entity and any other previously joined entities in one of three ways: `With (optional)` / `With (required)` / `Without`. 
 
-Keep in mind that adding an additional entity can change the number of rows in your results. For instance, let's consider a search that includes 'Contacts with (optional) Addresses'. In this scenario, the results will display differently based on the number of addresses associated with each contact.
+Which option is chosen to join the entities affects how many and which rows are returned. Sometimes you might join to additional entities just in order to restrict the rows, such as getting just the contacts who have bought tickets for the Annual General Meeting, or all those who have not yet bought tickets.
 
-![Sample join](../../img/search_kit_joins.png)
+`With (optional)` treats the new entities as optional. Even if there is not a match, the rows from the earlier entity or entities will still be returned in the results. Contacts With (optional) Contact Addresses will return a row for a Contact that has no addresses, and all of that row's Contact Addresses fields will be empty/NULL.
 
-- If a contact has no address or just one, they will appear in the results as a single row.
-- If a contact has multiple addresses, there will be a separate row for each address.
+`With (required)` only returns rows in your search if there exists an additional entity for the earlier entity or entities in the search. For example, Contacts With (required) Contact Addresses will not return any rows for Contacts that do not have addresses, but does return a row for every combination of Contact and one of its addresses.
 
-Here's an example with Timmy and his parents:
+`Without` only returns rows where the earlier entity or entities have no matching row in the new entity. For example, Contacts Without Contact Addresses will return a row for each Contact that has no Contact Address.
 
-|Display Name|Location Type|Street Address|Is Primary|
-|------------|-------------|--------------|----------|
-|Timmy|Home|Sesame Street|Yes|
-|Timmy's Mum|Home|Sesame Street|Yes|
-|Timmy's Mum|Work|Downing Street|No|
-|Timmy's Dad|||
+Each additional entity you add to the search is 'joined' to the entities already selected. Your choice of 'With (optional)` / `With (required)` / `Without` determines if rows will be added to the search or removed. 
 
-In this table (if you attach the addresses using the option "With optional" to the contacts):
-
-- Timmy appears once as he has only one known address.
-- Timmy's Mum appears twice, once for each of her two addresses (Home and Work).
-- Timmy's Dad appears without any address details.
-
-There are three options for joins in SearchKit: with (required), with (optional), and without. Each of these options significantly alters the search results. Here's how they differ:
-
-- With (required): This option ensures that only those contacts with the specified additional information (like an address) are shown in the results.
-- With (optional): Using this option, all contacts are shown in the results, but additional information is included where available.
-- Without: This option includes only those contacts that do not have the specified additional information.
-
-The choice of join option directly influences which contacts and what information is displayed in your search results.
 
 ## Option Details
 
