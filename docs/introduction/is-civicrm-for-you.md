@@ -9,7 +9,6 @@ every organisation. Here are some ways that you can find out whether
 CiviCRM is right for your organisation:
 
 -   identify your organisation's needs
--   check out [the CiviCRM Statistics page](https://stats.civicrm.org/?tab=sites)
 -   read [case studies about how similar organizations use CiviCRM](https://civicrm.org/case-studies/)
 -   play with [one of many free CiviCRM demonstration sites](https://civicrm.org/demo)
 -   talk to others who use CiviCRM

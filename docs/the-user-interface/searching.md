@@ -6,14 +6,14 @@ CiviCRM.
 We will start off with some simple searches and then move on to more
 advanced techniques. CiviCRM beginners should be familiar with
 Quick search, Advanced Search and the component searches. More advanced
-users should also look at [Search Kit](../searching/searchkit/what-is-searchkit.md) reports, custom searches and Search Builder.
+users should also look at [SearchKit](../searching/searchkit/what-is-searchkit.md) reports, custom searches and Search Builder.
 
 ## Overview
 In this introduction we will discuss at various level of detail:
 
 * **Quick search** - how to quickly search for contacts.
 * **Advanced search** - how to really dig deep for contacts with lots of search possibilities.
-* **Search Builder** - how to build your own searches (though if you are using CiviCRM version 5.20 or later you should really look into [Search Kit](../searching/searchkit/what-is-searchkit.md) too).
+* **Search Builder** - how to build your own searches (though if you are using CiviCRM version 5.20 or later you should really look into [SearchKit](../searching/searchkit/what-is-searchkit.md) too).
 * **Full-text search** - how to search for something in all the available text fields in the database.
 * **Component search** - on searching within specific component entities like events, memberships, cases, contributions etc.
 * **Custom searches** - using the available custom made searches that can be from CiviCRM core or from one or more of your specific extensions.
@@ -22,7 +22,7 @@ In this introduction we will discuss at various level of detail:
 * **The wildcard** - using "%" or "%_%" in your searches as a wildcard.
 * **Case sensitivity** - what you can do with upper or lower case in your search.
 * **Default number of rows** - how many results are returned in your searches and how you can change that number.
-* **Search Kit** - a brief link to the [Search Kit](../searching/searchkit/what-is-searchkit.md) functionality.
+* **SearchKit** - a brief link to the [SearchKit](../searching/searchkit/what-is-searchkit.md) functionality.
 
 ## Searching and reporting
 
@@ -491,5 +491,5 @@ As of CiviCRM version 5.39 System Administrators can under **Administer** > **Cu
 change the number of rows to be outputted on the screen. You should not set too high a number as the higher the number, the slower the screen will be 
 to load.
 
-## Search Kit
-As of CiviCRM version 5.29 [Search Kit](../searching/searchkit/what-is-searchkit.md) is new functionality with lots of exciting possibilities for searching, reporting and potentially much more. The development continues, the functionality will evolve over time and so will the documentation. The section [Search Kit](../searching/searchkit/what-is-searchkit.md) covers that current state.
+## SearchKit
+As of CiviCRM version 5.29 [SearchKit](../searching/searchkit/what-is-searchkit.md) is new functionality with lots of exciting possibilities for searching, reporting and potentially much more. The development continues, the functionality will evolve over time and so will the documentation. The section [SearchKit](../searching/searchkit/what-is-searchkit.md) covers that current state.
