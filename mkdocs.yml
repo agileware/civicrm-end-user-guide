@@ -75,7 +75,7 @@ nav:
           - 'Search Button': 'searching/searchkit/search_button.md'
           - 'Actions': 'searching/searchkit/actions.md'
           - 'Save': 'searching/searchkit/save.md'
-          - 'Title': 'searching/searchkit/title.md'
+          - 'Title': 'searching/searchkit/title.md' 
           - 'Description': 'searching/searchkit/description.md'
           - 'Expires': 'searching/searchkit/expires.md'
           - 'Tags': 'searching/searchkit/tags.md'
