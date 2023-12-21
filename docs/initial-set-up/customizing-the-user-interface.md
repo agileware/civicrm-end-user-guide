@@ -110,9 +110,11 @@ are:
     those letters: Adams, Janet; Nadal, Jorge; etc. If disabled, a
     wildcard is still added, but only to the end of the search term. In
     this case, searching for "ada" will return any contact whose last
-    name begins with those letters: Adams, Janet' but not Nadal, Jorge.
+    name begins with those letters: Adams, Janet' but not Nadal, Jorge. 
+    You might choose to disable this to speed up searching on a large database.
 -   **Include Email** (choose Yes or No): If you choose Yes, email
     addresses will be automatically included when users search by Name.
+    You might choose to disable this to speed up searching on a large database.
 -   **Include Nickname** (choose Yes or No): If you choose Yes, contents
     of the Nickname field will be automatically included when users
     search by Name.
@@ -120,10 +122,11 @@ are:
     Yes, a bar will appear at the top of your search results allowing
     you to choose a letter of the alphabet. Clicking A, for example,
     will take you to a page displaying only contacts that begin with A.
+    You might choose to disable this to speed up searching on a large database.
 
 -   **Include Order By Clause** (choose Yes or No): If you choose No,
     your search results will not be ordered.
--   **Smart group cache timeout**: This determines how often the smart group cache is refreshed. For most sites this value should not be set to zero, since that means no caching at all and will slow down your site.  Even on sites where contact data changes frequently, the suggested minimum value is 5 minutes.
+-   **Smart group cache timeout**: This determines how often the smart group cache is refreshed. A value of 0 turns off caching. What works for you site might be variable. More information is [in the admin guide.](https://docs.civicrm.org/sysadmin/en/latest/setup/optimizations/).
 -   **Autocomplete Contact Search**: This is a series of checkboxes for
     basic contact fields (name, email, phone, etc). The fields that are
     checked will show up in the autocomplete results list that appears
